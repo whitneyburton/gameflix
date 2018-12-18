@@ -10,7 +10,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "All Over The Board",
-    "youtube": "https://www.youtube.com/watch?v=ZYvvhOzYx_4"
+    "youtube": "ZYvvhOzYx_4"
   },
   {
     "game": "Candy Land",
@@ -23,7 +23,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "Hasbro ",
-    "youtube": "https://www.youtube.com/watch?v=ZimfGniNXGo"
+    "youtube": "ZimfGniNXGo"
   },
   {
     "game": "Sorry!",
@@ -36,7 +36,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Hasbro ",
-    "youtube": "https://www.youtube.com/watch?v=v1uKXGyXJy0"
+    "youtube": "v1uKXGyXJy0"
   },
   {
     "game": "Don't Be A Loser Adult Expansion",
@@ -49,7 +49,7 @@ const games = [
     "expansion_pack": true ,
     "challenge_level": "average",
     "publisher": "All Over The Board",
-    "youtube": "https://www.youtube.com/watch?v=ZYvvhOzYx_4&t=341s"
+    "youtube": "ZYvvhOzYx_4&t=341s"
   },
   {
     "game": "Ticket to Ride",
@@ -62,7 +62,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Days of Wonder",
-    "youtube": "https://www.youtube.com/watch?v=qHmf1bau9xQ"
+    "youtube": "qHmf1bau9xQ"
   },
   {
     "game": "Betrayal at House on the Hill",
@@ -75,7 +75,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Avalon Hill ",
-    "youtube": "https://www.youtube.com/watch?v=MINNKyE4fjs"
+    "youtube": "MINNKyE4fjs"
   },
   {
     "game": "Dr. Eureka",
@@ -88,7 +88,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Blue Orange Games",
-    "youtube": "https://www.youtube.com/watch?v=XxjqsuHX484"
+    "youtube": "XxjqsuHX484"
   },
   {
     "game": "Jenga",
@@ -101,7 +101,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Hasbro ",
-    "youtube": "https://www.youtube.com/watch?v=RtGYWqx_MYI"
+    "youtube": "RtGYWqx_MYI"
   },
   {
     "game": "Tsuro of the Seas",
@@ -114,7 +114,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Calliope Games",
-    "youtube": "https://www.youtube.com/watch?v=3RmC6M-wIxA"
+    "youtube": "3RmC6M-wIxA"
   },
   {
     "game": "Forbidden Desert",
@@ -127,7 +127,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Gamewright",
-    "youtube": "https://www.youtube.com/watch?v=eCh1WoNShEY"
+    "youtube": "eCh1WoNShEY"
   },
   {
     "game": "Terraforming Mars",
@@ -140,7 +140,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Stronghold Games",
-    "youtube": "https://www.youtube.com/watch?v=TiswoYwwjnI"
+    "youtube": "TiswoYwwjnI"
   },
   {
     "game": "Kingdomino",
@@ -153,7 +153,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Blue Orange Games",
-    "youtube": "https://www.youtube.com/watch?v=nLiXmaV0bIs"
+    "youtube": "nLiXmaV0bIs"
   },
   {
     "game": "Scooby Doo: Fright at the Fun Park Game",
@@ -166,7 +166,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Buffalo Games",
-    "youtube": "https://www.youtube.com/watch?v=21J0ZQ1GLc0"
+    "youtube": "21J0ZQ1GLc0"
   },
   {
     "game": "Super Mario Level Up",
@@ -179,7 +179,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "USAopoly",
-    "youtube": "https://www.youtube.com/watch?v=dzd67RRO_x8"
+    "youtube": "dzd67RRO_x8"
   },
   {
     "game": "Laser Khet 2.0",
@@ -192,7 +192,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Innovention Toys",
-    "youtube": "https://www.youtube.com/watch?v=_j1pJj2UVic"
+    "youtube": "_j1pJj2UVic"
   },
   {
     "game": "Quadropolis",
@@ -205,7 +205,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Days of Wonder",
-    "youtube": "https://www.youtube.com/watch?v=HwKLP7_qT78"
+    "youtube": "HwKLP7_qT78"
   },
   {
     "game": "Small World",
@@ -218,7 +218,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Days of Wonder",
-    "youtube": "https://www.youtube.com/watch?v=ibzqvd3b1Yg"
+    "youtube": "ibzqvd3b1Yg"
   },
   {
     "game": "Time Stories",
@@ -231,7 +231,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Asmodee",
-    "youtube": "https://www.youtube.com/watch?v=M3gVCTcIang"
+    "youtube": "M3gVCTcIang"
   },
   {
     "game": "Twister",
@@ -244,7 +244,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "Hasbro ",
-    "youtube": "https://www.youtube.com/watch?v=9-ThwqP00mI"
+    "youtube": "9-ThwqP00mI"
   },
   {
     "game": "Monopoly: Ghostbusters",
@@ -257,7 +257,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "USAopoly",
-    "youtube": "https://www.youtube.com/watch?v=qTylbl8-TII"
+    "youtube": "qTylbl8-TII"
   },
   {
     "game": "Dr. Microbe",
@@ -270,7 +270,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "Blue Orange Games",
-    "youtube": "https://www.youtube.com/watch?v=DwgVNezSMzk"
+    "youtube": "DwgVNezSMzk"
   },
   {
     "game": "Imhotep: Builder of Egypt",
@@ -283,7 +283,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Kosmos Games",
-    "youtube": "https://www.youtube.com/watch?v=wrhfb4e5-60"
+    "youtube": "wrhfb4e5-60"
   },
   {
     "game": "Animal Act",
@@ -296,7 +296,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "Buffalo Games",
-    "youtube": "https://www.youtube.com/watch?v=F17NjpauTXY"
+    "youtube": "F17NjpauTXY"
   },
   {
     "game": "Wits and Wagers",
@@ -309,7 +309,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "North Star Games",
-    "youtube": "https://www.youtube.com/watch?v=x9M_vEaj3qM"
+    "youtube": "x9M_vEaj3qM"
   },
   {
     "game": "The Castles of Burgundy",
@@ -322,7 +322,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Ravensburger",
-    "youtube": "https://www.youtube.com/watch?v=D0CGjB5QTeU"
+    "youtube": "D0CGjB5QTeU"
   },
   {
     "game": "Chronology",
@@ -335,7 +335,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Buffalo Games",
-    "youtube": "https://www.youtube.com/watch?v=gWqehwKd-M8"
+    "youtube": "gWqehwKd-M8"
   },
   {
     "game": "Likewise!",
@@ -348,7 +348,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "Buffalo Games",
-    "youtube": "https://www.youtube.com/watch?v=hB9pmt3_pRc"
+    "youtube": "hB9pmt3_pRc"
   },
   {
     "game": "Monopoly Deal",
@@ -361,7 +361,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Hasbro ",
-    "youtube": "https://www.youtube.com/watch?v=znrBkuoMSJ0"
+    "youtube": "znrBkuoMSJ0"
   },
   {
     "game": "Uno",
@@ -374,7 +374,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Mattel",
-    "youtube": "https://www.youtube.com/watch?v=_CvaIyRE1Tw"
+    "youtube": "_CvaIyRE1Tw"
   },
   {
     "game": "Phase 10",
@@ -387,7 +387,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Mattel",
-    "youtube": "https://www.youtube.com/watch?v=5JpVNNJxVs0"
+    "youtube": "5JpVNNJxVs0"
   },
   {
     "game": "Gloom",
@@ -400,7 +400,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Atlas Games",
-    "youtube": "https://www.youtube.com/watch?v=yoDs6vwfkjo"
+    "youtube": "yoDs6vwfkjo"
   },
   {
     "game": "Munchkin Loot Letter",
@@ -413,7 +413,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Alderac Entertainment Group",
-    "youtube": "https://www.youtube.com/watch?v=aIyI7RA8LwA"
+    "youtube": "aIyI7RA8LwA"
   },
   {
     "game": "Colt Express",
@@ -426,7 +426,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Asmodee",
-    "youtube": "https://www.youtube.com/watch?v=inKMSbky6Ik"
+    "youtube": "inKMSbky6Ik"
   },
   {
     "game": "Urban Dictionary Game",
@@ -439,7 +439,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Buffalo Games",
-    "youtube": "https://www.youtube.com/watch?v=ouBsmnZdyWo"
+    "youtube": "ouBsmnZdyWo"
   },
   {
     "game": "Coup",
@@ -452,7 +452,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Indie Boards And Cards",
-    "youtube": "https://www.youtube.com/watch?v=9YySzHXa1mo"
+    "youtube": "9YySzHXa1mo"
   },
   {
     "game": "Apples to Apples",
@@ -465,7 +465,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "Mattel",
-    "youtube": "https://www.youtube.com/watch?v=lt1fRUDOKkM"
+    "youtube": "lt1fRUDOKkM"
   },
   {
     "game": "13 Minutes: The Cuban Missile Crisis",
@@ -478,7 +478,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Ultra Pro Entertainment",
-    "youtube": "https://www.youtube.com/watch?v=MW4pJvZ0Zkg"
+    "youtube": "MW4pJvZ0Zkg"
   },
   {
     "game": "#Alternative Facts",
@@ -491,7 +491,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "Ultra Pro Entertainment",
-    "youtube": "https://www.youtube.com/watch?v=A6HG1F-xeo4"
+    "youtube": "A6HG1F-xeo4"
   },
   {
     "game": "Happy Salmon",
@@ -504,7 +504,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "North Star Games",
-    "youtube": "https://www.youtube.com/watch?v=aeT2qssQii8"
+    "youtube": "aeT2qssQii8"
   },
   {
     "game": "Clubs Card Game",
@@ -517,7 +517,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "BoardGames.Com",
-    "youtube": "https://www.youtube.com/watch?v=XeBihJz3pzg"
+    "youtube": "XeBihJz3pzg"
   },
   {
     "game": "The Voting Game",
@@ -530,7 +530,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "The Voting Game",
-    "youtube": "https://www.youtube.com/watch?v=sWujxgSV93w"
+    "youtube": "sWujxgSV93w"
   },
   {
     "game": "Codenames Pictures",
@@ -543,7 +543,7 @@ const games = [
     "expansion_pack": true ,
     "challenge_level": "average",
     "publisher": "Czech Games",
-    "youtube": "https://www.youtube.com/watch?v=XM5QjwnTQHg"
+    "youtube": "XM5QjwnTQHg"
   },
   {
     "game": "Codenames Duet",
@@ -556,7 +556,7 @@ const games = [
     "expansion_pack": true ,
     "challenge_level": "average",
     "publisher": "Czech Games",
-    "youtube": "https://www.youtube.com/watch?v=Q--J0ZDv3tY"
+    "youtube": "Q--J0ZDv3tY"
   },
   {
     "game": "Clank! A Deck Building Adventure",
@@ -569,7 +569,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Renegade Game Studios",
-    "youtube": "https://www.youtube.com/watch?v=fmTlVx9DVLU"
+    "youtube": "fmTlVx9DVLU"
   },
   {
     "game": "Cat Tower",
@@ -582,7 +582,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "IDW Games",
-    "youtube": "https://www.youtube.com/watch?v=LTm0aykRoiU"
+    "youtube": "LTm0aykRoiU"
   },
   {
     "game": "Drunk Quest",
@@ -595,7 +595,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Ninja Division",
-    "youtube": "https://www.youtube.com/watch?v=pInXjNR2XHQ"
+    "youtube": "pInXjNR2XHQ"
   },
   {
     "game": "Queen's Cup",
@@ -608,7 +608,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Buffalo Beer Mug Co.",
-    "youtube": "https://www.youtube.com/watch?v=LItVjRrea1U"
+    "youtube": "LItVjRrea1U"
   },
   {
     "game": "Hot Seat",
@@ -621,7 +621,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Buffalo Games",
-    "youtube": "https://www.youtube.com/watch?v=5y9J6I9CeZc"
+    "youtube": "5y9J6I9CeZc"
   },
   {
     "game": "Star Realms: Cosmic Gambit",
@@ -634,7 +634,7 @@ const games = [
     "expansion_pack": true ,
     "challenge_level": "average",
     "publisher": "White Wizard Games",
-    "youtube": "https://www.youtube.com/watch?v=pnpiyBxgDqk"
+    "youtube": "pnpiyBxgDqk"
   },
   {
     "game": "Star Realms: Colony Wars",
@@ -647,7 +647,7 @@ const games = [
     "expansion_pack": true ,
     "challenge_level": "average",
     "publisher": "White Wizard Games",
-    "youtube": "https://www.youtube.com/watch?v=i90oGzamutc"
+    "youtube": "i90oGzamutc"
   },
   {
     "game": "The Settlers of Catan",
@@ -660,7 +660,7 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Mayfair Games",
-    "youtube": "https://www.youtube.com/watch?v=Kw4tIC_cJiE"
+    "youtube": "Kw4tIC_cJiE"
   }
 ];
 

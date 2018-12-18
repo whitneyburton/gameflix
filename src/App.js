@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar  />
-        <Featured />
+        <Featured data={this.state.data.games}/>
         <Carousel data={this.state.data} />
 
       </div>
