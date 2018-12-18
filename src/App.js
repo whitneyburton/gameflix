@@ -15,8 +15,15 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar  />
-        <Featured data={this.state.data.games}/>
-        <Carousel data={this.state.data} />
+        <Featured data={this.state.data.games} />
+          {this.state.data.genres.map(genre => {
+            let matchingGames = this.state.data.games.filter(game => {
+              return game.genre_ID.includes(genre.genreID);
+            })
+            return <Carousel  genre = {genre}
+                              matchingGames = {matchingGames} />
+          }
+        )}
 
       </div>
     );
