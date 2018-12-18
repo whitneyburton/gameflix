@@ -1,5 +1,17 @@
 .Carousel {
   height: 100px;
-  width: 100%;
   background-color: red;
+  align-content: center;
+  display: flex;
+}
+.scroll-container{
+  display: flex;
+  overflow: scroll;
+
+}
+
+.carousel-game{
+  background: peru;
+  min-width:200px;
+  margin:5px 10px;
 }
