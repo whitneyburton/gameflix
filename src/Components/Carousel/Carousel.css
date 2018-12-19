@@ -2,19 +2,16 @@
   height: 33.33%;
   background-color: #d3d3d3;
   align-content: center;
-  display: flex;
   padding: 10px;
 }
 .scroll-container {
   display: flex;
   overflow: scroll;
-  /* align-content: center; */
 }
 
-.carousel-game {
-  /* height: 200px; */
+.carousel-bar{
+  display: flex;
 }
-
 .game-card {
   background: #fff;
   height: 78%;
@@ -22,6 +19,9 @@
   border-radius: 5px;
   width:230px;
   margin:15px 10px 5px 10px;
+}
+.genre-name{
+  flex:2;
 }
 
 .carousel-image {

@@ -8,13 +8,16 @@ class App extends Component {
 
   constructor() {
     super();
-    this.state = {data:Data}
+    this.state = {
+      data: Data
+    }
   }
 
   render() {
     return (
       <div className="App">
-        <Navbar  />
+        <Navbar />
+  
         <Featured data={this.state.data.games} />
           {this.state.data.genres.map(genre => {
             let matchingGames = this.state.data.games.filter(game => {

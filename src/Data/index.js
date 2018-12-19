@@ -25,7 +25,7 @@ const games = [
     "challenge_level": "simple",
     "publisher": "Hasbro ",
     "youtube": "ZimfGniNXGo",
-    "img": "https:////cdn.shopify.com/s/files/1/1911/5793/products/13697925_350x.jpg?v=1512062059"
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/13697925_350x.jpg?v=1512062059"
   },
   {
     "game": "Sorry!",
