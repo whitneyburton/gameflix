@@ -9,27 +9,65 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: Data
+      areGamesLoaded: false,
+      areGenresLoaded: false,
+      games: null,
+      genres: null,
+      error: null
     }
   }
 
+  componentDidMount() {
+    fetch('https://whateverly-datasets.herokuapp.com/api/v1/games')
+      .then(data => data.json())
+      .then(result => this.setState({
+        areGamesLoaded: true,
+        games: result.games
+      }))
+      .catch(error => {
+        this.setState({
+          error
+        })
+      })
+    
+
+    fetch('https://whateverly-datasets.herokuapp.com/api/v1/genres')
+      .then(data => data.json())
+      .then(result => this.setState({
+        areGenresLoaded: true,
+        genres: result.genres
+      }))
+      .catch(error => {
+        this.setState({
+          error
+        })
+      })
+  }
+
   render() {
-    return (
-      <div className="App">
-        <Navbar />
-  
-        <Featured data={this.state.data.games} />
-          {this.state.data.genres.map(genre => {
-            let matchingGames = this.state.data.games.filter(game => {
+    if (this.state.error) {
+      return <div>SOMETHING IS BAD 💩 </div>
+    }
+    else if (this.state.areGamesLoaded && this.state.areGenresLoaded) {
+      return (
+        <div className="App">
+          <Navbar />
+
+          <Featured data={this.state.games} />
+
+          {this.state.genres.map(genre => {
+            let matchingGames = this.state.games.filter(game => {
               return game.genre_ID.includes(genre.genreID);
             })
-            return <Carousel  genre = {genre}
-                              matchingGames = {matchingGames} />
+            return <Carousel genre={genre} matchingGames={matchingGames} />
           }
-        )}
+          )}
 
-      </div>
-    );
+        </div>
+      );
+    } else {
+      return (<div>LOADING</div>)
+    }
   }
 }
 
