@@ -1,18 +1,23 @@
 .Carousel {
-  height: 33.33%;
+  /* height: 33.33%; */
   background-color: red;
   align-content: center;
   display: flex;
 }
-.scroll-container{
+.scroll-container {
   display: flex;
   overflow: scroll;
 
 }
 
-.carousel-game{
+.carousel-game {
+  /* height: 200px; */
+}
+
+.game-card {
   background: peru;
-  min-width:200px;
+  height: 100%;
+  width:200px;
   margin:5px 10px;
 }
 

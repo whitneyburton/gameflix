@@ -7,11 +7,17 @@ const Carousel = (props) => {
       left
       <h4>{props.genre.genre}</h4>
       <div className="scroll-container">
+        
         {props.matchingGames.map(game => {
-          return <div className="carousel-game">
-              <span>{game.game}</span>
-              <img className="carousel-image" src={require('../../img/test.jpg')}></img>
+          return (
+            <div className="carousel-game">
+              <div className="game-card">
+                <span>{game.game}</span>
+                <img className="carousel-image" src={'./img/test.jpg'}></img>
+              </div>
+              
             </div>
+            )
         })}
         </div>
       right
