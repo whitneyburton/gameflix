@@ -10,7 +10,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "All Over The Board",
-    "youtube": "ZYvvhOzYx_4"
+    "youtube": "ZYvvhOzYx_4",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
   },
   {
     "game": "Candy Land",
@@ -23,7 +24,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "Hasbro ",
-    "youtube": "ZimfGniNXGo"
+    "youtube": "ZimfGniNXGo",
+    "img": "https:////cdn.shopify.com/s/files/1/1911/5793/products/13697925_350x.jpg?v=1512062059"
   },
   {
     "game": "Sorry!",
@@ -36,7 +38,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Hasbro ",
-    "youtube": "v1uKXGyXJy0"
+    "youtube": "v1uKXGyXJy0",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/81lATGZlz9L._SL1500_350x.jpg?v=1506020034"
   },
   {
     "game": "Don't Be A Loser Adult Expansion",
@@ -49,7 +52,8 @@ const games = [
     "expansion_pack": true ,
     "challenge_level": "average",
     "publisher": "All Over The Board",
-    "youtube": "ZYvvhOzYx_4&t=341s"
+    "youtube": "ZYvvhOzYx_4&t=341s",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/Dont-be-a-loser-game-expansion-pack_350x.jpg?v=1505674431"
   },
   {
     "game": "Ticket to Ride",
@@ -62,7 +66,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Days of Wonder",
-    "youtube": "qHmf1bau9xQ"
+    "youtube": "qHmf1bau9xQ",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/9780975277324_p0_v3_s550x406_1024x1024.jpg?v=1507825048"
   },
   {
     "game": "Betrayal at House on the Hill",
@@ -75,7 +80,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Avalon Hill ",
-    "youtube": "MINNKyE4fjs"
+    "youtube": "MINNKyE4fjs",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/03006574-077e-4af0-bd5f-3c8b6d4638a6_1.3f7f1463b7898c36819ddfa69928aa62_1024x1024.jpg?v=1506020730"
   },
   {
     "game": "Dr. Eureka",
@@ -88,7 +94,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Blue Orange Games",
-    "youtube": "XxjqsuHX484"
+    "youtube": "XxjqsuHX484",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/dr._eureka_350x.jpg?v=1507925411"
   },
   {
     "game": "Jenga",
@@ -101,7 +108,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Hasbro ",
-    "youtube": "RtGYWqx_MYI"
+    "youtube": "RtGYWqx_MYI",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/HGA2120lg_1024x1024.jpg?v=1505774365"
   },
   {
     "game": "Tsuro of the Seas",
@@ -114,7 +122,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Calliope Games",
-    "youtube": "3RmC6M-wIxA"
+    "youtube": "3RmC6M-wIxA",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/tsuro-of-the-seas-game_1024x1024.jpg?v=1507925245"
   },
   {
     "game": "Forbidden Desert",
@@ -127,7 +136,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Gamewright",
-    "youtube": "eCh1WoNShEY"
+    "youtube": "eCh1WoNShEY",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/ForbiddenDesert_Cover_large_7b1c22d1-c280-4d07-86f6-be0fa99e1342_1024x1024.jpg?v=1505674437"
   },
   {
     "game": "Terraforming Mars",
@@ -140,7 +150,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Stronghold Games",
-    "youtube": "TiswoYwwjnI"
+    "youtube": "TiswoYwwjnI",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/91YyutBl3zL._SL1500_1024x1024.jpg?v=1505879653"
   },
   {
     "game": "Kingdomino",
@@ -153,7 +164,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Blue Orange Games",
-    "youtube": "nLiXmaV0bIs"
+    "youtube": "nLiXmaV0bIs",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/kingdomino_clipped_rev_1_1024x1024.png?v=1510510231"
   },
   {
     "game": "Scooby Doo: Fright at the Fun Park Game",
@@ -166,7 +178,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Buffalo Games",
-    "youtube": "21J0ZQ1GLc0"
+    "youtube": "21J0ZQ1GLc0",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/scoobydoo_350x.jpg?v=1505778261"
   },
   {
     "game": "Super Mario Level Up",
@@ -179,7 +192,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "USAopoly",
-    "youtube": "dzd67RRO_x8"
+    "youtube": "dzd67RRO_x8",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/52103585_350x.jpg?v=1506019913"
   },
   {
     "game": "Laser Khet 2.0",
@@ -192,7 +206,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Innovention Toys",
-    "youtube": "_j1pJj2UVic"
+    "youtube": "_j1pJj2UVic",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/laser-khet-2-game_1024x1024.jpg?v=1505674447"
   },
   {
     "game": "Quadropolis",
@@ -205,7 +220,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Days of Wonder",
-    "youtube": "HwKLP7_qT78"
+    "youtube": "HwKLP7_qT78",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/71udbbplBKL._SL1054_350x.jpg?v=1511123167"
   },
   {
     "game": "Small World",
@@ -218,7 +234,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Days of Wonder",
-    "youtube": "ibzqvd3b1Yg"
+    "youtube": "ibzqvd3b1Yg",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/smallword_clipped_rev_1_350x.png?v=1510511202"
   },
   {
     "game": "Time Stories",
@@ -231,7 +248,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Asmodee",
-    "youtube": "M3gVCTcIang"
+    "youtube": "M3gVCTcIang",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/41tfz29dgeL._SL500_AC_SS350_350x.jpg?v=1507734788"
   },
   {
     "game": "Twister",
@@ -244,7 +262,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "Hasbro ",
-    "youtube": "9-ThwqP00mI"
+    "youtube": "9-ThwqP00mI",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/HG98831lg_500x.jpg?v=1506010693"
   },
   {
     "game": "Monopoly: Ghostbusters",
@@ -257,7 +276,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "USAopoly",
-    "youtube": "qTylbl8-TII"
+    "youtube": "qTylbl8-TII",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/ghostbusters_mn_16_3dbt_web_0_350x.jpg?v=1506287026"
   },
   {
     "game": "Dr. Microbe",
@@ -270,7 +290,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "Blue Orange Games",
-    "youtube": "DwgVNezSMzk"
+    "youtube": "DwgVNezSMzk",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/microbe_clipped_rev_1_350x.png?v=1510514115"
   },
   {
     "game": "Imhotep: Builder of Egypt",
@@ -283,7 +304,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Kosmos Games",
-    "youtube": "wrhfb4e5-60"
+    "youtube": "wrhfb4e5-60",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/41fIVFZqecL_1024x1024.jpg?v=1506449189"
   },
   {
     "game": "Animal Act",
@@ -296,7 +318,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "Buffalo Games",
-    "youtube": "F17NjpauTXY"
+    "youtube": "F17NjpauTXY",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/animalact1_500x_clipped_rev_1_350x.png?v=1510267495"
   },
   {
     "game": "Wits and Wagers",
@@ -309,7 +332,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "North Star Games",
-    "youtube": "x9M_vEaj3qM"
+    "youtube": "x9M_vEaj3qM",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/wits-and-wagers-game_500x.jpg?v=1505674546"
   },
   {
     "game": "The Castles of Burgundy",
@@ -322,7 +346,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Ravensburger",
-    "youtube": "D0CGjB5QTeU"
+    "youtube": "D0CGjB5QTeU",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/castles-of-burgundy-game_500x.jpg?v=1505674531"
   },
   {
     "game": "Chronology",
@@ -335,7 +360,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Buffalo Games",
-    "youtube": "gWqehwKd-M8"
+    "youtube": "gWqehwKd-M8",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/chronology_clipped_rev_2_1024x1024.jpeg?v=1510513522"
   },
   {
     "game": "Likewise!",
@@ -348,7 +374,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "Buffalo Games",
-    "youtube": "hB9pmt3_pRc"
+    "youtube": "hB9pmt3_pRc",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/likwise_clipped_rev_1_500x.jpeg?v=1510513686"
   },
   {
     "game": "Monopoly Deal",
@@ -361,7 +388,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Hasbro ",
-    "youtube": "znrBkuoMSJ0"
+    "youtube": "znrBkuoMSJ0",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/HSB0965lg_1024x1024.jpg?v=1505774367"
   },
   {
     "game": "Uno",
@@ -374,7 +402,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Mattel",
-    "youtube": "_CvaIyRE1Tw"
+    "youtube": "_CvaIyRE1Tw",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/uno-card-game-1_1024x1024.jpg?v=1505674544"
   },
   {
     "game": "Phase 10",
@@ -387,7 +416,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Mattel",
-    "youtube": "5JpVNNJxVs0"
+    "youtube": "5JpVNNJxVs0",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/phase10_350x.jpg?v=1505767109"
   },
   {
     "game": "Gloom",
@@ -400,7 +430,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Atlas Games",
-    "youtube": "yoDs6vwfkjo"
+    "youtube": "yoDs6vwfkjo",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/gloom_box_500x_clipped_rev_1_1024x1024.png?v=1510509842"
   },
   {
     "game": "Munchkin Loot Letter",
@@ -413,7 +444,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Alderac Entertainment Group",
-    "youtube": "aIyI7RA8LwA"
+    "youtube": "aIyI7RA8LwA",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/ll-munchkin-box-title_350x.png?v=1510696485"
   },
   {
     "game": "Colt Express",
@@ -426,7 +458,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Asmodee",
-    "youtube": "inKMSbky6Ik"
+    "youtube": "inKMSbky6Ik",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/colt01_mock_350x.png?v=1507739470"
   },
   {
     "game": "Urban Dictionary Game",
@@ -439,7 +472,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Buffalo Games",
-    "youtube": "ouBsmnZdyWo"
+    "youtube": "ouBsmnZdyWo",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/81OkxCqGYyL._SY355_500x.jpg?v=1505674538"
   },
   {
     "game": "Coup",
@@ -452,7 +486,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Indie Boards And Cards",
-    "youtube": "9YySzHXa1mo"
+    "youtube": "9YySzHXa1mo",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/coup-game_1024x1024.jpg?v=1505674420"
   },
   {
     "game": "Apples to Apples",
@@ -465,7 +500,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "Mattel",
-    "youtube": "lt1fRUDOKkM"
+    "youtube": "lt1fRUDOKkM",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/Apples-to-Apples-game_350x.jpg?v=1505674398"
   },
   {
     "game": "13 Minutes: The Cuban Missile Crisis",
@@ -478,7 +514,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Ultra Pro Entertainment",
-    "youtube": "MW4pJvZ0Zkg"
+    "youtube": "MW4pJvZ0Zkg",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/13-minutes-the-cuban-missile-crisis_1024x1024.jpg?v=1509475788"
   },
   {
     "game": "#Alternative Facts",
@@ -491,7 +528,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "Ultra Pro Entertainment",
-    "youtube": "A6HG1F-xeo4"
+    "youtube": "A6HG1F-xeo4",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/81FE7vlftJL._SL1500_1024x1024.jpg?v=1509129441"
   },
   {
     "game": "Happy Salmon",
@@ -504,7 +542,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "North Star Games",
-    "youtube": "aeT2qssQii8"
+    "youtube": "aeT2qssQii8",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/pic2913980_1024x1024.png?v=1508170496"
   },
   {
     "game": "Clubs Card Game",
@@ -517,7 +556,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "BoardGames.Com",
-    "youtube": "XeBihJz3pzg"
+    "youtube": "XeBihJz3pzg",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/71eiZ6QvHBL._SL1200_500x.jpg?v=1508170983"
   },
   {
     "game": "The Voting Game",
@@ -530,7 +570,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "The Voting Game",
-    "youtube": "sWujxgSV93w"
+    "youtube": "sWujxgSV93w",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/votinggame_clipped_rev_2_500x.png?v=1510512212"
   },
   {
     "game": "Codenames Pictures",
@@ -543,7 +584,8 @@ const games = [
     "expansion_pack": true ,
     "challenge_level": "average",
     "publisher": "Czech Games",
-    "youtube": "XM5QjwnTQHg"
+    "youtube": "XM5QjwnTQHg",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/d7ec3487-1b2f-470c-9382-36f8c9f89382._SR285_285_350x.jpg?v=1508173178"
   },
   {
     "game": "Codenames Duet",
@@ -556,7 +598,8 @@ const games = [
     "expansion_pack": true ,
     "challenge_level": "average",
     "publisher": "Czech Games",
-    "youtube": "Q--J0ZDv3tY"
+    "youtube": "Q--J0ZDv3tY",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/codenames_duet_350x.png?v=1544341251"
   },
   {
     "game": "Clank! A Deck Building Adventure",
@@ -569,7 +612,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Renegade Game Studios",
-    "youtube": "fmTlVx9DVLU"
+    "youtube": "fmTlVx9DVLU",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/61ndijnUVdL._SL500_AC_SS350_350x.jpg?v=1511122105"
   },
   {
     "game": "Cat Tower",
@@ -582,7 +626,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "simple",
     "publisher": "IDW Games",
-    "youtube": "LTm0aykRoiU"
+    "youtube": "LTm0aykRoiU",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/61egvNiQAKL._SL1073_350x.jpg?v=1509129429"
   },
   {
     "game": "Drunk Quest",
@@ -595,7 +640,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Ninja Division",
-    "youtube": "pInXjNR2XHQ"
+    "youtube": "pInXjNR2XHQ",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/917LyBHiv5L._SL1500_1024x1024.jpg?v=1508177632"
   },
   {
     "game": "Queen's Cup",
@@ -608,7 +654,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Buffalo Beer Mug Co.",
-    "youtube": "LItVjRrea1U"
+    "youtube": "LItVjRrea1U",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/queenscup_64cb8104-6914-4f9e-ad7a-1c8b37f48ca8_350x.jpg?v=1518818237"
   },
   {
     "game": "Hot Seat",
@@ -621,7 +668,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "average",
     "publisher": "Buffalo Games",
-    "youtube": "5y9J6I9CeZc"
+    "youtube": "5y9J6I9CeZc",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/hotseat_clipped_rev_1_500x.jpeg?v=1510516877"
   },
   {
     "game": "Star Realms: Cosmic Gambit",
@@ -634,7 +682,8 @@ const games = [
     "expansion_pack": true ,
     "challenge_level": "average",
     "publisher": "White Wizard Games",
-    "youtube": "pnpiyBxgDqk"
+    "youtube": "pnpiyBxgDqk",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/star-realms-cosmic-gambit-expansion-game_350x.jpg?v=1505674521"
   },
   {
     "game": "Star Realms: Colony Wars",
@@ -647,7 +696,8 @@ const games = [
     "expansion_pack": true ,
     "challenge_level": "average",
     "publisher": "White Wizard Games",
-    "youtube": "i90oGzamutc"
+    "youtube": "i90oGzamutc",
+    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/star-realms-colony-wars_500x_clipped_rev_2_350x.jpeg?v=1510517169"
   },
   {
     "game": "The Settlers of Catan",
@@ -660,7 +710,8 @@ const games = [
     "expansion_pack": false ,
     "challenge_level": "complex",
     "publisher": "Mayfair Games",
-    "youtube": "Kw4tIC_cJiE"
+    "youtube": "Kw4tIC_cJiE",
+    "img": "https://i.ebayimg.com/00/s/NTAwWDQ4MA==/z/7r0AAOSwSypY-L5l/$_35.JPG"
   }
 ];
 

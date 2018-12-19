@@ -1,13 +1,14 @@
 .Carousel {
-  /* height: 33.33%; */
-  background-color: red;
+  height: 33.33%;
+  background-color: #d3d3d3;
   align-content: center;
   display: flex;
+  padding: 10px;
 }
 .scroll-container {
   display: flex;
   overflow: scroll;
-
+  /* align-content: center; */
 }
 
 .carousel-game {
@@ -15,12 +16,20 @@
 }
 
 .game-card {
-  background: peru;
-  height: 100%;
-  width:200px;
-  margin:5px 10px;
+  background: #fff;
+  height: 78%;
+  padding: 24px 0px;
+  border-radius: 5px;
+  width:230px;
+  margin:15px 10px 5px 10px;
 }
 
 .carousel-image {
   height: 180px;
+  width: 90%;
+}
+
+span {
+  display: block;
+  padding: 0px 30px 30px 30px;
 }

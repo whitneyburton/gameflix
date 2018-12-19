@@ -13,7 +13,7 @@ const Carousel = (props) => {
             <div className="carousel-game">
               <div className="game-card">
                 <span>{game.game}</span>
-                <img className="carousel-image" src={'./img/test.jpg'}></img>
+                <img className="carousel-image" src={game.img}></img>
               </div>
               
             </div>
