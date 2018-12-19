@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import './PopUp.css';
 
-export default class Popup extends Component{
+class PopUp extends Component{
   constructor() {
     super();
     this.state = {}
@@ -8,12 +9,15 @@ export default class Popup extends Component{
 
   render() {
     return (
-      <div>{this.props.game.game}</div>
+      <div className="PopUp">
+      {this.props.game.game}
+      </div>
     )
   }
 
 
 }
 
+export default PopUp;
 
 

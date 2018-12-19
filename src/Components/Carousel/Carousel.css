@@ -1,5 +1,5 @@
 .Carousel {
-  height: 33.33%;
+  min-height: 33.33%;
   background-color: #d3d3d3;
   align-content: center;
   padding: 10px;

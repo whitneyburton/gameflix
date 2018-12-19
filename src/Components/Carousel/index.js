@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Carousel.css';
-import PopUp from '../Popup'
+import PopUp from '../PopUp'
 
 class Carousel extends Component {
   constructor() {
