@@ -6,18 +6,8 @@ class Carousel extends Component {
   constructor() {
     super();
     this.state = {
-      shouldPopUp: false,
-      popUpInfo: {}
+
     }
-  }
-
-  createPopUp =(event)=> {
-    const popUpInfo  = this.props.matchingGames
-    .find(game => {
-      return game.img === event.target.src;
-    }) 
-
-    this.setState({ shouldPopUp:true,popUpInfo });
   }
 
   render() {
@@ -31,7 +21,7 @@ class Carousel extends Component {
             {this.props.matchingGames.map(game => {
               return (
                 <div className="carousel-game">
-                  <div onClick={this.createPopUp} className="game-card">
+                  <div onClick={(event) => this.props.createPopUp(event, this.props.genre.genreID)} className="game-card">
                     <span>{game.game}</span>
                     <img className="carousel-image" src={game.img}></img>
                   </div>
@@ -42,9 +32,9 @@ class Carousel extends Component {
           <div>right</div>
         </div>
         {
-          this.state.shouldPopUp
+          this.props.popUpInfo
           &&
-          <PopUp game={this.state.popUpInfo}/>
+          <PopUp game={this.props.popUpInfo}/>
         }
       </nav>
     )
