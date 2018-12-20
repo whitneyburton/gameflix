@@ -3,13 +3,6 @@ import './Carousel.css';
 import PopUp from '../PopUp'
 
 class Carousel extends Component {
-  constructor() {
-    super();
-    this.state = {
-
-    }
-  }
-
   render() {
     return (
       <nav className="Carousel">

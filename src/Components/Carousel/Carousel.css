@@ -21,7 +21,10 @@
   margin:15px 10px 5px 10px;
 }
 .genre-name{
-  flex:2;
+  margin: 0px;
+  text-align: left;
+  flex: 2 1;
+  font-size: 23px;
 }
 
 .carousel-image {
@@ -32,6 +35,8 @@
 span {
   display: block;
   padding: 0px 30px 30px 30px;
+  /* position: absolute; */
+  width: 180px;
 }
 
 .fa-angle-right,

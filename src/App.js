@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
-import Featured from './Components/Featured';
-import Carousel from './Components/Carousel';
+import LandingPage from './Components/LandingPage';
+import SearchPage from './Components/SearchPage';
+
 
 class App extends Component {
 
@@ -16,7 +17,7 @@ class App extends Component {
       error: null,
       popUpInfo: null,
       popUpGenreID: null,
-      searching: false
+      searching: ''
     }
   }
 
@@ -56,26 +57,22 @@ class App extends Component {
   }
 
   render() {
-    if (this.state.error) {
+    let { error, areGamesLoaded, areGenresLoaded, games, 
+          genres, popUpInfo, popUpGenreID, searching } = this.state;
+    if (error) {
       return <div>SOMETHING IS BAD 💩 </div>
-    } else if (this.state.areGamesLoaded && this.state.areGenresLoaded) {
+    } else if (areGamesLoaded && areGenresLoaded) {
       return (
         <div className="App">
           <Navbar />
-            {this.state.searching && <h1>'hi'</h1>}
-            {!this.state.searching && <Featured data={this.state.games} />}
-            {!this.state.searching && this.state.genres.map(genre => {
-              let matchingGames = this.state.games.filter(game => {
-                return game.genre_ID.includes(genre.genreID);
-              })
-              return (
-                <div>
-                  <Carousel genre={genre} matchingGames={matchingGames} createPopUp={this.createPopUp}
-                    popUpInfo={(this.state.popUpGenreID === genre.genreID) && this.state.popUpInfo} />
-                </div>
-              )
-            }
-            ) }
+          {searching ? <SearchPage /> :
+            <LandingPage
+              genres={genres}
+              games={games}
+              popUpInfo={popUpInfo}
+              popUpGenreID={popUpGenreID}
+              createPopUp={this.createPopUp} />
+          }
         </div>
       );
     } else {
