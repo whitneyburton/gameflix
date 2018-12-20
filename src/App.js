@@ -15,7 +15,8 @@ class App extends Component {
       genres: null,
       error: null,
       popUpInfo: null,
-      popUpGenreID: null
+      popUpGenreID: null,
+      searching: false
     }
   }
 
@@ -61,9 +62,9 @@ class App extends Component {
       return (
         <div className="App">
           <Navbar />
-          <Featured data={this.state.games} />
-          {
-            this.state.genres.map(genre => {
+            {this.state.searching && <h1>'hi'</h1>}
+            {!this.state.searching && <Featured data={this.state.games} />}
+            {!this.state.searching && this.state.genres.map(genre => {
               let matchingGames = this.state.games.filter(game => {
                 return game.genre_ID.includes(genre.genreID);
               })
@@ -74,7 +75,7 @@ class App extends Component {
                 </div>
               )
             }
-            )}
+            ) }
         </div>
       );
     } else {

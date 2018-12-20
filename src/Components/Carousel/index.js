@@ -15,7 +15,7 @@ class Carousel extends Component {
       <nav className="Carousel">
         <h4 className="genre-name">{this.props.genre.genre}</h4>
         <div className="carousel-bar">
-          <div>left</div>
+          <div><i class="fas fa-angle-left"></i></div>
           <div className="scroll-container">
 
             {this.props.matchingGames.map(game => {
@@ -29,7 +29,7 @@ class Carousel extends Component {
               )
             })}
           </div>
-          <div>right</div>
+          <div><i class="fas fa-angle-right"></i></div>
         </div>
         {
           this.props.popUpInfo
