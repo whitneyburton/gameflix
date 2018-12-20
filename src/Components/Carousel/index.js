@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Carousel.css';
 import PopUp from '../PopUp'
+import { uid } from 'react-uid'
 
 class Carousel extends Component {
   render() {
@@ -16,7 +17,7 @@ class Carousel extends Component {
                 <div className="carousel-game">
                   <div onClick={(event) => this.props.createPopUp(event, this.props.genre.genreID)} className="game-card">
                     <span>{game.game}</span>
-                    <img className="carousel-image" src={game.img}></img>
+                    <img className="carousel-image" src={game.img} alt="game board"></img>
                   </div>
                 </div>
               )
