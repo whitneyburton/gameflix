@@ -14,7 +14,7 @@ class Carousel extends Component {
 
             {this.props.matchingGames.map(game => {
               return (
-                <div className="carousel-game">
+                <div key={game} className="carousel-game">
                   <div onClick={(event) => this.props.createPopUp(event, this.props.genre.genreID)} className="game-card">
                     <span>{game.game}</span>
                     <img className="carousel-image" src={game.img} alt="game board"></img>
@@ -22,6 +22,8 @@ class Carousel extends Component {
                 </div>
               )
             })}
+
+            
           </div>
           <div><i class="fas fa-angle-right"></i></div>
         </div>

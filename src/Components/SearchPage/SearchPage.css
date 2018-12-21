@@ -1,0 +1,16 @@
+.SearchPage {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  filter: grayscale(.9);
+}
+
+.SearchPage .search-popup {
+  background-color: blueviolet;
+  filter: grayscale(0);
+  position: fixed;
+  height: 400px;
+  width: 400px;
+  left: 37vw;
+  top: 25vh;
+}

@@ -129,7 +129,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "Strategy",
         "nodeType": "host",
         "props": Object {
           "children": <Carousel
@@ -158,7 +158,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "Family",
         "nodeType": "host",
         "props": Object {
           "children": <Carousel
@@ -274,7 +274,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "Strategy",
           "nodeType": "host",
           "props": Object {
             "children": <Carousel
@@ -303,7 +303,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "Family",
           "nodeType": "host",
           "props": Object {
             "children": <Carousel

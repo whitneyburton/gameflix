@@ -3,8 +3,12 @@ import './PopUp.css';
 
 class PopUp extends Component{
   render() {
+    let className="PopUp";
+    if(this.props.isSearch) {
+      className="search-popup"
+    }
     return (
-      <div className="PopUp">
+      <div className={className}>
       {this.props.game.game}
       </div>
     )

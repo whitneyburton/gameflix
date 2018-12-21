@@ -13,7 +13,7 @@ export default class LandingPage extends Component {
             .filter(game => game.genre_ID.includes(genre.genreID))
 
           return (
-            <div>
+            <div key={genre}>
               <Carousel
                 genre={genre}
                 matchingGames={matchingGames}
