@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './PopUp.css';
 
-class PopUp extends Component{
+export default class PopUp extends Component {
   render() {
     let className="PopUp";
     if(this.props.isSearch) {
@@ -9,12 +9,9 @@ class PopUp extends Component{
     }
     return (
       <div className={className}>
+      <i onClick={this.props.closePopUp} class="fas fa-times"></i>
       {this.props.game.game}
       </div>
     )
   }
 }
-
-export default PopUp;
-
-

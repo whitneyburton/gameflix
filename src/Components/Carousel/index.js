@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Carousel.css';
-import PopUp from '../PopUp'
-import { uid } from 'react-uid'
+import PopUp from '../PopUp';
 
 class Carousel extends Component {
   render() {
@@ -22,15 +21,15 @@ class Carousel extends Component {
                 </div>
               )
             })}
-
-            
           </div>
           <div><i class="fas fa-angle-right"></i></div>
         </div>
         {
           this.props.popUpInfo
           &&
-          <PopUp game={this.props.popUpInfo}/>
+          <PopUp 
+            closePopUp={this.props.closePopUp}            
+            game={this.props.popUpInfo}/>
         }
       </nav>
     )

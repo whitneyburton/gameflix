@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { uid } from 'react-uid';
 import './App.css';
 import Navbar from './Components/Navbar';
 import LandingPage from './Components/LandingPage';
@@ -7,7 +6,6 @@ import SearchPage from './Components/SearchPage';
 
 
 class App extends Component {
-
   constructor() {
     super();
     this.state = {
@@ -58,6 +56,10 @@ class App extends Component {
     this.setState({ popUpInfo, popUpGenreID: genreID });
   }
 
+  closePopUp = () => {
+    this.setState({ popUpInfo: null })
+  }
+
   checkFilterInput = (event) => {
     let inputValue = event.target.value.toLowerCase();
     this.setState({searching: inputValue});
@@ -83,13 +85,15 @@ class App extends Component {
             <SearchPage 
               filteredGames={filteredGames}
               popUpInfo={popUpInfo}
-              createPopUp={this.createPopUp} /> :
+              createPopUp={this.createPopUp}
+              closePopUp={this.closePopUp} /> :
             <LandingPage
               genres={genres}
               games={games}
               popUpInfo={popUpInfo}
               popUpGenreID={popUpGenreID}
-              createPopUp={this.createPopUp} />
+              createPopUp={this.createPopUp}
+              closePopUp={this.closePopUp} />
           }
         </div>
       );

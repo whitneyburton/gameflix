@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
 import './SearchPage.css';
-import PopUp from '../PopUp'
+import PopUp from '../PopUp';
 
 
 export default class SearchPage extends Component {
-
-  // constructor(){
-  //   this.state={
-  //     shouldPopUp:false
-  //   }
-  // }
-
   render() {
     return (
       <div className="SearchPage">
@@ -24,9 +17,12 @@ export default class SearchPage extends Component {
             </div>
           )
         })}
-          {
-            this.props.popUpInfo &&
-          <PopUp game={this.props.popUpInfo} isSearch={this.props.popUpInfo} />
+        {
+          this.props.popUpInfo &&
+          <PopUp
+            game={this.props.popUpInfo}
+            isSearch={this.props.popUpInfo}
+            closePopUp={this.props.closePopUp} />
         }
       </div>
     )
