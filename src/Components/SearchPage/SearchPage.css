@@ -1,0 +1,15 @@
+.SearchPage {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  /* filter: grayscale(.9); */
+}
+
+.SearchPage .search-popup {
+  background-color: #8a2be2;
+  position: fixed;
+  height: 400px;
+  width: 400px;
+  left: 37vw;
+  top: 25vh;
+}

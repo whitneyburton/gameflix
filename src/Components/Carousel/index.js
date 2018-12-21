@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Carousel.css';
-import PopUp from '../PopUp'
-import { uid } from 'react-uid'
+import PopUp from '../PopUp';
 
 class Carousel extends Component {
   render() {
@@ -14,7 +13,7 @@ class Carousel extends Component {
 
             {this.props.matchingGames.map(game => {
               return (
-                <div className="carousel-game">
+                <div key={game} className="carousel-game">
                   <div onClick={(event) => this.props.createPopUp(event, this.props.genre.genreID)} className="game-card">
                     <span>{game.game}</span>
                     <img className="carousel-image" src={game.img} alt="game board"></img>
@@ -28,7 +27,9 @@ class Carousel extends Component {
         {
           this.props.popUpInfo
           &&
-          <PopUp game={this.props.popUpInfo}/>
+          <PopUp 
+            closePopUp={this.props.closePopUp}            
+            game={this.props.popUpInfo}/>
         }
       </nav>
     )

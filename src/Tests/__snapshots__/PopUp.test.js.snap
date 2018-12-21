@@ -38,11 +38,30 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "Don't Be A Loser",
+      "children": Array [
+        <i
+          class="fas fa-times"
+        />,
+        "Don't Be A Loser",
+      ],
       "className": "PopUp",
     },
     "ref": null,
-    "rendered": "Don't Be A Loser",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "class": "fas fa-times",
+          "onClick": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "i",
+      },
+      "Don't Be A Loser",
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -51,11 +70,30 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Don't Be A Loser",
+        "children": Array [
+          <i
+            class="fas fa-times"
+          />,
+          "Don't Be A Loser",
+        ],
         "className": "PopUp",
       },
       "ref": null,
-      "rendered": "Don't Be A Loser",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "class": "fas fa-times",
+            "onClick": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "i",
+        },
+        "Don't Be A Loser",
+      ],
       "type": "div",
     },
   ],

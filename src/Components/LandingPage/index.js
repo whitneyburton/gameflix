@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Featured from '../Featured';
 import Carousel from '../Carousel';
+import './LandingPage.css';
 
 export default class LandingPage extends Component {
   render() {
@@ -13,11 +14,12 @@ export default class LandingPage extends Component {
             .filter(game => game.genre_ID.includes(genre.genreID))
 
           return (
-            <div>
+            <div key={genre}>
               <Carousel
                 genre={genre}
                 matchingGames={matchingGames}
                 createPopUp={this.props.createPopUp}
+                closePopUp={this.props.closePopUp}
                 popUpInfo={(popUpGenreID === genre.genreID) && popUpInfo} />
             </div>
           )
@@ -26,5 +28,4 @@ export default class LandingPage extends Component {
       </div>
     )
   }
-
 }
