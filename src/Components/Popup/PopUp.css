@@ -1,4 +1,4 @@
 .PopUp {
-  height: 500px;
-  background-color: red;
+  min-height: 500px;
+  background-color: whitesmoke;
 }
