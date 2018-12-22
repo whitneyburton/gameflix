@@ -1,8 +1,4 @@
 .Navbar {
-  height: 95px;
-  width: 100%;
+  height: 10%;
   background-color: #2F363D;
-  position: fixed;
-  top: 0px;
-  z-index: 1;
 }
