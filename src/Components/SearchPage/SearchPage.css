@@ -9,7 +9,7 @@
 .SearchPage .search-popup {
   background-color: #8a2be2;
   position: fixed;
-  height: 40%;
+  min-height: 40%;
   min-width: 300px;
   max-width: 550px;
   width: 40%;
