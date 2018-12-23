@@ -1,15 +1,18 @@
 .SearchPage {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 80px;
+  height: 90%;
+  overflow: scroll;
   /* filter: grayscale(.9); */
 }
 
 .SearchPage .search-popup {
   background-color: #8a2be2;
   position: fixed;
-  height: 400px;
-  width: 400px;
-  left: 37vw;
-  top: 25vh;
+  height: 40%;
+  min-width: 300px;
+  max-width: 550px;
+  width: 40%;
+  left: 35%;
+  top: 30%;
 }
