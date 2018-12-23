@@ -1,36 +1,30 @@
 import React, { Component } from 'react';
 import './Carousel.css';
-import PopUp from '../PopUp';
+import GameCard from '../GameCard';
+import { uid } from 'react-uid';
 
 class Carousel extends Component {
   render() {
+    const { genre, matchingGames, createPopUp, children } = this.props;
     return (
-      <nav className="Carousel">
-        <h4 className="genre-name">{this.props.genre.genre}</h4>
-        <div className="carousel-bar">
-          <div><i class="fas fa-angle-left"></i></div>
-          <div className="scroll-container">
+      <nav className="Carousel" data-genre={genre.genre}>
+        <h4 className="genre">{genre.genre}</h4>
 
-            {this.props.matchingGames.map(game => {
-              return (
-                <div key={game} className="carousel-game">
-                  <div onClick={(event) => this.props.createPopUp(event, this.props.genre.genreID)} className="game-card">
-                    <span>{game.game}</span>
-                    <img className="carousel-image" src={game.img} alt="game board"></img>
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-          <div><i class="fas fa-angle-right"></i></div>
+        <i className="fas fa-angle-left"></i>
+
+        <div className="scroll-container">
+          {matchingGames.map(game => {
+            return (
+              <GameCard
+                key={uid(game)}
+                game={game}
+                createPopUp={createPopUp} />
+            )
+          })}
         </div>
-        {
-          this.props.popUpInfo
-          &&
-          <PopUp 
-            closePopUp={this.props.closePopUp}            
-            game={this.props.popUpInfo}/>
-        }
+
+        <i className="fas fa-angle-right"></i>
+        {children}
       </nav>
     )
   }

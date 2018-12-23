@@ -3,15 +3,25 @@
   background-color: #d3d3d3;
   align-content: center;
   padding: 10px;
+  display: grid;
+  grid-template-columns: 2% 96% 2%;
+  grid-template-areas: 
+  "genre genre genre"
+  "left mid right"
+  "popup popup popup"
+}
+.genre{
+  grid-area: genre;
+  margin: 0px;
+  text-align: left;
+  font-size: 23px;
 }
 .scroll-container {
+  grid-area: mid;
   display: flex;
   overflow: scroll;
 }
 
-.carousel-bar{
-  display: flex;
-}
 .game-card {
   background: #fff;
   height: 78%;
@@ -20,12 +30,7 @@
   width:230px;
   margin:15px 10px 5px 10px;
 }
-.genre-name{
-  margin: 0px;
-  text-align: left;
-  flex: 2 1;
-  font-size: 23px;
-}
+
 
 .carousel-image {
   height: 180px;
@@ -36,7 +41,6 @@
 span {
   display: block;
   padding: 0px 30px 30px 30px;
-  /* position: absolute; */
   width: 180px;
 }
 
@@ -44,4 +48,16 @@ span {
 .fa-angle-left {
   font-size: 30px;
   color: #000;
+  width:5%;
+  display: inline-block;
+}
+.fa-angle-left{
+  grid-area: left;
+}
+.fa-angle-right{
+  grid-area:right;
+}
+
+.PopUp{
+  grid-area:popup;
 }

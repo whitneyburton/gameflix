@@ -3,16 +3,19 @@ import './PopUp.css';
 
 export default class PopUp extends Component {
   render() {
+    const { isSearch, game, closePopUp } = this.props;
     let className = "PopUp";
-    if (this.props.isSearch) {
+
+    if (isSearch) {
       className = "search-popup"
     }
+
     return (
-      <div className={className}>
-        <i onClick={this.props.closePopUp} class="fas fa-times"></i>
-        <h1>{this.props.game.game}</h1>
-        <p>{this.props.game.description}</p>
-        <img className="carousel-image" src={this.props.game.img} alt="" />
+      <div className={className}>]
+        <i onClick={closePopUp} className="fas fa-times"></i>
+        <h1>{game.game}</h1>
+        <p>{game.description}</p>
+        <img className="carousel-image" src={game.img} alt="" />
       </div>
     )
   }
