@@ -1,102 +1,105 @@
 import React, { Component } from 'react';
-import './App.css';
-import Navbar from './Components/Navbar';
-import LandingPage from './Components/LandingPage';
-import SearchPage from './Components/SearchPage';
+import './styles/Main.scss';
+import Navbar from './Components/Navbar.js';
+import LandingPage from './Components/LandingPage.js';
+import SearchPage from './Components/SearchPage.js';
 
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      areGamesLoaded: false,
-      areGenresLoaded: false,
-      error: null,
+      errors: null,
       games: null,
       genres: null,
       popUpInfo: null,
-      popUpGenreID: null,
+      popUpGenre: null,
       searching: '',
       filteredGames: []
     }
   }
+  getData = (request) => {
+    const url = 'https://whateverly-datasets.herokuapp.com/api/v1/';
 
-  componentDidMount() {
-    fetch('https://whateverly-datasets.herokuapp.com/api/v1/games')
+    fetch(`${url + request}`)
       .then(data => data.json())
       .then(result => this.setState({
-        areGamesLoaded: true,
-        games: result.games
+        [request]: result[request]
       }))
-      .catch(error => {
+      .catch(errors => {
         this.setState({
-          error
-        })
-      })
-
-
-    fetch('https://whateverly-datasets.herokuapp.com/api/v1/genres')
-      .then(data => data.json())
-      .then(result => this.setState({
-        areGenresLoaded: true,
-        genres: result.genres
-      }))
-      .catch(error => {
-        this.setState({
-          error
+          errors
         })
       })
   }
 
-  createPopUp = (event, genreID) => {
+  componentDidMount() {
+    this.getData('games');
+    this.getData('genres');
+  }
+
+  createPopUp = (event) => {
+    const isCarousel = event.target.closest('.Carousel');
+    const popUpGenre = isCarousel && event.target.closest('.Carousel').dataset.genre;
+
     const popUpInfo = this.state.games
       .find(game => {
         return game.img === event.target.src;
-      })
-    this.setState({ popUpInfo, popUpGenreID: genreID });
+      });
+
+    this.setState({ popUpInfo, popUpGenre });
   }
 
   closePopUp = () => {
-    this.setState({ popUpInfo: null })
+    this.setState({
+      popUpInfo: null,
+      popUpGenre: null,
+    })
   }
 
   checkFilterInput = (event) => {
     let inputValue = event.target.value.toLowerCase();
-    this.setState({searching: inputValue});
-    let filteredGames = this.state.games
+    const filteredGames = this.state.games
       .filter(game => game.game.toLowerCase().includes(inputValue))
-      .sort((a,b) => {
-        if (a.game > b.game){return 1} 
-        if (a.game < b.game) {return -1} 
-        return 0;})
-    this.setState({filteredGames: filteredGames});
+      .sort((a, b) => a.game.localeCompare(b.game));
+
+    this.closePopUp();
+    this.setState({
+      searching: inputValue,
+      filteredGames
+    });
   }
 
   render() {
-    let { error, areGamesLoaded, areGenresLoaded, games, 
-          genres, popUpInfo, popUpGenreID, searching, filteredGames } = this.state;
-    if (error) {
-      return <div>SOMETHING IS BAD 💩 </div>
-    } else if (areGamesLoaded && areGenresLoaded) {
+    let { errors, games,
+      genres, popUpInfo, popUpGenre, searching, filteredGames } = this.state;
+
+    if (genres && games && !errors) {
       return (
         <div className="App">
-          <Navbar checkFilterInput={this.checkFilterInput}/>
-          {searching ? 
-            <SearchPage 
-              filteredGames={filteredGames}
-              popUpInfo={popUpInfo}
-              createPopUp={this.createPopUp}
-              closePopUp={this.closePopUp} /> :
-            <LandingPage
-              genres={genres}
-              games={games}
-              popUpInfo={popUpInfo}
-              popUpGenreID={popUpGenreID}
-              createPopUp={this.createPopUp}
-              closePopUp={this.closePopUp} />
+          <Navbar checkFilterInput={this.checkFilterInput} />
+          {
+            searching ?
+              <SearchPage
+                filteredGames={filteredGames}
+                popUpInfo={popUpInfo}
+                createPopUp={this.createPopUp}
+                closePopUp={this.closePopUp} />
+              :
+              <LandingPage
+                genres={genres}
+                games={games}
+                popUpInfo={popUpInfo}
+                popUpGenre={popUpGenre}
+                createPopUp={this.createPopUp}
+                closePopUp={this.closePopUp} />
           }
         </div>
       );
+    }
+
+    if (errors) {
+      return <span role={"img"} aria-label="error">SOMETHING IS BAD 💩 </span>
     } else {
       return (<div>LOADING</div>)
     }
