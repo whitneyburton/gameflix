@@ -5,29 +5,45 @@
   grid-template-columns: 1fr 1fr;
 }
 
-
 .game-name {
   font-size: 30px;
   margin: 10px auto; 
   padding-bottom: 15px;
   border-bottom: 2px black solid;
+  margin: 10px auto;
+  width: 500px;
 }
 
 .game-info {
   display: flex;
   justify-content: space-evenly;
   border-bottom: 2px black solid;
+  width: 500px;
+  margin: 10px auto;
 }
 
 .age-range,
 .num-of-players,
 .num-of-minutes {
   display: inline-block;
+}
 
+.difficulty-level {
+  border-bottom: 2px black solid;
+  margin: 10px auto;
+  width: 500px;
+}
+
+.fa-thermometer-quarter,
+.fa-thermometer-half,
+.fa-thermometer-full {
+  font-size: 25px;
+  padding-left: 10px;
 }
 
 .game-description {
   width: 500px;
   margin: 10px auto; 
+  border-bottom: 2px black solid;
 
 }

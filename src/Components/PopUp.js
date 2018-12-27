@@ -4,9 +4,16 @@ export default class PopUp extends Component {
   render() {
     const { isSearch, game, closePopUp } = this.props;
     let className = "PopUp";
+    let iconClassName = "fas fa-thermometer-half"
 
     if (isSearch) {
       className = "search-popup"
+    }
+
+    if (game.challenge_level === 'simple') {
+      iconClassName = "fas fa-thermometer-quarter"
+    } else if (game.challenge_level === 'complex') {
+      iconClassName = "fas fa-thermometer-full"
     }
 
     return (
@@ -20,7 +27,10 @@ export default class PopUp extends Component {
             <p class="num-of-minutes"><i class="fas fa-clock"></i> {game.number_of_minutes} min.</p>
           </div>
           <p class="game-description">{game.description}</p>
-          
+          <p class="difficulty-level">
+            Challenge level: {game.challenge_level}
+            <i className={iconClassName}></i>
+          </p>
           <img className="carousel-image" src={game.img} alt="game in box" />
         </section>
 
