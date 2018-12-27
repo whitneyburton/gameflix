@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Featured from '../Featured';
-import Carousel from '../Carousel';
-import './LandingPage.css';
-import PopUp from '../PopUp'
+import Featured from './Featured';
+import Carousel from './Carousel';
+import PopUp from './PopUp'
 import { uid } from 'react-uid';
 export default class LandingPage extends Component {
   render() {

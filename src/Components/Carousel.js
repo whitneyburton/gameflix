@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './Carousel.css';
-import GameCard from '../GameCard';
+import GameCard from './GameCard';
 import { uid } from 'react-uid';
 
 class Carousel extends Component {

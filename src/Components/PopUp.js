@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './PopUp.css';
 
 export default class PopUp extends Component {
   render() {

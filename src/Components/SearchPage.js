@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './SearchPage.css';
-import GameCard from '../GameCard';
-import PopUp from '../PopUp';
+import GameCard from './GameCard';
+import PopUp from './PopUp';
 
 
 export default class SearchPage extends Component {
