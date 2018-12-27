@@ -18,9 +18,12 @@ export default class PopUp extends Component {
 
     return (
       <div className={className}>
-        <section>
-          <i onClick={closePopUp} className="fas fa-times"></i>
-          <h1 class="game-name">{game.game}</h1>
+        <section class="game-details">
+          
+            <i onClick={closePopUp} className="fas fa-times"></i>
+          <h1 class="game-name">
+            {game.game}
+          </h1>
           <div class="game-info">
             <p class="age-range"><i class="fas fa-birthday-cake"></i> Ages {game.min_age}+</p>
             <p class="num-of-players"><i class="fas fa-users"></i> {game.min_players} - {game.max_players} players</p>
@@ -34,7 +37,7 @@ export default class PopUp extends Component {
           <img className="carousel-image" src={game.img} alt="game in box" />
         </section>
 
-        <section>
+        <section class="youtube-video">
           <iframe
             width="100%"
             height="100%"
