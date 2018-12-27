@@ -1,4 +1,33 @@
 .PopUp {
   min-height: 500px;
   background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.game-name {
+  font-size: 30px;
+  margin: 10px auto; 
+  padding-bottom: 15px;
+  border-bottom: 2px black solid;
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px black solid;
+}
+
+.age-range,
+.num-of-players,
+.num-of-minutes {
+  display: inline-block;
+
+}
+
+.game-description {
+  width: 500px;
+  margin: 10px auto; 
+
 }
