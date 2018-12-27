@@ -1,4 +1,23 @@
 .Navbar {
+  display: flex;
+  justify-content: space-between;
   height: 10%;
   background-color: #2F363D;
+}
+
+.fa-bars {
+  font-size: 30px;
+  padding-left: 7px;
+  color: white;
+  margin: 2%;
+}
+
+.searchbar {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  padding-left: 7px;
+  color: grey;
+  margin: 2%;
 }

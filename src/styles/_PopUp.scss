@@ -11,11 +11,14 @@
   border: 2px solid grey;
   padding: 1px 1px;
   border-radius: 5px;
-  color: white;
   border-style: outset;
   background-color: darkgray;
-  margin-right: 500px;
-  margin-top: 8px;
+  margin-right: 480px;
+  margin-top: 3px;
+}
+
+.fa-times:hover {
+  cursor: pointer;
 }
 
 .game-name {
