@@ -28,10 +28,10 @@ ShallowWrapper {
     "props": Object {
       "children": <iframe
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen={true}
-        frameborder="0"
+        allowFullScreen={true}
+        frameBorder="0"
         height="100%"
-        src="https://www.youtube.com/embed/ZYvvhOzYx_4"
+        src="https://www.youtube.com/embed/ZYvvhOzYx_4?autoplay=0"
         title="featured-video"
         width="100%"
       />,
@@ -44,10 +44,10 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-        "allowfullscreen": true,
-        "frameborder": "0",
+        "allowFullScreen": true,
+        "frameBorder": "0",
         "height": "100%",
-        "src": "https://www.youtube.com/embed/ZYvvhOzYx_4",
+        "src": "https://www.youtube.com/embed/ZYvvhOzYx_4?autoplay=0",
         "title": "featured-video",
         "width": "100%",
       },
@@ -65,10 +65,10 @@ ShallowWrapper {
       "props": Object {
         "children": <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen={true}
-          frameborder="0"
+          allowFullScreen={true}
+          frameBorder="0"
           height="100%"
-          src="https://www.youtube.com/embed/ZYvvhOzYx_4"
+          src="https://www.youtube.com/embed/ZYvvhOzYx_4?autoplay=0"
           title="featured-video"
           width="100%"
         />,
@@ -81,10 +81,10 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-          "allowfullscreen": true,
-          "frameborder": "0",
+          "allowFullScreen": true,
+          "frameBorder": "0",
           "height": "100%",
-          "src": "https://www.youtube.com/embed/ZYvvhOzYx_4",
+          "src": "https://www.youtube.com/embed/ZYvvhOzYx_4?autoplay=0",
           "title": "featured-video",
           "width": "100%",
         },
