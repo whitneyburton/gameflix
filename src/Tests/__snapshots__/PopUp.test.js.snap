@@ -39,28 +39,74 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        "]",
         <i
-          class="fas fa-times"
+          className="fas fa-times"
         />,
-        "Don't Be A Loser",
+        <h1>
+          Don't Be A Loser
+        </h1>,
+        <p>
+          Don't Be a Loser is a fun party game where you don't have to win but you just don't want to be the BIG LOSER! This game is easy to play and designed with social situations in mind, allowing players to freely leave and come back without interrupting the game!
+        </p>,
+        <img
+          alt=""
+          className="carousel-image"
+          src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
+        />,
       ],
       "className": "PopUp",
     },
     "ref": null,
     "rendered": Array [
+      "]",
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "class": "fas fa-times",
+          "className": "fas fa-times",
           "onClick": undefined,
         },
         "ref": null,
         "rendered": null,
         "type": "i",
       },
-      "Don't Be A Loser",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Don't Be A Loser",
+        },
+        "ref": null,
+        "rendered": "Don't Be A Loser",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Don't Be a Loser is a fun party game where you don't have to win but you just don't want to be the BIG LOSER! This game is easy to play and designed with social situations in mind, allowing players to freely leave and come back without interrupting the game!",
+        },
+        "ref": null,
+        "rendered": "Don't Be a Loser is a fun party game where you don't have to win but you just don't want to be the BIG LOSER! This game is easy to play and designed with social situations in mind, allowing players to freely leave and come back without interrupting the game!",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "",
+          "className": "carousel-image",
+          "src": "https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
     ],
     "type": "div",
   },
@@ -71,28 +117,74 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          "]",
           <i
-            class="fas fa-times"
+            className="fas fa-times"
           />,
-          "Don't Be A Loser",
+          <h1>
+            Don't Be A Loser
+          </h1>,
+          <p>
+            Don't Be a Loser is a fun party game where you don't have to win but you just don't want to be the BIG LOSER! This game is easy to play and designed with social situations in mind, allowing players to freely leave and come back without interrupting the game!
+          </p>,
+          <img
+            alt=""
+            className="carousel-image"
+            src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
+          />,
         ],
         "className": "PopUp",
       },
       "ref": null,
       "rendered": Array [
+        "]",
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "class": "fas fa-times",
+            "className": "fas fa-times",
             "onClick": undefined,
           },
           "ref": null,
           "rendered": null,
           "type": "i",
         },
-        "Don't Be A Loser",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Don't Be A Loser",
+          },
+          "ref": null,
+          "rendered": "Don't Be A Loser",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Don't Be a Loser is a fun party game where you don't have to win but you just don't want to be the BIG LOSER! This game is easy to play and designed with social situations in mind, allowing players to freely leave and come back without interrupting the game!",
+          },
+          "ref": null,
+          "rendered": "Don't Be a Loser is a fun party game where you don't have to win but you just don't want to be the BIG LOSER! This game is easy to play and designed with social situations in mind, allowing players to freely leave and come back without interrupting the game!",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "",
+            "className": "carousel-image",
+            "src": "https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
       ],
       "type": "div",
     },

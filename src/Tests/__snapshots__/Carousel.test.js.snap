@@ -45,46 +45,45 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h4
-          className="genre-name"
+          className="genre"
+        />,
+        <i
+          className="fas fa-angle-left"
         />,
         <div
-          className="carousel-bar"
+          className="scroll-container"
         >
-          <div>
-            <i
-              class="fas fa-angle-left"
-            />
-          </div>
-          <div
-            className="scroll-container"
-          >
-            <div
-              className="carousel-game"
-            >
-              <div
-                className="game-card"
-                onClick={[Function]}
-              >
-                <span>
-                  Don't Be A Loser
-                </span>
-                <img
-                  alt="game board"
-                  className="carousel-image"
-                  src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <i
-              class="fas fa-angle-right"
-            />
-          </div>
+          <_default
+            createPopUp={[MockFunction]}
+            game={
+              Object {
+                "challenge_level": "average",
+                "description": "Don't Be a Loser is a fun party game where you don't have to win but you just don't want to be the BIG LOSER! This game is easy to play and designed with social situations in mind, allowing players to freely leave and come back without interrupting the game!",
+                "expansion_pack": false,
+                "game": "Don't Be A Loser",
+                "genre_ID": Array [
+                  6,
+                  11,
+                  13,
+                ],
+                "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523",
+                "max_players": 10,
+                "min_age": 13,
+                "min_players": 4,
+                "number_of_minutes": "30",
+                "publisher": "All Over The Board",
+                "youtube": "ZYvvhOzYx_4",
+              }
+            }
+          />
         </div>,
-        false,
+        <i
+          className="fas fa-angle-right"
+        />,
+        undefined,
       ],
       "className": "Carousel",
+      "data-genre": undefined,
     },
     "ref": null,
     "rendered": Array [
@@ -94,7 +93,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": undefined,
-          "className": "genre-name",
+          "className": "genre",
         },
         "ref": null,
         "rendered": null,
@@ -105,194 +104,90 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "className": "fas fa-angle-left",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "i",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": Array [
-            <div>
-              <i
-                class="fas fa-angle-left"
-              />
-            </div>,
-            <div
-              className="scroll-container"
-            >
-              <div
-                className="carousel-game"
-              >
-                <div
-                  className="game-card"
-                  onClick={[Function]}
-                >
-                  <span>
-                    Don't Be A Loser
-                  </span>
-                  <img
-                    alt="game board"
-                    className="carousel-image"
-                    src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
-                  />
-                </div>
-              </div>
-            </div>,
-            <div>
-              <i
-                class="fas fa-angle-right"
-              />
-            </div>,
+            <_default
+              createPopUp={[MockFunction]}
+              game={
+                Object {
+                  "challenge_level": "average",
+                  "description": "Don't Be a Loser is a fun party game where you don't have to win but you just don't want to be the BIG LOSER! This game is easy to play and designed with social situations in mind, allowing players to freely leave and come back without interrupting the game!",
+                  "expansion_pack": false,
+                  "game": "Don't Be A Loser",
+                  "genre_ID": Array [
+                    6,
+                    11,
+                    13,
+                  ],
+                  "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523",
+                  "max_players": 10,
+                  "min_age": 13,
+                  "min_players": 4,
+                  "number_of_minutes": "30",
+                  "publisher": "All Over The Board",
+                  "youtube": "ZYvvhOzYx_4",
+                }
+              }
+            />,
           ],
-          "className": "carousel-bar",
+          "className": "scroll-container",
         },
         "ref": null,
         "rendered": Array [
           Object {
             "instance": null,
-            "key": undefined,
-            "nodeType": "host",
+            "key": "uid1",
+            "nodeType": "class",
             "props": Object {
-              "children": <i
-                class="fas fa-angle-left"
-              />,
+              "createPopUp": [MockFunction],
+              "game": Object {
+                "challenge_level": "average",
+                "description": "Don't Be a Loser is a fun party game where you don't have to win but you just don't want to be the BIG LOSER! This game is easy to play and designed with social situations in mind, allowing players to freely leave and come back without interrupting the game!",
+                "expansion_pack": false,
+                "game": "Don't Be A Loser",
+                "genre_ID": Array [
+                  6,
+                  11,
+                  13,
+                ],
+                "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523",
+                "max_players": 10,
+                "min_age": 13,
+                "min_players": 4,
+                "number_of_minutes": "30",
+                "publisher": "All Over The Board",
+                "youtube": "ZYvvhOzYx_4",
+              },
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "class": "fas fa-angle-left",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "i",
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <div
-                  className="carousel-game"
-                >
-                  <div
-                    className="game-card"
-                    onClick={[Function]}
-                  >
-                    <span>
-                      Don't Be A Loser
-                    </span>
-                    <img
-                      alt="game board"
-                      className="carousel-image"
-                      src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
-                    />
-                  </div>
-                </div>,
-              ],
-              "className": "scroll-container",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "[object Object]",
-                "nodeType": "host",
-                "props": Object {
-                  "children": <div
-                    className="game-card"
-                    onClick={[Function]}
-                  >
-                    <span>
-                      Don't Be A Loser
-                    </span>
-                    <img
-                      alt="game board"
-                      className="carousel-image"
-                      src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
-                    />
-                  </div>,
-                  "className": "carousel-game",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <span>
-                        Don't Be A Loser
-                      </span>,
-                      <img
-                        alt="game board"
-                        className="carousel-image"
-                        src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
-                      />,
-                    ],
-                    "className": "game-card",
-                    "onClick": [Function],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Don't Be A Loser",
-                      },
-                      "ref": null,
-                      "rendered": "Don't Be A Loser",
-                      "type": "span",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "alt": "game board",
-                        "className": "carousel-image",
-                        "src": "https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "img",
-                    },
-                  ],
-                  "type": "div",
-                },
-                "type": "div",
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <i
-                class="fas fa-angle-right"
-              />,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "class": "fas fa-angle-right",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "i",
-            },
-            "type": "div",
+            "rendered": null,
+            "type": [Function],
           },
         ],
         "type": "div",
       },
-      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "fas fa-angle-right",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "i",
+      },
+      undefined,
     ],
     "type": "nav",
   },
@@ -304,46 +199,45 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h4
-            className="genre-name"
+            className="genre"
+          />,
+          <i
+            className="fas fa-angle-left"
           />,
           <div
-            className="carousel-bar"
+            className="scroll-container"
           >
-            <div>
-              <i
-                class="fas fa-angle-left"
-              />
-            </div>
-            <div
-              className="scroll-container"
-            >
-              <div
-                className="carousel-game"
-              >
-                <div
-                  className="game-card"
-                  onClick={[Function]}
-                >
-                  <span>
-                    Don't Be A Loser
-                  </span>
-                  <img
-                    alt="game board"
-                    className="carousel-image"
-                    src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
-                  />
-                </div>
-              </div>
-            </div>
-            <div>
-              <i
-                class="fas fa-angle-right"
-              />
-            </div>
+            <_default
+              createPopUp={[MockFunction]}
+              game={
+                Object {
+                  "challenge_level": "average",
+                  "description": "Don't Be a Loser is a fun party game where you don't have to win but you just don't want to be the BIG LOSER! This game is easy to play and designed with social situations in mind, allowing players to freely leave and come back without interrupting the game!",
+                  "expansion_pack": false,
+                  "game": "Don't Be A Loser",
+                  "genre_ID": Array [
+                    6,
+                    11,
+                    13,
+                  ],
+                  "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523",
+                  "max_players": 10,
+                  "min_age": 13,
+                  "min_players": 4,
+                  "number_of_minutes": "30",
+                  "publisher": "All Over The Board",
+                  "youtube": "ZYvvhOzYx_4",
+                }
+              }
+            />
           </div>,
-          false,
+          <i
+            className="fas fa-angle-right"
+          />,
+          undefined,
         ],
         "className": "Carousel",
+        "data-genre": undefined,
       },
       "ref": null,
       "rendered": Array [
@@ -353,7 +247,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": undefined,
-            "className": "genre-name",
+            "className": "genre",
           },
           "ref": null,
           "rendered": null,
@@ -364,194 +258,90 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "className": "fas fa-angle-left",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "i",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": Array [
-              <div>
-                <i
-                  class="fas fa-angle-left"
-                />
-              </div>,
-              <div
-                className="scroll-container"
-              >
-                <div
-                  className="carousel-game"
-                >
-                  <div
-                    className="game-card"
-                    onClick={[Function]}
-                  >
-                    <span>
-                      Don't Be A Loser
-                    </span>
-                    <img
-                      alt="game board"
-                      className="carousel-image"
-                      src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
-                    />
-                  </div>
-                </div>
-              </div>,
-              <div>
-                <i
-                  class="fas fa-angle-right"
-                />
-              </div>,
+              <_default
+                createPopUp={[MockFunction]}
+                game={
+                  Object {
+                    "challenge_level": "average",
+                    "description": "Don't Be a Loser is a fun party game where you don't have to win but you just don't want to be the BIG LOSER! This game is easy to play and designed with social situations in mind, allowing players to freely leave and come back without interrupting the game!",
+                    "expansion_pack": false,
+                    "game": "Don't Be A Loser",
+                    "genre_ID": Array [
+                      6,
+                      11,
+                      13,
+                    ],
+                    "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523",
+                    "max_players": 10,
+                    "min_age": 13,
+                    "min_players": 4,
+                    "number_of_minutes": "30",
+                    "publisher": "All Over The Board",
+                    "youtube": "ZYvvhOzYx_4",
+                  }
+                }
+              />,
             ],
-            "className": "carousel-bar",
+            "className": "scroll-container",
           },
           "ref": null,
           "rendered": Array [
             Object {
               "instance": null,
-              "key": undefined,
-              "nodeType": "host",
+              "key": "uid1",
+              "nodeType": "class",
               "props": Object {
-                "children": <i
-                  class="fas fa-angle-left"
-                />,
+                "createPopUp": [MockFunction],
+                "game": Object {
+                  "challenge_level": "average",
+                  "description": "Don't Be a Loser is a fun party game where you don't have to win but you just don't want to be the BIG LOSER! This game is easy to play and designed with social situations in mind, allowing players to freely leave and come back without interrupting the game!",
+                  "expansion_pack": false,
+                  "game": "Don't Be A Loser",
+                  "genre_ID": Array [
+                    6,
+                    11,
+                    13,
+                  ],
+                  "img": "https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523",
+                  "max_players": 10,
+                  "min_age": 13,
+                  "min_players": 4,
+                  "number_of_minutes": "30",
+                  "publisher": "All Over The Board",
+                  "youtube": "ZYvvhOzYx_4",
+                },
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "class": "fas fa-angle-left",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "i",
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <div
-                    className="carousel-game"
-                  >
-                    <div
-                      className="game-card"
-                      onClick={[Function]}
-                    >
-                      <span>
-                        Don't Be A Loser
-                      </span>
-                      <img
-                        alt="game board"
-                        className="carousel-image"
-                        src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
-                      />
-                    </div>
-                  </div>,
-                ],
-                "className": "scroll-container",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "[object Object]",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <div
-                      className="game-card"
-                      onClick={[Function]}
-                    >
-                      <span>
-                        Don't Be A Loser
-                      </span>
-                      <img
-                        alt="game board"
-                        className="carousel-image"
-                        src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
-                      />
-                    </div>,
-                    "className": "carousel-game",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <span>
-                          Don't Be A Loser
-                        </span>,
-                        <img
-                          alt="game board"
-                          className="carousel-image"
-                          src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
-                        />,
-                      ],
-                      "className": "game-card",
-                      "onClick": [Function],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "Don't Be A Loser",
-                        },
-                        "ref": null,
-                        "rendered": "Don't Be A Loser",
-                        "type": "span",
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "alt": "game board",
-                          "className": "carousel-image",
-                          "src": "https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523",
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": "img",
-                      },
-                    ],
-                    "type": "div",
-                  },
-                  "type": "div",
-                },
-              ],
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <i
-                  class="fas fa-angle-right"
-                />,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "class": "fas fa-angle-right",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "i",
-              },
-              "type": "div",
+              "rendered": null,
+              "type": [Function],
             },
           ],
           "type": "div",
         },
-        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "fas fa-angle-right",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "i",
+        },
+        undefined,
       ],
       "type": "nav",
     },

@@ -1,4 +1,67 @@
 .PopUp {
   min-height: 500px;
   background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fa-times {
+  position: relative;
+  font-size: 14px;
+  border: 2px solid grey;
+  padding: 1px 1px;
+  border-radius: 5px;
+  border-style: outset;
+  background-color: darkgray;
+  margin-right: 480px;
+  margin-top: 3px;
+}
+
+.fa-times:hover {
+  cursor: pointer;
+}
+
+.game-name {
+  font-size: 30px;
+  margin: 0px auto;
+  padding-bottom: 15px;
+  border-bottom: 2px black solid;
+  width: 500px;
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px black solid;
+  width: 500px;
+  margin: 0px auto 10px auto;
+}
+
+.age-range,
+.num-of-players,
+.num-of-minutes {
+  display: inline-block;
+}
+
+.difficulty-level {
+  border-bottom: 2px black solid;
+  margin: 10px auto;
+  width: 500px;
+  padding-bottom: 15px;
+
+}
+
+.fa-thermometer-quarter,
+.fa-thermometer-half,
+.fa-thermometer-full {
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.game-description {
+  width: 500px;
+  margin: 10px auto; 
+  border-bottom: 2px black solid;
+  padding-bottom: 15px;
+
 }

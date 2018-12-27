@@ -10,12 +10,14 @@
   "left mid right"
   "popup popup popup"
 }
+
 .genre{
   grid-area: genre;
   margin: 0px;
   text-align: left;
   font-size: 23px;
 }
+
 .scroll-container {
   grid-area: mid;
   display: flex;
@@ -27,14 +29,16 @@
   height: 78%;
   padding: 24px 0px;
   border-radius: 5px;
-  width:230px;
-  margin:15px 10px 5px 10px;
+  width: 235px;
+  margin: 15px 10px 5px 10px;
 }
 
+.game-card:hover {
+  cursor: pointer;
+}
 
 .carousel-image {
   height: 180px;
-  width: 90%;
   max-width: 400px;
 }
 
@@ -48,16 +52,18 @@ span {
 .fa-angle-left {
   font-size: 30px;
   color: #000;
-  width:5%;
+  width: 5%;
   display: inline-block;
 }
+
 .fa-angle-left{
   grid-area: left;
 }
+
 .fa-angle-right{
-  grid-area:right;
+  grid-area: right;
 }
 
 .PopUp{
-  grid-area:popup;
+  grid-area: popup;
 }
