@@ -9,9 +9,9 @@ export default class Featured extends Component {
           width="100%"
           height="100%"
           src={`https://www.youtube.com/embed/${this.props.data[1].youtube}?autoplay=1`}
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
           title="featured-video">
         </iframe>
       </nav>
