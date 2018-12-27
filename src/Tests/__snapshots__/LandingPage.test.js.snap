@@ -80,16 +80,22 @@ ShallowWrapper {
               createPopUp={[MockFunction]}
               genre="Strategy"
               matchingGames={Array []}
-              popUpInfo={false}
-            />
+            >
+              <PopUp
+                game={null}
+              />
+            </Carousel>
           </div>,
           <div>
             <Carousel
               createPopUp={[MockFunction]}
               genre="Family"
               matchingGames={Array []}
-              popUpInfo={false}
-            />
+            >
+              <PopUp
+                game={null}
+              />
+            </Carousel>
           </div>,
         ],
       ],
@@ -129,15 +135,18 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "Strategy",
+        "key": "val-Strategy",
         "nodeType": "host",
         "props": Object {
           "children": <Carousel
             createPopUp={[MockFunction]}
             genre="Strategy"
             matchingGames={Array []}
-            popUpInfo={false}
-          />,
+          >
+            <PopUp
+              game={null}
+            />
+          </Carousel>,
         },
         "ref": null,
         "rendered": Object {
@@ -145,29 +154,45 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "children": <PopUp
+              game={null}
+            />,
             "closePopUp": undefined,
             "createPopUp": [MockFunction],
             "genre": "Strategy",
             "matchingGames": Array [],
-            "popUpInfo": false,
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "closePopUp": undefined,
+              "game": null,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
         "type": "div",
       },
       Object {
         "instance": null,
-        "key": "Family",
+        "key": "val-Family",
         "nodeType": "host",
         "props": Object {
           "children": <Carousel
             createPopUp={[MockFunction]}
             genre="Family"
             matchingGames={Array []}
-            popUpInfo={false}
-          />,
+          >
+            <PopUp
+              game={null}
+            />
+          </Carousel>,
         },
         "ref": null,
         "rendered": Object {
@@ -175,14 +200,27 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "children": <PopUp
+              game={null}
+            />,
             "closePopUp": undefined,
             "createPopUp": [MockFunction],
             "genre": "Family",
             "matchingGames": Array [],
-            "popUpInfo": false,
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "closePopUp": undefined,
+              "game": null,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
         "type": "div",
@@ -227,16 +265,22 @@ ShallowWrapper {
                 createPopUp={[MockFunction]}
                 genre="Strategy"
                 matchingGames={Array []}
-                popUpInfo={false}
-              />
+              >
+                <PopUp
+                  game={null}
+                />
+              </Carousel>
             </div>,
             <div>
               <Carousel
                 createPopUp={[MockFunction]}
                 genre="Family"
                 matchingGames={Array []}
-                popUpInfo={false}
-              />
+              >
+                <PopUp
+                  game={null}
+                />
+              </Carousel>
             </div>,
           ],
         ],
@@ -276,15 +320,18 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "Strategy",
+          "key": "val-Strategy",
           "nodeType": "host",
           "props": Object {
             "children": <Carousel
               createPopUp={[MockFunction]}
               genre="Strategy"
               matchingGames={Array []}
-              popUpInfo={false}
-            />,
+            >
+              <PopUp
+                game={null}
+              />
+            </Carousel>,
           },
           "ref": null,
           "rendered": Object {
@@ -292,29 +339,45 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
+              "children": <PopUp
+                game={null}
+              />,
               "closePopUp": undefined,
               "createPopUp": [MockFunction],
               "genre": "Strategy",
               "matchingGames": Array [],
-              "popUpInfo": false,
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "closePopUp": undefined,
+                "game": null,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             "type": [Function],
           },
           "type": "div",
         },
         Object {
           "instance": null,
-          "key": "Family",
+          "key": "val-Family",
           "nodeType": "host",
           "props": Object {
             "children": <Carousel
               createPopUp={[MockFunction]}
               genre="Family"
               matchingGames={Array []}
-              popUpInfo={false}
-            />,
+            >
+              <PopUp
+                game={null}
+              />
+            </Carousel>,
           },
           "ref": null,
           "rendered": Object {
@@ -322,14 +385,27 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
+              "children": <PopUp
+                game={null}
+              />,
               "closePopUp": undefined,
               "createPopUp": [MockFunction],
               "genre": "Family",
               "matchingGames": Array [],
-              "popUpInfo": false,
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "closePopUp": undefined,
+                "game": null,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             "type": [Function],
           },
           "type": "div",
