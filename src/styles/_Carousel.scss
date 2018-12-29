@@ -1,6 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .Carousel {
   min-height: 33.33%;
-  background-color: #d3d3d3;
+  background-color: #15171a;
   align-content: center;
   padding: 10px;
   display: grid;
@@ -16,6 +21,8 @@
   margin: 0px;
   text-align: left;
   font-size: 23px;
+  color: #FFF;
+  padding-left: 38px;
 }
 
 .scroll-container {
@@ -25,8 +32,9 @@
 }
 
 .game-card {
-  background: #fff;
-  height: 78%;
+  background: #FFF;
+  border: outset 3px;
+  height: 77%;
   padding: 24px 0px;
   border-radius: 5px;
   width: 235px;
@@ -50,10 +58,11 @@ span {
 
 .fa-angle-right,
 .fa-angle-left {
-  font-size: 30px;
-  color: #000;
+  font-size: 42px;
+  color: #FFF;
   width: 5%;
   display: inline-block;
+  padding: 138px 0px;
 }
 
 .fa-angle-left{
@@ -62,6 +71,7 @@ span {
 
 .fa-angle-right{
   grid-area: right;
+  padding-left: 4px;
 }
 
 .PopUp{

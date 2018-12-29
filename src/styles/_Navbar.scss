@@ -2,22 +2,65 @@
   display: flex;
   justify-content: space-between;
   height: 10%;
-  background-color: #2F363D;
+  background-color: #2b3034;
+}
+
+.hamburger-filters {
+  display: flex;
+  padding-left: 7px;
+  margin: 2%;
 }
 
 .fa-bars {
   font-size: 30px;
-  padding-left: 7px;
-  color: white;
+  color: #FFF;
+}
+
+.home,
+.filter-boardgames,
+.filter-cardgames {
+  color: #FFF;
+  font-weight: bold;
+  padding: 6px 70px;
+}
+
+.home:hover,
+.filter-boardgames:hover,
+.filter-cardgames:hover {
+  cursor: pointer;
+}
+
+.search-field {
+  display: flex;
+  margin: 15px;
+}
+
+.fa-search {
+  font-size: 20px;
+  color: #FFF;
   margin: 2%;
+  padding-top: 8px;
 }
 
 .searchbar {
   width: 200px;
   height: 30px;
-  border-radius: 5px;
   font-size: 15px;
+  font-weight: bold;
   padding-left: 7px;
-  color: grey;
+  border: none;
+  border-bottom: 3px solid #FFF;
+  background-color: #2b3034;
+  color: #FFF;
   margin: 2%;
+}
+
+.searchbar:focus {
+  outline: 0;
+}
+
+::placeholder { 
+  color: #d2cfcf;
+  opacity: 1; 
+  font-size: 15px;
 }
