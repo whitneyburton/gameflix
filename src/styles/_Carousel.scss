@@ -22,6 +22,7 @@
   margin: 0px;
   text-align: left;
   font-size: 23px;
+  font-weight: 600;
   color: #FFF;
   padding: 23px 0px 0px 38px;
 }
@@ -36,7 +37,7 @@
   background: #FFF;
   border: outset 4px;
   height: 77%;
-  padding: 18px 0px;
+  padding-bottom: 22px;
   border-radius: 5px;
   width: 235px;
   margin: 15px 10px 5px 10px;
@@ -49,13 +50,16 @@
 .carousel-image {
   height: 180px;
   max-width: 400px;
+  padding-top: 18px;
 }
 
 .game-title {
   display: block;
-  padding: 0px 0px 24px 26px;
+  padding: 12px 27px;
   width: 180px;
+  background-color: #e4e2e2;
   font-weight: 600;
+  font-size: 15px;
 }
 
 .fa-angle-right,
@@ -67,11 +71,15 @@
   padding: 138px 0px;
 }
 
-.fa-angle-left{
+.fa-angle-right:hover,
+.fa-angle-left:hover {
+  cursor: pointer;
+}
+.fa-angle-left {
   grid-area: left;
 }
 
-.fa-angle-right{
+.fa-angle-right {
   grid-area: right;
   padding-left: 4px;
 }
