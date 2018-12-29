@@ -8,7 +8,7 @@ export default class extends Component {
     return (
       <div key={game.game} className="carousel-game">
         <div className="game-card" onClick={createPopUp}>
-          <span>{game.game}</span>
+          <span className="game-card-header">{game.game}</span>
           <img className="carousel-image" src={game.img} alt="game board"/>
         </div>
       </div>

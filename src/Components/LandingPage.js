@@ -3,6 +3,7 @@ import Featured from './Featured';
 import Carousel from './Carousel';
 import PopUp from './PopUp'
 import { uid } from 'react-uid';
+
 export default class LandingPage extends Component {
   render() {
     let { games, genres, popUpInfo, popUpGenre, closePopUp, createPopUp } = this.props;
@@ -25,6 +26,8 @@ export default class LandingPage extends Component {
                   popUpGenre === genre.genre &&
                   <PopUp
                     closePopUp={closePopUp}
+                    showPopUp={this.showPopUp}
+                    dontShowPopUp={this.dontShowPopUp}
                     game={popUpInfo} />
                 }
               </Carousel>

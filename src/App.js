@@ -44,7 +44,7 @@ class App extends Component {
 
     const popUpInfo = this.state.games
       .find(game => {
-        return game.img === event.target.src;
+        return game.game === event.target.closest('div').innerText;
       });
 
     this.setState({ popUpInfo, popUpGenre });
@@ -53,7 +53,7 @@ class App extends Component {
   closePopUp = () => {
     this.setState({
       popUpInfo: null,
-      popUpGenre: null,
+      popUpGenre: null
     })
   }
 
