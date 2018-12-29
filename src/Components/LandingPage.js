@@ -26,8 +26,6 @@ export default class LandingPage extends Component {
                   popUpGenre === genre.genre &&
                   <PopUp
                     closePopUp={closePopUp}
-                    showPopUp={this.showPopUp}
-                    dontShowPopUp={this.dontShowPopUp}
                     game={popUpInfo} />
                 }
               </Carousel>
