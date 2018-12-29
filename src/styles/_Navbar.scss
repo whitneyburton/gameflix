@@ -1,27 +1,31 @@
 .Navbar {
   display: flex;
   justify-content: space-between;
-  height: 10%;
+  height: 75px;
   background-color: #2b3034;
 }
 
 .hamburger-filters {
   display: flex;
   padding-left: 7px;
-  margin: 2%;
+  margin: 26px 26px;
 }
 
 .fa-bars {
-  font-size: 30px;
+  font-size: 26px;
   color: #FFF;
+  padding-right: 20px;
 }
 
 .home,
 .filter-boardgames,
 .filter-cardgames {
   color: #FFF;
+  padding: 2px 30px;
+}
+
+.home {
   font-weight: bold;
-  padding: 6px 70px;
 }
 
 .home:hover,
@@ -32,7 +36,7 @@
 
 .search-field {
   display: flex;
-  margin: 15px;
+  margin: 16px 28px;
 }
 
 .fa-search {
@@ -46,10 +50,9 @@
   width: 200px;
   height: 30px;
   font-size: 15px;
-  font-weight: bold;
   padding-left: 7px;
   border: none;
-  border-bottom: 3px solid #FFF;
+  border-bottom: 2.5px solid #FFF;
   background-color: #2b3034;
   color: #FFF;
   margin: 2%;

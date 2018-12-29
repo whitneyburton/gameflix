@@ -1,13 +1,14 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: Open Sans;
 }
 
 .Carousel {
   min-height: 33.33%;
   background-color: #15171a;
   align-content: center;
-  padding: 10px;
+  // padding: 10px;
   display: grid;
   grid-template-columns: 2% 96% 2%;
   grid-template-areas: 
@@ -22,7 +23,7 @@
   text-align: left;
   font-size: 23px;
   color: #FFF;
-  padding-left: 38px;
+  padding: 23px 0px 0px 38px;
 }
 
 .scroll-container {
@@ -33,9 +34,9 @@
 
 .game-card {
   background: #FFF;
-  border: outset 3px;
+  border: outset 4px;
   height: 77%;
-  padding: 24px 0px;
+  padding: 18px 0px;
   border-radius: 5px;
   width: 235px;
   margin: 15px 10px 5px 10px;
@@ -50,9 +51,9 @@
   max-width: 400px;
 }
 
-span {
+.game-title {
   display: block;
-  padding: 0px 30px 30px 30px;
+  padding: 0px 0px 24px 26px;
   width: 180px;
 }
 
