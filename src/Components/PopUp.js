@@ -28,7 +28,7 @@ export default class PopUp extends Component {
             {game.game}
           </h1>
           <div class="game-info">
-            <p class="age-range"><i class="fas fa-birthday-cake"></i> Ages {game.min_age}+</p>
+            <p class="age-range"><i class="fas fa-birthday-cake"></i> Ages {game.min_age} +</p>
             <p class="num-of-players"><i class="fas fa-users"></i> {game.min_players} - {game.max_players} players</p>
             <p class="num-of-minutes"><i class="fas fa-clock"></i> {game.number_of_minutes} min.</p>
           </div>

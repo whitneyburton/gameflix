@@ -24,7 +24,7 @@
   border-radius: 5px;
   border-style: outset;
   background-color: darkgray;
-  margin-right: 480px;
+  margin-right: 570px;
   margin-top: 3px;
 }
 
@@ -33,18 +33,20 @@
 }
 
 .game-name {
-  font-size: 30px;
+  font-size: 44px;
   margin: 0px auto;
   padding-bottom: 15px;
   border-bottom: 2px black solid;
-  width: 500px;
+  width: 90%;
+  font-family: Staatliches;
 }
 
 .game-info {
   display: flex;
   justify-content: space-evenly;
   border-bottom: 2px black solid;
-  width: 500px;
+  width: 90%;
+  padding: 10px 0px;
   margin: 0px auto 10px auto;
 }
 
@@ -57,7 +59,7 @@
 .difficulty-level {
   border-bottom: 2px black solid;
   margin: 10px auto;
-  width: 500px;
+  width: 90%;
   padding-bottom: 15px;
 
 }
@@ -69,9 +71,21 @@
   padding-left: 10px;
 }
 
+.fa-thermometer-quarter {
+  color: green;
+}
+
+.fa-thermometer-half {
+  color: orange;
+}
+
+.fa-thermometer-full {
+  color: red;
+}
+
 .game-description {
-  width: 500px;
-  margin: 10px auto;
+  width: 90%;
+  margin: 10px auto; 
   border-bottom: 2px black solid;
   padding-bottom: 15px;
 

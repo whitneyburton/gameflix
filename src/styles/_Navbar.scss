@@ -1,23 +1,69 @@
 .Navbar {
   display: flex;
   justify-content: space-between;
-  height: 10%;
-  background-color: #2F363D;
+  height: 75px;
+  background-color: #2b3034;
+}
+
+.hamburger-filters {
+  display: flex;
+  padding-left: 7px;
+  margin: 26px 26px;
 }
 
 .fa-bars {
-  font-size: 30px;
-  padding-left: 7px;
-  color: white;
+  font-size: 26px;
+  color: #FFF;
+  padding-right: 20px;
+}
+
+.home,
+.filter-boardgames,
+.filter-cardgames {
+  color: #FFF;
+  padding: 2px 30px;
+}
+
+.home {
+  font-weight: bold;
+}
+
+.home:hover,
+.filter-boardgames:hover,
+.filter-cardgames:hover {
+  cursor: pointer;
+}
+
+.search-field {
+  display: flex;
+  margin: 16px 28px;
+}
+
+.fa-search {
+  font-size: 20px;
+  color: #FFF;
   margin: 2%;
+  padding-top: 8px;
 }
 
 .searchbar {
   width: 200px;
   height: 30px;
-  border-radius: 5px;
   font-size: 15px;
   padding-left: 7px;
-  color: grey;
+  border: none;
+  border-bottom: 2.5px solid #FFF;
+  background-color: #2b3034;
+  color: #FFF;
   margin: 2%;
+}
+
+.searchbar:focus {
+  outline: 0;
+}
+
+::placeholder { 
+  color: #d2cfcf;
+  opacity: 1; 
+  font-size: 15px;
 }
