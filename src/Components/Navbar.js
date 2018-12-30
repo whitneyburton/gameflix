@@ -5,10 +5,11 @@ export default class Navbar extends Component {
     return (
       <nav className="Navbar">
         <div class="hamburger-filters">
-          <i class="fas fa-bars"></i>
-          <p class="home">Home</p>
+          <p class="reset-games" onClick={this.props.resetAllGames}>All Games</p>
           <p class="filter-boardgames">Board Games</p>
           <p class="filter-cardgames">Card Games</p>
+          <p class="filter-cardgames" onClick="showAdvancedSearch">Advanced Search</p>
+          
         </div>
         <form class="search-field">
           <i class="fas fa-search"></i>

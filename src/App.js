@@ -38,6 +38,17 @@ class App extends Component {
     this.getData('genres');
   }
 
+  resetAllGames = () => {
+    debugger;
+
+    document.querySelector('.searchbar').value = '';
+    this.closePopUp();
+    this.setState({
+      filteredGames: [],
+      searching:''
+    })
+  }
+
   createPopUp = (event) => {
     const isCarousel = event.target.closest('.Carousel');
     const popUpGenre = isCarousel && event.target.closest('.Carousel').dataset.genre;
@@ -77,7 +88,10 @@ class App extends Component {
     if (genres && games && !errors) {
       return (
         <div className="App">
-          <Navbar checkFilterInput={this.checkFilterInput} />
+          <Navbar
+            checkFilterInput={this.checkFilterInput}
+            resetAllGames={this.resetAllGames}
+          />
           {
             searching ?
               <SearchPage
