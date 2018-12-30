@@ -1,8 +1,14 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Open Sans;
+}
+
 .Carousel {
   min-height: 33.33%;
-  background-color: #d3d3d3;
+  background-color: #15171a;
   align-content: center;
-  padding: 10px;
+  // padding: 10px;
   display: grid;
   grid-template-columns: 2% 96% 2%;
   grid-template-areas: 
@@ -16,6 +22,9 @@
   margin: 0px;
   text-align: left;
   font-size: 23px;
+  font-weight: 600;
+  color: #FFF;
+  padding: 23px 0px 0px 38px;
 }
 
 .scroll-container {
@@ -25,9 +34,10 @@
 }
 
 .game-card {
-  background: #fff;
-  height: 78%;
-  padding: 24px 0px;
+  background: #FFF;
+  border: outset 4px;
+  height: 77%;
+  padding-bottom: 22px;
   border-radius: 5px;
   width: 235px;
   margin: 15px 10px 5px 10px;
@@ -40,28 +50,38 @@
 .carousel-image {
   height: 180px;
   max-width: 400px;
+  padding-top: 18px;
 }
 
-span {
+.game-title {
   display: block;
-  padding: 0px 30px 30px 30px;
+  padding: 12px 27px;
   width: 180px;
+  background-color: #e4e2e2;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .fa-angle-right,
 .fa-angle-left {
-  font-size: 30px;
-  color: #000;
+  font-size: 42px;
+  color: #FFF;
   width: 5%;
   display: inline-block;
+  padding: 138px 0px;
 }
 
-.fa-angle-left{
+.fa-angle-right:hover,
+.fa-angle-left:hover {
+  cursor: pointer;
+}
+.fa-angle-left {
   grid-area: left;
 }
 
-.fa-angle-right{
+.fa-angle-right {
   grid-area: right;
+  padding-left: 4px;
 }
 
 .PopUp{

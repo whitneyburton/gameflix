@@ -16,7 +16,6 @@ class Carousel extends Component {
       <nav className="Carousel" data-genre={genre.genre}>
         <h4 className="genre">{genre.genre}</h4>
         <i onClick={this.shiftCarousel} className="fas fa-angle-left"></i>
-        
         <div className="scroll-container">
           {matchingGames.map(game => {
             return (
