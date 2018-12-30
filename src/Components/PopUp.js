@@ -3,24 +3,27 @@ import React, { Component } from 'react';
 export default class PopUp extends Component {
   render() {
     const { isSearch, game, closePopUp } = this.props;
-    let className = "PopUp";
-    let iconClassName = "fas fa-thermometer-half"
+    let className;
+    let iconClassName;
 
-    if (isSearch) {
-      className = "search-popup"
-    }
+    isSearch ? className = "search-popup" : className = "PopUp"
 
-    if (game.challenge_level === 'simple') {
-      iconClassName = "fas fa-thermometer-quarter"
-    } else if (game.challenge_level === 'complex') {
-      iconClassName = "fas fa-thermometer-full"
+    switch (game.challenge_level) {
+      case 'simple':
+        iconClassName = "fas fa-thermometer-quarter"
+        break;
+      case 'average':
+        iconClassName = "fas fa-thermometer-half"
+        break;
+      default:
+        iconClassName = "fas fa-thermometer-full"
     }
 
     return (
       <div className={className}>
         <section class="game-details">
-          
-            <i onClick={closePopUp} className="fas fa-times"></i>
+
+          <i onClick={closePopUp} className="fas fa-times"></i>
           <h1 class="game-name">
             {game.game}
           </h1>
@@ -52,3 +55,4 @@ export default class PopUp extends Component {
     )
   }
 }
+
