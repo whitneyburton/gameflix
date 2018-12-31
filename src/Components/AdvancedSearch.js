@@ -13,9 +13,9 @@ export default class AdvancedSearch extends Component {
           <div>
             <p>Type of Game</p>
             <input name="type-checkbox" id="board" data-id="board" type="checkbox" />
-            <label for="board"></label>
+            <label for="board">board</label>
             <input  name="type-checkbox" id="card" data-id="card" type="checkbox" />
-            <label for="card"></label>
+            <label for="card">card</label>
           </div>
           <div>
             <p># of Players</p>
