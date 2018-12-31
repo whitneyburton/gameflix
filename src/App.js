@@ -16,7 +16,13 @@ class App extends Component {
       popUpGenre: null,
       searching: '',
       filteredGames: [],
-      filterOptions: []
+      filterOptions: [
+        false, true,
+        false, true, false, false,
+        false, false, false, false,
+        false, false, false, false,
+        false, false, false, false, false
+      ]
     }
   }
   getData = (request) => {
@@ -89,21 +95,29 @@ class App extends Component {
   }
   setAdvancedFilter = () => {
     //set/get values
-    let filteredGames;
-    if (this.state.filteredGames) {
-       filteredGames  = this.state.filteredGames;
+
+    let { filterOptions } = this.state
+    let advancedFilteredGames;
+    if (this.state.filteredGames.length === 0) {
+      advancedFilteredGames = this.state.games;
     } else {
-      filteredGames = this.state.filteredGames;
+      advancedFilteredGames = this.state.filteredGames;
     }
 
-    // filterOptions.forEach(option => {
-      
-    // })
+    let newGames = advancedFilteredGames
+      .filter(game => (filterOptions[0] ? (game.genre_ID.includes(6))
+        : filterOptions[1] ? (game.genre_ID.includes(7)) : game))
+      .filter(game => (filterOptions[2] ? (game.min_age < 8)
+        : filterOptions[3] ? (game.min_age > 8 && game.min_age < 13)
+          : filterOptions[4] ? (game.min_age > 13)
+            : filterOptions[5] ? (game.min_age > 20) : game))
 
     this.setState({
-
+      filteredGames: newGames,
+      searching: true
     })
   }
+
   advancedFilter = () => {
 
   }
@@ -119,6 +133,7 @@ class App extends Component {
           <Navbar
             checkFilterInput={this.checkFilterInput}
             resetAllGames={this.resetAllGames}
+            setAdvancedFilter={this.setAdvancedFilter}
           />
           {
             searching ?

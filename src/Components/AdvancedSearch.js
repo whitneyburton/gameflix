@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 
 
 export default class AdvancedSearch extends Component {
-
+constructor() {
+  super()
+}
 
   render() {
     return (
       <div className="AdvancedSearch">
-        <form>
+        <form onClick={this.props.setAdvancedFilter}>
           <div>
           <p># of Players</p>
           <input id="number-players-checkbox" class="2" type="checkbox" />

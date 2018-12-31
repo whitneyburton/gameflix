@@ -33,7 +33,7 @@ export default class Navbar extends Component {
             placeholder="Search all games">
           </input>
         </form>
-        {this.state.showAdvancedSearch && <AdvancedSearch />}
+        {this.state.showAdvancedSearch && <AdvancedSearch setAdvancedFilter={this.props.setAdvancedFilter}/>}
       </nav >
     )
   }
