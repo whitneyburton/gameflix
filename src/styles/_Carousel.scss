@@ -35,18 +35,18 @@
 .game-card {
   background: #FFF;
   border: outset 4px;
-  height: 77%;
+  height: 240px;
   padding-bottom: 22px;
   border-radius: 5px;
-  width: 235px;
+  width: 264px;
   margin: 15px 10px 5px 10px;
   transition: all 500ms ease;
 }
 
 .game-card:hover {
   cursor: pointer;
-  height: 78%;
-  width: 240px;
+  height: 245px;
+  width: 268px;
 }
 
 .carousel-image {
