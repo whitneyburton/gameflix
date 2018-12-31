@@ -10,7 +10,6 @@
   align-content: center;
   // padding: 10px;
   display: grid;
-  grid-template-columns: 2% 96% 2%;
   grid-template-areas: 
   "genre genre genre"
   "left mid right"
@@ -21,7 +20,7 @@
   grid-area: genre;
   margin: 0px;
   text-align: left;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 600;
   color: #FFF;
   padding: 23px 0px 0px 38px;
@@ -69,6 +68,7 @@
   width: 5%;
   display: inline-block;
   padding: 138px 0px;
+  z-index: 1;
 }
 
 .fa-angle-right:hover,

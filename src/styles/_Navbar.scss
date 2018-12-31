@@ -6,6 +6,10 @@
   background-image: linear-gradient(#5b5b5b, #2b3034);
 }
 
+.title {
+  color: red;
+}
+
 .filter-buttons {
   display: flex;
   padding-left: 7px;
@@ -22,8 +26,9 @@
 .filter-boardgames,
 .filter-cardgames,
 .advanced-search {
+  font-size: 15px;
   color: #FFF;
-  padding: 2px 30px;
+  padding: 7px 0px 7px 40px;
   display: inline-block;
 }
 
@@ -72,10 +77,11 @@
   font-size: 15px;
 }
 
-@media screen and (max-width: 985px) {
+@media screen and (max-width: 1000px) {
   .Navbar {
     flex-direction: column-reverse;    
   }
+
   .filter-buttons {
     justify-content: center;
     margin: 26px 0px 16px 0px;
@@ -84,13 +90,31 @@
     justify-content: center;
     margin: 0px;
   }
+  .searchbar {
+    width: 285px;
+  }
 }
 
 @media screen and (max-width: 570px) {
+  .title {
+    padding-top: 15px;
+  }
   .reset-games,
   .filter-boardgames,
   .filter-cardgames,
   .advanced-search {
     display: block;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .filter-buttons {
+    flex-direction: column;
+  }
+  .title {
+    padding: 0px;
+  }
+  .reset-games, .filter-boardgames, .filter-cardgames, .advanced-search {
+    padding: 7px 0px;
   }
 }

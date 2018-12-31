@@ -18,6 +18,7 @@ export default class Navbar extends Component {
     return (
       <nav className="Navbar">
         <div class="filter-buttons">
+          <h2 class="title">GAMEFLIX</h2>
           <div class="filters-column-one">
             <p class="reset-games" onClick={() => this.props.resetAllGames('')}>All Games</p>
             <p class="filter-boardgames" onClick={() => this.props.resetAllGames(6)}>Board Games</p>
