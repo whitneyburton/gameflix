@@ -15,7 +15,8 @@ class App extends Component {
       popUpInfo: null,
       popUpGenre: null,
       searching: '',
-      filteredGames: []
+      filteredGames: [],
+      filterOptions: []
     }
   }
   getData = (request) => {
@@ -38,14 +39,20 @@ class App extends Component {
     this.getData('genres');
   }
 
-  resetAllGames = () => {
-    debugger;
-
+  resetAllGames = (type) => {
+    const games = this.state.games;
+    let filteredGames;
     document.querySelector('.searchbar').value = '';
     this.closePopUp();
+
+    if (type) {
+      filteredGames = games.filter(game => {
+        return game.genre_ID.includes(type)
+      })
+    }
     this.setState({
-      filteredGames: [],
-      searching:''
+      filteredGames: filteredGames || [],
+      searching: filteredGames || ''
     })
   }
 
@@ -69,17 +76,38 @@ class App extends Component {
   }
 
   checkFilterInput = (event) => {
-    let inputValue = event.target.value.toLowerCase();
+    const inputValue = event.target.value.toLowerCase();
+    const options = this.state.advancedOptions;
     const filteredGames = this.state.games
       .filter(game => game.game.toLowerCase().includes(inputValue))
       .sort((a, b) => a.game.localeCompare(b.game));
-
     this.closePopUp();
     this.setState({
       searching: inputValue,
       filteredGames
     });
   }
+  setAdvancedFilter = () => {
+    //set/get values
+    let filteredGames;
+    if (this.state.filteredGames) {
+       filteredGames  = this.state.filteredGames;
+    } else {
+      filteredGames = this.state.filteredGames;
+    }
+
+    // filterOptions.forEach(option => {
+      
+    // })
+
+    this.setState({
+
+    })
+  }
+  advancedFilter = () => {
+
+  }
+  // if(options)options.forEach(option,i)
 
   render() {
     let { errors, games,

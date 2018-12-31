@@ -1,7 +1,8 @@
 .Navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  height: 75px;
+  min-height: 75px;
   background-color: #2b3034;
 }
 
