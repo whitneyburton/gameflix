@@ -19,37 +19,25 @@ class App extends Component {
       filterOptions: {
         type: {
           card: false,
-          board: true
+          board: false
         },
         players: {
           2: false,
           34: false,
           56: false,
-          7:false
+          7: false
         },
         age: {
           '<8': false,
           '8-13': false,
           '13+': false,
-          'adult':false
+          'adult': false
         }
 
       }
-      ,
+
     }
   }
-
-  // options = {
-  //   players: (min, max) => this.state.games
-  //     .filter(game => game.min_players >= min && game.max_players <= max),
-
-  //   age: (min, max) => this.state.games
-  //     .filter(game => game.min_age >= min && game.max_age <= max),
-
-  //   length: (time) => this.state.games
-  //     .filter(game => game.number_of_minutes)
-  //   // genre: (genre)
-  // }
 
   getData = (request) => {
     const url = 'https://whateverly-datasets.herokuapp.com/api/v1/';
@@ -120,10 +108,33 @@ class App extends Component {
     });
   }
   setAdvancedFilter = (event) => {
-    //set/get values
-    
+    let dataId = event.target.dataset.id;
+    let { card, board } = this.state.filterOptions.type;
     let { filterOptions } = this.state;
-    let advancedFilteredGames;
+    
+    switch (dataId) {
+      case 'card':
+        // filterOptions.type.board = false;
+        filterOptions.type.card = !card;
+        // document.querySelector('#card').checked = !card;
+        // break
+        // this.state.filteredGames
+        this.resetAllGames(' ');
+        break;
+      case 'board':
+        // let filterOptions = this.state.filterOptions;
+        // filterOptions.type.card = false;
+        let newBoard = true
+        filterOptions.type.board = !board;
+        // document.querySelector('#board').checked = !board;
+        this.resetAllGames(' ');
+        break;
+
+    }
+
+
+    
+    let advancedFilteredGames =[];
     let newGames;
     if (!this.state.filteredGames.length) {
       advancedFilteredGames = this.state.games;
@@ -134,10 +145,11 @@ class App extends Component {
     newGames = advancedFilteredGames
       .filter(game => (filterOptions.type.card ? (game.genre_ID.includes(7))
         : filterOptions.type.board ? (game.genre_ID.includes(6)) : game))
-      // .filter(game => (filterOptions[2] ? (game.min_age < 8)
-      //   : filterOptions[3] ? (game.min_age > 8 && game.min_age < 13)
-      //     : filterOptions[4] ? (game.min_age > 13)
-      //       : filterOptions[5] ? (game.min_age > 20) : game))
+        // debugger
+    // .filter(game => (filterOptions[2] ? (game.min_age < 8)
+    //   : filterOptions[3] ? (game.min_age > 8 && game.min_age < 13)
+    //     : filterOptions[4] ? (game.min_age > 13)
+    //       : filterOptions[5] ? (game.min_age > 20) : game))
 
     this.setState({
       filteredGames: newGames,

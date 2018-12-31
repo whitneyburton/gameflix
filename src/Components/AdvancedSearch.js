@@ -12,9 +12,9 @@ export default class AdvancedSearch extends Component {
         <form onClick={this.props.setAdvancedFilter}>
           <div>
             <p>Type of Game</p>
-            <input name="type-checkbox" id="board" type="radio" />
+            <input name="type-checkbox" id="board" data-id="board" type="checkbox" />
             <label for="board"></label>
-            <input  name="type-checkbox" id="card" type="radio" />
+            <input  name="type-checkbox" id="card" data-id="card" type="checkbox" />
             <label for="card"></label>
           </div>
           <div>
