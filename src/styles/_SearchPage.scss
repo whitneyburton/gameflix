@@ -1,9 +1,9 @@
 .SearchPage {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   height: 90%;
   overflow: scroll;
-  /* filter: grayscale(.9); */
 }
 
 .SearchPage .search-popup {

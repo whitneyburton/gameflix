@@ -6,7 +6,7 @@
   background-image: linear-gradient(#5b5b5b, #2b3034);
 }
 
-.hamburger-filters {
+.filter-buttons {
   display: flex;
   padding-left: 7px;
   margin: 26px 26px;
@@ -20,9 +20,11 @@
 
 .reset-games,
 .filter-boardgames,
-.filter-cardgames {
+.filter-cardgames,
+.advanced-search {
   color: #FFF;
   padding: 2px 30px;
+  display: inline-block;
 }
 
 .reset-games {
@@ -31,7 +33,8 @@
 
 .reset-games:hover,
 .filter-boardgames:hover,
-.filter-cardgames:hover {
+.filter-cardgames:hover,
+.advanced-search:hover {
   cursor: pointer;
 }
 
@@ -67,4 +70,27 @@
   color: #d2cfcf;
   opacity: 1; 
   font-size: 15px;
+}
+
+@media screen and (max-width: 985px) {
+  .Navbar {
+    flex-direction: column-reverse;    
+  }
+  .filter-buttons {
+    justify-content: center;
+    margin: 26px 0px 16px 0px;
+  }
+  .search-field {
+    justify-content: center;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .reset-games,
+  .filter-boardgames,
+  .filter-cardgames,
+  .advanced-search {
+    display: block;
+  }
 }
