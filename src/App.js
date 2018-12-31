@@ -107,6 +107,7 @@ class App extends Component {
       filteredGames
     });
   }
+  
   setAdvancedFilter = (event) => {
     let dataId = event.target.dataset.id;
     let { card, board } = this.state.filterOptions.type;
@@ -114,47 +115,41 @@ class App extends Component {
     
     switch (dataId) {
       case 'card':
-        // filterOptions.type.board = false;
-        filterOptions.type.card = !card;
-        // document.querySelector('#card').checked = !card;
-        // break
-        // this.state.filteredGames
-        this.resetAllGames(' ');
+        document.querySelector('#card').checked &&         
+          this.resetAllGames(7);
+        document.querySelector('#board').checked = false;
         break;
       case 'board':
-        // let filterOptions = this.state.filterOptions;
-        // filterOptions.type.card = false;
-        let newBoard = true
-        filterOptions.type.board = !board;
-        // document.querySelector('#board').checked = !board;
-        this.resetAllGames(' ');
+        document.querySelector('#board').checked && 
+          this.resetAllGames(6);
+        document.querySelector('#card').checked = false;        
         break;
-
+      default:
     }
 
 
     
-    let advancedFilteredGames =[];
-    let newGames;
-    if (!this.state.filteredGames.length) {
-      advancedFilteredGames = this.state.games;
-    } else {
-      advancedFilteredGames = this.state.filteredGames;
-    }
+    // let advancedFilteredGames =[];
+    // let newGames;
+    // if (!this.state.filteredGames.length) {
+    //   advancedFilteredGames = this.state.games;
+    // } else {
+    //   advancedFilteredGames = this.state.filteredGames;
+    // }
 
-    newGames = advancedFilteredGames
-      .filter(game => (filterOptions.type.card ? (game.genre_ID.includes(7))
-        : filterOptions.type.board ? (game.genre_ID.includes(6)) : game))
+    // newGames = advancedFilteredGames
+    //   .filter(game => (filterOptions.type.card ? (game.genre_ID.includes(7))
+    //     : filterOptions.type.board ? (game.genre_ID.includes(6)) : game))
         // debugger
     // .filter(game => (filterOptions[2] ? (game.min_age < 8)
     //   : filterOptions[3] ? (game.min_age > 8 && game.min_age < 13)
     //     : filterOptions[4] ? (game.min_age > 13)
     //       : filterOptions[5] ? (game.min_age > 20) : game))
 
-    this.setState({
-      filteredGames: newGames,
-      searching: true
-    })
+    // this.setState({
+    //   filteredGames: newGames,
+    //   searching: true
+    // })
   }
 
   advancedFilter = () => {
