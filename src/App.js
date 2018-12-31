@@ -116,6 +116,7 @@ class App extends Component {
       filteredGames: gamesToStore
     });
   }
+  
   setAdvancedFilter = (event) => {
     // event.preventDefault();
     let dataId = event.target.dataset.id;
@@ -127,6 +128,7 @@ class App extends Component {
     switch (dataId) {
 
       case 'card':
+
         if (document.querySelector('#card').checked) {
           holder.type.card = true;
           holder.type.board = false;
@@ -144,9 +146,8 @@ class App extends Component {
           holder.type.board = false
         }
         document.querySelector('#card').checked = false
-
         break;
-
+      default:
     }
 
     let advancedFilteredGames = this.state.games;
@@ -154,11 +155,11 @@ class App extends Component {
     let newGames = advancedFilteredGames
       .filter(game => (holder.type.board ? (game.genre_ID.includes(6))
         : holder.type.card ? (game.genre_ID.includes(7)) : game))
-
     // .filter(game => (filterOptions[2] ? (game.min_age < 8)
     //   : filterOptions[3] ? (game.min_age > 8 && game.min_age < 13)
     //     : filterOptions[4] ? (game.min_age > 13)
     //       : filterOptions[5] ? (game.min_age > 20) : game))
+
 
       if (newGames.length === 0) {
         newGames = null
@@ -168,6 +169,7 @@ class App extends Component {
       filteredGames: newGames,
       // searching: true
     })
+
   }
 
 
