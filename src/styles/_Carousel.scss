@@ -40,10 +40,13 @@
   border-radius: 5px;
   width: 235px;
   margin: 15px 10px 5px 10px;
+  transition: all 500ms ease;
 }
 
 .game-card:hover {
   cursor: pointer;
+  height: 78%;
+  width: 240px;
 }
 
 .carousel-image {
@@ -55,7 +58,6 @@
 .game-card-header {
   display: block;
   padding: 12px 27px;
-  width: 180px;
   background-color: #e4e2e2;
   font-weight: 600;
   font-size: 15px;

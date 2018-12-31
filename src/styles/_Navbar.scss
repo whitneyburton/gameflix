@@ -7,7 +7,7 @@
 }
 
 .title {
-  color: red;
+  color: #ff1818;
 }
 
 .filter-buttons {
@@ -32,15 +32,12 @@
   display: inline-block;
 }
 
-.reset-games {
-  font-weight: bold;
-}
-
 .reset-games:hover,
 .filter-boardgames:hover,
 .filter-cardgames:hover,
 .advanced-search:hover {
   cursor: pointer;
+  font-weight: bold;
 }
 
 .search-field {
@@ -95,7 +92,7 @@
   }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 700px) {
   .title {
     padding-top: 15px;
   }
@@ -107,7 +104,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   .filter-buttons {
     flex-direction: column;
   }
