@@ -15,7 +15,8 @@ class App extends Component {
       popUpInfo: null,
       popUpGenre: null,
       searching: '',
-      filteredGames: [],
+      filteredGames: null,
+      filterByType: [],
       filterOptions: {
         type: {
           card: false,
@@ -71,7 +72,7 @@ class App extends Component {
       })
     }
     this.setState({
-      filteredGames: filteredGames || [],
+      filteredGames: filteredGames || null,
       searching: filteredGames || ''
     })
   }
@@ -97,60 +98,83 @@ class App extends Component {
 
   checkFilterInput = (event) => {
     const inputValue = event.target.value.toLowerCase();
-    const options = this.state.advancedOptions;
-    const filteredGames = this.state.games
-      .filter(game => game.game.toLowerCase().includes(inputValue))
+    let gamesToFilter;
+    if (this.state.filteredGames.length === 0) {
+      gamesToFilter = this.state.games;
+    } else {
+      gamesToFilter = this.state.filteredGames;
+    }
+    let gamesToStore = gamesToFilter.filter(game => game.game.toLowerCase().includes(inputValue))
       .sort((a, b) => a.game.localeCompare(b.game));
+
+        if(gamesToStore.length === 0) {
+          gamesToStore = null;
+        }
     this.closePopUp();
     this.setState({
       searching: inputValue,
-      filteredGames
+      filteredGames: gamesToStore
     });
   }
   
   setAdvancedFilter = (event) => {
+    // event.preventDefault();
     let dataId = event.target.dataset.id;
-    let { card, board } = this.state.filterOptions.type;
-    let { filterOptions } = this.state;
-    
+    // let { card, board } = this.state.filterOptions.type;
+    // let { filterOptions } = this.state;
+    let holder = this.state.filterOptions;
+
+    // debugger
     switch (dataId) {
+
       case 'card':
-        document.querySelector('#card').checked &&         
-          this.resetAllGames(7);
-        document.querySelector('#board').checked = false;
+
+        if (document.querySelector('#card').checked) {
+          holder.type.card = true;
+          holder.type.board = false;
+        } else {
+          holder.type.card = false
+        }
+        document.querySelector('#board').checked = false
+
         break;
       case 'board':
-        document.querySelector('#board').checked && 
-          this.resetAllGames(6);
-        document.querySelector('#card').checked = false;        
+        if (document.querySelector('#board').checked) {
+          holder.type.board = true;
+          holder.type.card = false;
+        } else {
+          holder.type.board = false
+        }
+        document.querySelector('#card').checked = false
         break;
       default:
     }
 
+    let advancedFilteredGames = this.state.games;
 
-    
-    // let advancedFilteredGames =[];
-    // let newGames;
-    // if (!this.state.filteredGames.length) {
-    //   advancedFilteredGames = this.state.games;
-    // } else {
-    //   advancedFilteredGames = this.state.filteredGames;
-    // }
-
-    // newGames = advancedFilteredGames
-    //   .filter(game => (filterOptions.type.card ? (game.genre_ID.includes(7))
-    //     : filterOptions.type.board ? (game.genre_ID.includes(6)) : game))
-        // debugger
+    let newGames = advancedFilteredGames
+      .filter(game => (holder.type.board ? (game.genre_ID.includes(6))
+        : holder.type.card ? (game.genre_ID.includes(7)) : game))
     // .filter(game => (filterOptions[2] ? (game.min_age < 8)
     //   : filterOptions[3] ? (game.min_age > 8 && game.min_age < 13)
     //     : filterOptions[4] ? (game.min_age > 13)
     //       : filterOptions[5] ? (game.min_age > 20) : game))
 
-    // this.setState({
-    //   filteredGames: newGames,
-    //   searching: true
-    // })
+
+      if (newGames.length === 0) {
+        newGames = null
+      }
+    this.setState({
+      filterOptions: holder,
+      filteredGames: newGames,
+      // searching: true
+    })
+
   }
+
+
+
+
 
   advancedFilter = () => {
 
@@ -169,7 +193,7 @@ class App extends Component {
             setAdvancedFilter={this.setAdvancedFilter}
           />
           {
-            searching ?
+            filteredGames ?
               <SearchPage
                 filteredGames={filteredGames}
                 popUpInfo={popUpInfo}
