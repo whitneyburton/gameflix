@@ -150,14 +150,15 @@ class App extends Component {
       showAdvancedSearch: !this.state.showAdvancedSearch
     })
   }
+  
   setAdvancedFilter = (event) => {
     let dataId = event.target.dataset.id;
     let holder = this.state.filterOptions;
     let inputValue = document.querySelector('#input-value').value
 
     switch (dataId) {
+        
       case 'card':
-
         if (document.querySelector('#card').checked) {
           holder.type.card = true;
           holder.type.board = false;
@@ -167,7 +168,7 @@ class App extends Component {
         document.querySelector('#board').checked = false
         break;
       case 'board':
-        if (document.querySelector('#board').checked) {
+          if (document.querySelector('#board').checked) {
           holder.type.board = true;
           holder.type.card = false;
         } else {
@@ -271,7 +272,6 @@ class App extends Component {
 
   }
 
-
   render() {
     let { errors, games,
       genres, popUpInfo, popUpGenre, searchPageCheck, filteredGames, showAdvancedSearch } = this.state;
@@ -286,6 +286,7 @@ class App extends Component {
             setAdvancedFilter={this.setAdvancedFilter}
           />
           {
+
             searchPageCheck ?
               <SearchPage
                 filteredGames={filteredGames}

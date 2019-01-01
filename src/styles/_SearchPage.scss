@@ -1,9 +1,9 @@
 .SearchPage {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   height: 90%;
   overflow: scroll;
-  /* filter: grayscale(.9); */
 }
 
 .SearchPage .search-popup {
@@ -19,4 +19,14 @@
   top: 20%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 770px) {
+  .SearchPage .search-popup {
+    min-width: 90%; 
+    max-width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    top: 1%;
+  }
 }

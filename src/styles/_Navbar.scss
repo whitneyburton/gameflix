@@ -3,10 +3,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   min-height: 75px;
-  background-image: linear-gradient(#6f6f6f, #2b3034);
+  background-image: linear-gradient(#5b5b5b, #2b3034);
 }
 
-.hamburger-filters {
+.title {
+  color: #ff1818;
+}
+
+.filter-buttons {
   display: flex;
   padding-left: 7px;
   margin: 26px 26px;
@@ -20,19 +24,20 @@
 
 .reset-games,
 .filter-boardgames,
-.filter-cardgames {
+.filter-cardgames,
+.advanced-search {
+  font-size: 15px;
   color: #FFF;
-  padding: 2px 30px;
-}
-
-.reset-games {
-  font-weight: bold;
+  padding: 7px 0px 7px 40px;
+  display: inline-block;
 }
 
 .reset-games:hover,
 .filter-boardgames:hover,
-.filter-cardgames:hover {
+.filter-cardgames:hover,
+.advanced-search:hover {
   cursor: pointer;
+  font-weight: bold;
 }
 
 .search-field {
@@ -67,4 +72,46 @@
   color: #d2cfcf;
   opacity: 1; 
   font-size: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .Navbar {
+    flex-direction: column-reverse;    
+  }
+
+  .filter-buttons {
+    justify-content: center;
+    margin: 26px 0px 16px 0px;
+  }
+  .search-field {
+    justify-content: center;
+    margin: 0px;
+  }
+  .searchbar {
+    width: 285px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    padding-top: 15px;
+  }
+  .reset-games,
+  .filter-boardgames,
+  .filter-cardgames,
+  .advanced-search {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .filter-buttons {
+    flex-direction: column;
+  }
+  .title {
+    padding: 0px;
+  }
+  .reset-games, .filter-boardgames, .filter-cardgames, .advanced-search {
+    padding: 7px 0px;
+  }
 }

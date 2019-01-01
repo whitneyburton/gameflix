@@ -10,11 +10,16 @@ export default class Navbar extends Component {
   render() {
     return (
       <nav className="Navbar">
-        <div class="hamburger-filters">
-          <p class="reset-games" onClick={() => this.props.resetAllGames('')}>All Games</p>
-          <p class="filter-boardgames" onClick={() => this.props.resetAllGames(6)}>Board Games</p>
-          <p class="filter-cardgames" onClick={() => this.props.resetAllGames(7)}>Card Games</p>
-          <p class="filter-cardgames" onClick={this.props.toggleAdvancedSearch}>Advanced Search</p>
+        <div class="filter-buttons">
+          <h2 class="title">GAMEFLIX</h2>
+          <div class="filters-column-one">
+            <p class="reset-games" onClick={() => this.props.resetAllGames('')}>All Games</p>
+            <p class="filter-boardgames" onClick={() => this.props.resetAllGames(6)}>Board Games</p>
+          </div>
+          <div class="filters-column-two">
+            <p class="filter-cardgames" onClick={() => this.props.resetAllGames(7)}>Card Games</p>
+            <p class="advanced-search" onClick={this.toggleAdvancedSearch}>Advanced Search</p>
+          </div>
 
         </div>
         <form class="search-field">
