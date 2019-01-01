@@ -153,7 +153,7 @@ class App extends Component {
   
   setAdvancedFilter = (event) => {
     let dataId = event.target.dataset.id;
-    let holder = this.state.filterOptions;
+    let holder = {...this.state.filterOptions};
     let inputValue = document.querySelector('#input-value').value
 
     switch (dataId) {
