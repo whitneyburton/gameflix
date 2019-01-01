@@ -1,0 +1,53 @@
+.game-card {
+  background: #FFF;
+  border: outset 4px;
+  height: 240px;
+  padding-bottom: 22px;
+  border-radius: 5px;
+  width: 264px;
+  margin: 15px 10px 5px 10px;
+}
+
+.game-card:hover {
+  cursor: pointer;
+  position: relative;
+  animation: hoverCard .1s ease-out forwards;
+  animation-delay: .5s;
+}
+
+@keyframes hoverCard {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: -5px;
+    height: 250px;
+    width: 274px;
+  }
+}
+
+.game-card-image {
+  height: 180px;
+  max-width: 400px;
+  padding-top: 18px;
+}
+
+.game-card-header-container {
+  position: relative;
+  height: 60px;
+  margin: auto;
+  background-color: #e4e2e2;
+}
+
+.game-card-header-title-container {
+  width: 250px;
+  margin: auto;
+}
+
+.game-card-header {
+  display: block;
+  padding: 12px 27px;
+  font-weight: 600;
+  font-size: 15px;
+}
