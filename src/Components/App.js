@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import '../styles/Main.scss';
-import Navbar from './Navbar.js';
-import LandingPage from './LandingPage.js';
-import SearchPage from './SearchPage.js';
+import Navbar from './Navbar';
+import LandingPage from './LandingPage';
+import SearchPage from './SearchPage';
+import HomePage from './HomePage';
 
 
 class App extends Component {
@@ -107,28 +108,28 @@ class App extends Component {
       filteredGames
     });
   }
-  
+
   setAdvancedFilter = (event) => {
     let dataId = event.target.dataset.id;
     let { card, board } = this.state.filterOptions.type;
     let { filterOptions } = this.state;
-    
+
     switch (dataId) {
       case 'card':
-        document.querySelector('#card').checked &&         
+        document.querySelector('#card').checked &&
           this.resetAllGames(7);
         document.querySelector('#board').checked = false;
         break;
       case 'board':
-        document.querySelector('#board').checked && 
+        document.querySelector('#board').checked &&
           this.resetAllGames(6);
-        document.querySelector('#card').checked = false;        
+        document.querySelector('#card').checked = false;
         break;
       default:
     }
 
 
-    
+
     // let advancedFilteredGames =[];
     // let newGames;
     // if (!this.state.filteredGames.length) {
@@ -140,7 +141,7 @@ class App extends Component {
     // newGames = advancedFilteredGames
     //   .filter(game => (filterOptions.type.card ? (game.genre_ID.includes(7))
     //     : filterOptions.type.board ? (game.genre_ID.includes(6)) : game))
-        // debugger
+    // debugger
     // .filter(game => (filterOptions[2] ? (game.min_age < 8)
     //   : filterOptions[3] ? (game.min_age > 8 && game.min_age < 13)
     //     : filterOptions[4] ? (game.min_age > 13)
@@ -159,8 +160,10 @@ class App extends Component {
   render() {
     let { errors, games,
       genres, popUpInfo, popUpGenre, searching, filteredGames } = this.state;
-
-    if (genres && games && !errors) {
+    if (true) {
+     return <HomePage />
+    }
+    else if (genres && games && !errors) {
       return (
         <div className="App">
           <Navbar
