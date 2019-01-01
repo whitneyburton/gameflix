@@ -150,7 +150,6 @@ class App extends Component {
       showAdvancedSearch: !this.state.showAdvancedSearch
     })
   }
-
   setAdvancedFilter = (event) => {
     let dataId = event.target.dataset.id;
     let holder = this.state.filterOptions;
@@ -158,6 +157,7 @@ class App extends Component {
 
     switch (dataId) {
       case 'card':
+
         if (document.querySelector('#card').checked) {
           holder.type.card = true;
           holder.type.board = false;
@@ -268,6 +268,7 @@ class App extends Component {
       filteredGames: newGames,
       searchPageCheck
     })
+
   }
 
 

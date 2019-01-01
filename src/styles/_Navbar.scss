@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   min-height: 75px;
-  background-color: #2b3034;
+  background-image: linear-gradient(#6f6f6f, #2b3034);
 }
 
 .hamburger-filters {
@@ -54,7 +54,7 @@
   padding-left: 7px;
   border: none;
   border-bottom: 2.5px solid #FFF;
-  background-color: #2b3034;
+  background-color: transparent;
   color: #FFF;
   margin: 2%;
 }
