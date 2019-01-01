@@ -2,4 +2,12 @@
   width: 100%;
   color:whitesmoke;
   background-color: transparent;
+  height: 0px;
+  overflow: hidden;
+  transition: .2s linear;
+}
+
+.AdvancedSearchClicked {
+  transition: .2s linear;
+  height: 300px;
 }

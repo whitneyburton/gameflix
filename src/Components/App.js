@@ -16,7 +16,6 @@ class App extends Component {
       popUpGenre: null,
       searching: '',
       searchPageCheck: false,
-      showAdvancedSearch: false,
       filteredGames: [],
       filterOptions: {
         type: {
@@ -66,8 +65,12 @@ class App extends Component {
     this.getData('genres');
   }
 
-  resetAllGames = (type) => {
+  resetAllGames = (event) => {
 
+    let games = [...this.state.games]
+    let filteredGames;
+    let searchPageCheck;
+    let dataNav = event.target.dataset.nav;
     let filterOptions = {
       type: {
         card: false,
@@ -93,29 +96,30 @@ class App extends Component {
       }
     }
 
+    document.querySelector('.AdvancedSearch').classList.remove('AdvancedSearchClicked');
     document.querySelectorAll('.adv-search-checkbox').forEach(checkbox => {
       checkbox.checked = false
     })
-
+    document.querySelector('#input-value').value = '';
     document.querySelector('.searchbar').value = '';
     this.closePopUp();
 
-    let games = this.state.games
-    let filteredGames;
-    let searchPageCheck;
-
-    if (type === 6) {
-      filterOptions.type.board = true;
-      // document.querySelector('#board').checked = true;
-      filteredGames = games.filter(game => game.genre_ID.includes(6))
-      searchPageCheck = true;
-    } else if (type === 7) {
-      filterOptions.type.card = true;
-      // document.querySelector('#card').checked = true;
-      filteredGames = games.filter(game => game.genre_ID.includes(7))
-      searchPageCheck = true;
-    } else {
-      searchPageCheck = false;
+    switch (dataNav) {
+      case 'resetall':
+        searchPageCheck = false;
+        break;
+      case 'resetboard':
+        filterOptions.type.board = true;
+        document.querySelector('#board').checked = true;
+        filteredGames = games.filter(game => game.genre_ID.includes(6))
+        searchPageCheck = true;
+        break;
+      case 'resetcard':
+        filterOptions.type.card = true;
+        document.querySelector('#card').checked = true;
+        filteredGames = games.filter(game => game.genre_ID.includes(7))
+        searchPageCheck = true;
+        break;
     }
 
     this.setState({
@@ -145,19 +149,14 @@ class App extends Component {
     })
   }
 
-  toggleAdvancedSearch = () => {
-    this.setState({
-      showAdvancedSearch: !this.state.showAdvancedSearch
-    })
-  }
-  
-  setAdvancedFilter = (event) => {
+  setFilter = (event) => {
     let dataId = event.target.dataset.id;
-    let holder = {...this.state.filterOptions};
+    let holder = { ...this.state.filterOptions };
     let inputValue = document.querySelector('#input-value').value
+    this.closePopUp();
 
     switch (dataId) {
-        
+
       case 'card':
         if (document.querySelector('#card').checked) {
           holder.type.card = true;
@@ -168,7 +167,7 @@ class App extends Component {
         document.querySelector('#board').checked = false
         break;
       case 'board':
-          if (document.querySelector('#board').checked) {
+        if (document.querySelector('#board').checked) {
           holder.type.board = true;
           holder.type.card = false;
         } else {
@@ -217,7 +216,7 @@ class App extends Component {
         break;
     }
 
-    let advancedFilteredGames = this.state.games;
+    let advancedFilteredGames = [...this.state.games];
     let newGames = advancedFilteredGames
       .filter(game => (holder.type.board ? (game.genre_ID.includes(6))
         : holder.type.card ? (game.genre_ID.includes(7)) : game))
@@ -269,7 +268,6 @@ class App extends Component {
       filteredGames: newGames,
       searchPageCheck
     })
-
   }
 
   render() {
@@ -279,11 +277,10 @@ class App extends Component {
       return (
         <div className="App">
           <Navbar
-            toggleAdvancedSearch={this.toggleAdvancedSearch}
             showAdvancedSearch={showAdvancedSearch}
             checkFilterInput={this.checkFilterInput}
             resetAllGames={this.resetAllGames}
-            setAdvancedFilter={this.setAdvancedFilter}
+            setFilter={this.setFilter}
           />
           {
 
