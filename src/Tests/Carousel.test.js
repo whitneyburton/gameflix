@@ -32,9 +32,6 @@ describe('Carousel', () => {
     expect(wrapper).toMatchSnapshot();
   })
 
-  it('should create a popup card when the game card is clicked', () => {
-    wrapper.find('.game-card').simulate('click', { preventDefault: () => {} })
-    expect(createPopUpMock).toBeCalled();
-  })
+
 
 })
