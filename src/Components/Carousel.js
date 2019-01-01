@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import GameCard from './GameCard';
 import { uid } from 'react-uid';
 
-class Carousel extends Component {
+export default class Carousel extends Component {
 
   shiftCarousel(event) {
     const shiftDirection = event.target.classList.contains('fa-angle-right') ? 1 : -1;
@@ -17,14 +17,13 @@ class Carousel extends Component {
         <h4 className="genre">{genre.genre}</h4>
         <i onClick={this.shiftCarousel} className="fas fa-angle-left"></i>
         <div className="scroll-container">
-          {matchingGames.map(game => {
-            return (
-              <GameCard
-                key={uid(game)}
-                game={game}
-                createPopUp={createPopUp} />
-            )
-          })} 
+          {matchingGames.map(game => ((
+            <GameCard
+              key={uid(game)}
+              game={game}
+              createPopUp={createPopUp}
+            />
+          )))}
         </div>
 
         <i onClick={this.shiftCarousel} className="fas fa-angle-right"></i>
@@ -33,5 +32,3 @@ class Carousel extends Component {
     )
   }
 }
-
-export default Carousel;
