@@ -4,7 +4,6 @@ import Featured from '../Components/Featured';
 
 describe('Featured', () => {
   let wrapper;
-
   const games = [{}, {
     "youtube": "ZYvvhOzYx_4"
   }];
@@ -13,10 +12,9 @@ describe('Featured', () => {
     wrapper = shallow(
       <Featured data={games} />
     )
-  })
+  });
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  }) 
-
-})
+  });
+});

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './styles/Main.scss';
-import Navbar from './Components/Navbar.js';
-import LandingPage from './Components/LandingPage.js';
-import SearchPage from './Components/SearchPage.js';
+import '../styles/Main.scss';
+import Navbar from './Navbar.js';
+import LandingPage from './LandingPage.js';
+import SearchPage from './SearchPage.js';
 
 
 class App extends Component {
