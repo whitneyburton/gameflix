@@ -4,16 +4,9 @@ import AdvancedSearch from './AdvancedSearch'
 export default class Navbar extends Component {
   constructor() {
     super();
-    this.state = {
-      showAdvancedSearch: false
-    }
   }
 
-  toggleAdvancedSearch = () => {
-    this.setState({
-      showAdvancedSearch: !this.state.showAdvancedSearch
-    })
-  }
+ 
   render() {
     return (
       <nav className="Navbar">
@@ -32,13 +25,14 @@ export default class Navbar extends Component {
         <form class="search-field">
           <i class="fas fa-search"></i>
           <input
-            onChange={this.props.checkFilterInput}
+            id="input-value"
+            onChange={this.props.setAdvancedFilter}
             type="text"
             className="searchbar"
             placeholder="Search all games">
           </input>
         </form>
-        {this.state.showAdvancedSearch && <AdvancedSearch setAdvancedFilter={this.props.setAdvancedFilter}/>}
+        {this.props.showAdvancedSearch && <AdvancedSearch setAdvancedFilter={this.props.setAdvancedFilter}/>}
       </nav >
     )
   }
