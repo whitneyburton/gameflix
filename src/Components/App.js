@@ -245,6 +245,7 @@ class App extends Component {
             checkFilterInput={this.checkFilterInput}
             resetAllGames={this.resetAllGames}
             setFilter={this.setFilter}
+            handleTransition={this.handleTransition}
           />
           {
 

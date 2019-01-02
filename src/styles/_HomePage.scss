@@ -22,4 +22,12 @@
   height:100px;
   width:100px;
   border-radius: 50%;
+  transition: all 1s ease;
+}
+
+.enter-button:hover{
+  cursor: pointer;
+  height:110px;
+  width:110px;
+  border:solid darkred 1px;
 }
