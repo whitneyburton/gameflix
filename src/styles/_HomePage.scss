@@ -6,10 +6,59 @@
   letter-spacing: 3.5px;
   display:grid;
   align-content: center;
-  justify-content: center;
+  text-align: center;
+}
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-600px);
+  }
+  50% {
+    transform: translateX(0px);
+  } 
+}
+
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(600px);
+  }
+  50% {
+    transform: translateX(0px);
+  } 
+}
+
+@keyframes openAnimate {
+  50% {
+    width: 0%
+  }
+  100% {
+    width: 40%
+  }
+}
+
+.gameflix-title {
+  margin: 0px;
+  animation: slideInTop 4s ease 0s 1 forwards; 
+}
+
+.underline {
+  animation: openAnimate 4s ease 0s 1 forwards; 
+  border-bottom: 3px red solid;
+  width: 0%;
+  margin: auto;
+}
+
+.mission-statement {
+  animation: slideInBottom 4s ease 0s 1 forwards; 
+  padding: 3% 0%;
+  font-weight: 400;
+  text-align: center;
+  font-size: 22px;
+  margin: auto;
 }
 
 .enter-button{
+  animation: slideInBottom 4s ease 0s 1 forwards; 
   display:block;
   margin: 0 auto;
   background: #ff1818;

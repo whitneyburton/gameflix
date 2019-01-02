@@ -2,6 +2,7 @@
   background-color: #15171a;
   align-content: center;
   display: grid;
+  grid-template-columns: 1fr 50fr 1fr;
   grid-template-areas:
     "genre genre genre"
     "left mid right"
@@ -28,9 +29,8 @@
 .fa-angle-left {
   font-size: 42px;
   color: #FFF;
-  width: 5%;
   display: inline-block;
-  padding: 138px 0px;
+  padding: 138px 0 138px 10px;
   z-index: 1;
 }
 
@@ -39,13 +39,25 @@
   cursor: pointer;
 }
 
+.Carousel i {
+  visibility: hidden;
+}
+
+.Carousel:hover i {
+  visibility: visible;
+}
+
 .fa-angle-left {
   grid-area: left;
 }
 
 .fa-angle-right {
   grid-area: right;
-  padding-left: 4px;
+  padding-right: 10px;
+}
+
+.hide {
+  display: none;
 }
 
 .PopUp {
