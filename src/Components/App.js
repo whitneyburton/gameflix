@@ -137,7 +137,7 @@ class App extends Component {
     const popUpGenre = isCarousel && event.target.closest('.Carousel').dataset.genre;
     let games = [...this.state.games];
     let popUpInfo = games.find(game => {
-      return game.game === event.target.closest('div').innerText;
+      return game.game === event.target.closest('.game-card').id;
     });
     this.setState({ popUpInfo, popUpGenre });
   }
