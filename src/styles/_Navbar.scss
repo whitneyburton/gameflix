@@ -8,6 +8,7 @@
 
 .title {
   color: #ff1818;
+  letter-spacing: 3.5px;
 }
 
 .filter-buttons {
@@ -74,7 +75,7 @@
   font-size: 15px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1030px) {
   .Navbar {
     flex-direction: column-reverse;    
   }
@@ -104,7 +105,7 @@
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 465px) {
   .filter-buttons {
     flex-direction: column;
   }

@@ -98,3 +98,13 @@
   object-fit: contain;
   height: 500px;
 }
+
+@media screen and (max-width: 770px) {
+  .PopUp {
+    grid-template-columns: 1fr;
+  }
+
+  .youtube-video {
+    display: none;
+  }
+}
