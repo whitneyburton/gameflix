@@ -9,16 +9,16 @@ export default class AdvancedSearch extends Component {
   render() {
     return (
       <div className="AdvancedSearch">
-        <form onClick={this.props.setFilter}>
-          <div>
+        <form className="advanced-search-form" onClick={this.props.setFilter}>
+          <div className="filter-by-type">
             <p>Type of Game</p>
             <input name="type-checkbox" id="board" class="adv-search-checkbox" data-id="board" type="checkbox" />
             <label for="board">board</label>
             <input  name="type-checkbox" id="card" class="adv-search-checkbox" data-id="card" type="checkbox" />
             <label for="card">card</label>
           </div>
-          <div>
-            <p># of Players</p>
+          <div className="filter-by-players">
+            <p>Number of Players</p>
             <input  id="two" class="adv-search-checkbox" data-id="two" type="checkbox" />
             <label for="number-players-checkbox">
               2 players
@@ -36,7 +36,7 @@ export default class AdvancedSearch extends Component {
               7+ players
           </label>
           </div>
-          <div>
+          <div className="filter-by-age">
             <p>Age</p>
             <input id="lesseight" class="adv-search-checkbox" data-id="lesseight" type="checkbox" />
             <label for="number-players-checkbox">
@@ -56,7 +56,7 @@ export default class AdvancedSearch extends Component {
           </label>
           </div>
 
-          <div>
+          <div className="filter-by-genre">
             <p>Genre</p>
             <input id="strategy" class="adv-search-checkbox" data-id="strategy" type="checkbox" />
             <label for="number-players-checkbox">

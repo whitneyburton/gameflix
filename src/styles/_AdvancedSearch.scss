@@ -9,5 +9,18 @@
 
 .AdvancedSearchClicked {
   transition: .2s linear;
-  height: 300px;
+  height: auto;
+}
+
+.advanced-search-form {
+  display: flex;
+  padding: 0px 40px 40px 40px;
+}
+
+.filter-by-type,
+.filter-by-players,
+.filter-by-age,
+.filter-by-genre {
+  padding: 0px 20px;
+
 }
