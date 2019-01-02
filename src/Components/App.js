@@ -10,7 +10,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      isHomePage: true,
+      isHomePage: false,
       errors: null,
       games: null,
       genres: null,
@@ -256,7 +256,7 @@ class App extends Component {
   render() {
     let { errors, games,
       genres, popUpInfo, popUpGenre, searchPageCheck, filteredGames, showAdvancedSearch, isHomePage } = this.state;
-    if (!isHomePage) {
+    if (isHomePage) {
       return <HomePage handleTransition={this.handleTransition} />
     }
     else if (genres && games && !errors) {
