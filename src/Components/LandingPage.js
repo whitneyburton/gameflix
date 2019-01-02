@@ -5,6 +5,7 @@ import PopUp from './PopUp'
 import { uid } from 'react-uid';
 
 export default class LandingPage extends Component {
+  
   render() {
     let { games, genres, popUpInfo, popUpGenre, closePopUp, createPopUp } = this.props;
     return (
@@ -22,13 +23,13 @@ export default class LandingPage extends Component {
                 matchingGames={matchingGames}
                 createPopUp={createPopUp}
                 closePopUp={closePopUp} >
+              </Carousel>
                 {
                   popUpGenre === genre.genre &&
                   <PopUp
                     closePopUp={closePopUp}
                     game={popUpInfo} />
                 }
-              </Carousel>
             </div>
           )
         })

@@ -4,41 +4,39 @@ import AdvancedSearch from './AdvancedSearch'
 export default class Navbar extends Component {
   constructor() {
     super();
-    this.state = {
-      showAdvancedSearch: false
-    }
   }
 
   toggleAdvancedSearch = () => {
-    this.setState({
-      showAdvancedSearch: !this.state.showAdvancedSearch
-    })
+    document.querySelector('.AdvancedSearch').classList.toggle('AdvancedSearchClicked');
   }
+
   render() {
     return (
       <nav className="Navbar">
-        <div class="filter-buttons">
-          <h2 class="title" onClick={}>GAMEFLIX</h2>
-          <div class="filters-column-one">
-            <p class="reset-games" onClick={() => this.props.resetAllGames('')}>All Games</p>
-            <p class="filter-boardgames" onClick={() => this.props.resetAllGames(6)}>Board Games</p>
+        <div className="main-nav">
+          <div class="filter-buttons">
+            <h2 class="title">GAMEFLIX</h2>
+            <div class="filters-column-one">
+              <p class="reset-games" data-nav="resetall" onClick={this.props.resetAllGames}>All Games</p>
+              <p class="filter-boardgames" data-nav="resetboard" onClick={this.props.resetAllGames}>Board Games</p>
+            </div>
+            <div class="filters-column-two">
+              <p class="filter-cardgames" data-nav="resetcard" onClick={this.props.resetAllGames}>Card Games</p>
+              <p class="advanced-search" onClick={this.toggleAdvancedSearch}>Advanced Search</p>
+            </div>
           </div>
-          <div class="filters-column-two">
-            <p class="filter-cardgames" onClick={() => this.props.resetAllGames(7)}>Card Games</p>
-            <p class="advanced-search" onClick={this.toggleAdvancedSearch}>Advanced Search</p>
-          </div>
-
+          <form class="search-field">
+            <i class="fas fa-search"></i>
+            <input
+              id="input-value"
+              onChange={this.props.setFilter}
+              type="text"
+              className="searchbar"
+              placeholder="Search all games">
+            </input>
+          </form>
         </div>
-        <form class="search-field">
-          <i class="fas fa-search"></i>
-          <input
-            onChange={this.props.checkFilterInput}
-            type="text"
-            className="searchbar"
-            placeholder="Search all games">
-          </input>
-        </form>
-        {this.state.showAdvancedSearch && <AdvancedSearch setAdvancedFilter={this.props.setAdvancedFilter}/>}
+        <AdvancedSearch setFilter={this.props.setFilter} />
       </nav >
     )
   }

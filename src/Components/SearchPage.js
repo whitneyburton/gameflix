@@ -2,30 +2,29 @@ import React, { Component } from 'react';
 import GameCard from './GameCard';
 import PopUp from './PopUp';
 
-
 export default class SearchPage extends Component {
   render() {
     const { filteredGames, createPopUp, popUpInfo, closePopUp } = this.props;
 
     return (
       <div className="SearchPage">
+        <div className="search-results-counter">Search Results: {filteredGames.length} </div>
         {
           filteredGames.map(game => {
           return (
             <GameCard
               game={game}
-              createPopUp={createPopUp} />
+              createPopUp={createPopUp}
+            />
           )
-          })
-        }
-        
-        {
-          popUpInfo &&
+        })}
+
+        {popUpInfo &&
           <PopUp
             game={popUpInfo}
             isSearch={popUpInfo}
-            closePopUp={closePopUp} />
-        }
+            closePopUp={closePopUp}
+          />}
       </div>
     )
   }

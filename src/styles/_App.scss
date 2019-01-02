@@ -1,4 +1,13 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Open Sans;
+}
+
 .App {
   text-align: center;
   height: 100vh;
+}
+::-webkit-scrollbar{
+  display: none;
 }

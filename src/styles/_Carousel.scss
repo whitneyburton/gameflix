@@ -1,22 +1,14 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: Open Sans;
-}
-
 .Carousel {
-  min-height: 33.33%;
   background-color: #15171a;
   align-content: center;
-  // padding: 10px;
   display: grid;
-  grid-template-areas: 
-  "genre genre genre"
-  "left mid right"
-  "popup popup popup"
+  grid-template-areas:
+    "genre genre genre"
+    "left mid right"
+    "popup popup popup"
 }
 
-.genre{
+.genre {
   grid-area: genre;
   margin: 0px;
   text-align: left;
@@ -30,37 +22,6 @@
   grid-area: mid;
   display: flex;
   overflow: scroll;
-}
-
-.game-card {
-  background: #FFF;
-  border: outset 4px;
-  height: 240px;
-  padding-bottom: 22px;
-  border-radius: 5px;
-  width: 264px;
-  margin: 15px 10px 5px 10px;
-  transition: all 500ms ease;
-}
-
-.game-card:hover {
-  cursor: pointer;
-  height: 245px;
-  width: 268px;
-}
-
-.carousel-image {
-  height: 180px;
-  max-width: 400px;
-  padding-top: 18px;
-}
-
-.game-card-header {
-  display: block;
-  padding: 12px 27px;
-  background-color: #e4e2e2;
-  font-weight: 600;
-  font-size: 15px;
 }
 
 .fa-angle-right,
@@ -77,6 +38,7 @@
 .fa-angle-left:hover {
   cursor: pointer;
 }
+
 .fa-angle-left {
   grid-area: left;
 }
@@ -86,6 +48,6 @@
   padding-left: 4px;
 }
 
-.PopUp{
+.PopUp {
   grid-area: popup;
 }

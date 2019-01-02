@@ -17,6 +17,7 @@ class App extends Component {
       popUpInfo: null,
       popUpGenre: null,
       searching: '',
+      searchPageCheck: false,
       filteredGames: [],
       filterOptions: {
         type: {
@@ -24,18 +25,23 @@ class App extends Component {
           board: false
         },
         players: {
-          2: false,
-          34: false,
-          56: false,
-          7: false
+          two: false,
+          threefour: false,
+          fivesix: false,
+          seven: false
         },
         age: {
-          '<8': false,
-          '8-13': false,
-          '13+': false,
-          'adult': false
+          lesseight: false,
+          eightthirteen: false,
+          thirteenplus: false,
+          adult: false
+        },
+        genre: {
+          strategy: false,
+          family: false,
+          party: false,
+          adventure: false
         }
-
       }
 
     }
@@ -61,32 +67,78 @@ class App extends Component {
     this.getData('genres');
   }
 
-  resetAllGames = (type) => {
-    const games = this.state.games;
+  resetAllGames = (event) => {
+    let games = [...this.state.games]
     let filteredGames;
+    let searchPageCheck;
+    let dataNav = event.target.dataset.nav;
+    let filterOptions = {
+      type: {
+        card: false,
+        board: false
+      },
+      players: {
+        two: false,
+        threefour: false,
+        fivesix: false,
+        seven: false
+      },
+      age: {
+        lesseight: false,
+        eightthirteen: false,
+        thirteenplus: false,
+        adult: false
+      },
+      genre: {
+        strategy: false,
+        family: false,
+        party: false,
+        adventure: false
+      }
+    }
+
+    document.querySelector('.AdvancedSearch').classList.remove('AdvancedSearchClicked');
+    document.querySelectorAll('.adv-search-checkbox').forEach(checkbox => {
+      checkbox.checked = false
+    })
+    document.querySelector('#input-value').value = '';
     document.querySelector('.searchbar').value = '';
     this.closePopUp();
 
-    if (type) {
-      filteredGames = games.filter(game => {
-        return game.genre_ID.includes(type)
-      })
+    switch (dataNav) {
+      case 'resetall':
+        searchPageCheck = false;
+        break;
+      case 'resetboard':
+        filterOptions.type.board = true;
+        document.querySelector('#board').checked = true;
+        filteredGames = games.filter(game => game.genre_ID.includes(6))
+        searchPageCheck = true;
+        break;
+      case 'resetcard':
+        filterOptions.type.card = true;
+        document.querySelector('#card').checked = true;
+        filteredGames = games.filter(game => game.genre_ID.includes(7))
+        searchPageCheck = true;
+        break;
     }
+
     this.setState({
+      filterOptions,
+      searchPageCheck,
       filteredGames: filteredGames || [],
-      searching: filteredGames || ''
+      searching: '',
+      showAdvancedSearch: false
     })
   }
 
   createPopUp = (event) => {
     const isCarousel = event.target.closest('.Carousel');
     const popUpGenre = isCarousel && event.target.closest('.Carousel').dataset.genre;
-
-    const popUpInfo = this.state.games
-      .find(game => {
-        return game.game === event.target.closest('div').innerText;
-      });
-
+    let games = [...this.state.games];
+    let popUpInfo = games.find(game => {
+      return game.game === event.target.closest('div').innerText;
+    });
     this.setState({ popUpInfo, popUpGenre });
   }
 
@@ -97,65 +149,80 @@ class App extends Component {
     })
   }
 
-  checkFilterInput = (event) => {
-    const inputValue = event.target.value.toLowerCase();
-    const options = this.state.advancedOptions;
-    const filteredGames = this.state.games
-      .filter(game => game.game.toLowerCase().includes(inputValue))
-      .sort((a, b) => a.game.localeCompare(b.game));
+  setFilter = (event) => {
+    const dataCategory = event.target.dataset.category;
+    const dataFilter = event.target.dataset.filter;
+    let filterOptions = { ...this.state.filterOptions };
+    const inputValue = document.querySelector('#input-value').value
     this.closePopUp();
-    this.setState({
-      searching: inputValue,
-      filteredGames
-    });
-  }
 
-  setAdvancedFilter = (event) => {
-    let dataId = event.target.dataset.id;
-    let { card, board } = this.state.filterOptions.type;
-    let { filterOptions } = this.state;
-
-    switch (dataId) {
-      case 'card':
-        document.querySelector('#card').checked &&
-          this.resetAllGames(7);
-        document.querySelector('#board').checked = false;
-        break;
-      case 'board':
-        document.querySelector('#board').checked &&
-          this.resetAllGames(6);
-        document.querySelector('#card').checked = false;
-        break;
-      default:
+    if (dataCategory && document.querySelector(`#${dataFilter}`).checked) {
+      filterOptions[dataCategory][dataFilter] = true
+    } else if (dataCategory) {
+      filterOptions[dataCategory][dataFilter] = false;
     }
 
+    if (dataFilter === 'card') {
+      filterOptions.type.board = false
+      document.querySelector('#board').checked = false
+    } else if (dataFilter === 'board') {
+      filterOptions.type.card = false;
+      document.querySelector('#card').checked = false
+    }
 
+    let games = [...this.state.games];
+    let filteredGames = games
+      .filter(game => (filterOptions.type.board ? (game.genre_ID.includes(6))
+        : filterOptions.type.card ? (game.genre_ID.includes(7)) : game))
+      .filter(game => {
+        if ((filterOptions.players.two && (game.min_players <= 2 && 2 <= game.max_players))
+          || (filterOptions.players.threefour && (game.min_players <= 3 && 4 <= game.max_players))
+          || (filterOptions.players.fivesix && (game.min_players <= 5 && 6 <= game.max_players))
+          || (filterOptions.players.seven && (game.min_players <= 7 && 7 <= game.max_players))) {
+          return game
+        } else if (filterOptions.players.two || filterOptions.players.threefour || filterOptions.players.fivesix || filterOptions.players.seven) {
+          return
+        } else {
+          return game
+        }
+      })
+      .filter(game => {
+        if ((filterOptions.age.lesseight && (game.min_age < 8))
+          || (filterOptions.age.eightthirteen && (game.min_age >= 8 && 13 >= game.min_age))
+          || (filterOptions.age.thirteenplus && (game.min_age >= 13))
+          || (filterOptions.age.adult && (game.min_age >= 21))) {
+          return game
+        } else if (filterOptions.age.lesseight || filterOptions.age.thirteenplus || filterOptions.age.eightthirteen || filterOptions.age.adult) {
+          return
+        } else {
+          return game
+        }
+      })
+      .filter(game => {
+        if ((filterOptions.genre.strategy && (game.genre_ID.includes(1)))
+          || (filterOptions.genre.family && (game.genre_ID.includes(2)))
+          || (filterOptions.genre.party && (game.genre_ID.includes(3)))
+          || (filterOptions.genre.adventure && (game.genre_ID.includes(8)))) {
+          return game
+        } else if (filterOptions.genre.strategy || filterOptions.genre.family || filterOptions.genre.party || filterOptions.genre.adventure) {
+          return
+        } else {
+          return game
+        }
+      })
 
-    // let advancedFilteredGames =[];
-    // let newGames;
-    // if (!this.state.filteredGames.length) {
-    //   advancedFilteredGames = this.state.games;
-    // } else {
-    //   advancedFilteredGames = this.state.filteredGames;
-    // }
+    if (inputValue) {
+      filteredGames = filteredGames.filter(game => game.game.toLowerCase().includes(inputValue))
+        .sort((a, b) => a.game.localeCompare(b.game));
+    }
 
-    // newGames = advancedFilteredGames
-    //   .filter(game => (filterOptions.type.card ? (game.genre_ID.includes(7))
-    //     : filterOptions.type.board ? (game.genre_ID.includes(6)) : game))
-    // debugger
-    // .filter(game => (filterOptions[2] ? (game.min_age < 8)
-    //   : filterOptions[3] ? (game.min_age > 8 && game.min_age < 13)
-    //     : filterOptions[4] ? (game.min_age > 13)
-    //       : filterOptions[5] ? (game.min_age > 20) : game))
+    const searchPageCheck = (filteredGames.length < this.state.games.length) || inputValue ? true : false
 
-    // this.setState({
-    //   filteredGames: newGames,
-    //   searching: true
-    // })
-  }
-
-  advancedFilter = () => {
-
+    this.setState({
+      filterOptions,
+      filteredGames,
+      searchPageCheck
+    })
   }
 
   handleTransition = (place) => {
@@ -166,7 +233,7 @@ class App extends Component {
 
   render() {
     let { errors, games,
-      genres, popUpInfo, popUpGenre, searching, filteredGames, isHomePage } = this.state;
+      genres, popUpInfo, popUpGenre, searchPageCheck, filteredGames, showAdvancedSearch, isHomePage } = this.state;
     if (isHomePage) {
       return <HomePage handleTransition={this.handleTransition} />
     }
@@ -174,12 +241,14 @@ class App extends Component {
       return (
         <div className="App">
           <Navbar
+            showAdvancedSearch={showAdvancedSearch}
             checkFilterInput={this.checkFilterInput}
             resetAllGames={this.resetAllGames}
-            setAdvancedFilter={this.setAdvancedFilter}
+            setFilter={this.setFilter}
           />
           {
-            searching ?
+
+            searchPageCheck ?
               <SearchPage
                 filteredGames={filteredGames}
                 popUpInfo={popUpInfo}

@@ -2,7 +2,7 @@
   background-color: whitesmoke;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  overflow: hidden;
+  height: 500px;
   animation: openPopUp 0.4s ease-out forwards;
 }
 
@@ -24,8 +24,7 @@
   border-radius: 5px;
   border-style: outset;
   background-color: darkgray;
-  margin-right: 570px;
-  margin-top: 3px;
+  margin: 1% 90% 0% 0%;
 }
 
 .fa-times:hover {
@@ -35,6 +34,8 @@
 .game-name {
   font-size: 44px;
   margin: 0px auto;
+  font-weight: 500;
+  letter-spacing: 1px;
   padding-bottom: 15px;
   border-bottom: 2px black solid;
   width: 90%;
@@ -61,7 +62,7 @@
   margin: 10px auto;
   width: 90%;
   padding-bottom: 15px;
-
+  text-transform: capitalize;
 }
 
 .fa-thermometer-quarter,
@@ -85,8 +86,42 @@
 
 .game-description {
   width: 90%;
-  margin: 10px auto; 
+  margin: 10px auto;
   border-bottom: 2px black solid;
   padding-bottom: 15px;
+}
 
+.popup-image {
+  height: 200px;
+  padding-top: 5%;
+}
+
+.youtube-video {
+  object-fit: contain;
+  height: 500px;
+}
+
+@media screen and (max-width: 1030px) {
+  .age-range, 
+  .num-of-players, 
+  .num-of-minutes,
+  .game-info,
+  .difficulty-level,
+  .game-description {
+    font-size: 12px;
+  }
+
+  .game-name {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .PopUp {
+    grid-template-columns: 1fr;
+  }
+
+  .youtube-video {
+    display: none;
+  }
 }
