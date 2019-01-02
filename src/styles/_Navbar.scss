@@ -82,12 +82,13 @@
 
   .filter-buttons {
     justify-content: center;
-    margin: 26px 0px 16px 0px;
   }
+  
   .search-field {
     justify-content: center;
     margin: 0px;
   }
+  
   .searchbar {
     width: 285px;
   }
@@ -97,6 +98,10 @@
   .title {
     padding-top: 15px;
   }
+  .filter-buttons {
+    margin: 5px 0px;
+  }
+
   .reset-games,
   .filter-boardgames,
   .filter-cardgames,
@@ -109,9 +114,11 @@
   .filter-buttons {
     flex-direction: column;
   }
+
   .title {
     padding: 0px;
   }
+
   .reset-games, .filter-boardgames, .filter-cardgames, .advanced-search {
     padding: 7px 0px;
   }
