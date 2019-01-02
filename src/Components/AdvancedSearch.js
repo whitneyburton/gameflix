@@ -6,7 +6,7 @@ export default class AdvancedSearch extends Component {
   render() {
     return (
       <div className="AdvancedSearch">
-        <form className="form" onClick={this.props.setAdvancedFilter}>
+        <form className="form" onClick={this.props.setFilter}>
           <div>
             <p>Type of Game</p>
             <input name="type-checkbox" id="board" className="adv-search-checkbox" data-id="board" type="checkbox" />
