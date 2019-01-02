@@ -1,14 +1,6 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: Open Sans;
-}
-
 .Carousel {
-  min-height: 33.33%;
   background-color: #15171a;
   align-content: center;
-  // padding: 10px;
   display: grid;
   grid-template-areas:
     "genre genre genre"

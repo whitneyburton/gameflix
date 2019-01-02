@@ -22,13 +22,13 @@ export default class LandingPage extends Component {
                 matchingGames={matchingGames}
                 createPopUp={createPopUp}
                 closePopUp={closePopUp} >
+              </Carousel>
                 {
                   popUpGenre === genre.genre &&
                   <PopUp
                     closePopUp={closePopUp}
                     game={popUpInfo} />
                 }
-              </Carousel>
             </div>
           )
         })
