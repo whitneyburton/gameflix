@@ -4,18 +4,20 @@ import { uid } from 'react-uid';
 
 export default class Carousel extends Component {
 
+
   shiftCarousel(event) {
     const shiftDirection = event.target.classList.contains('fa-angle-right') ? 1 : -1;
     const currentPosition = event.target.parentElement.childNodes[2].scrollLeft;
-    event.target.parentElement.childNodes[2].scrollLeft = currentPosition + (250 * shiftDirection);
+    event.target.parentElement.childNodes[2].scrollLeft = currentPosition + (292 * shiftDirection);
   }
 
   render() {
     const { genre, matchingGames, createPopUp, children } = this.props;
     return (
+
       <nav className="Carousel" data-genre={genre.genre}>
         <h4 className="genre">{genre.genre}</h4>
-        <i onClick={this.shiftCarousel} className="fas fa-angle-left"></i>
+        <i onClick={this.shiftCarousel} className="fas fa-angle-left side-carrot"></i>
         <div className="scroll-container">
           {matchingGames.map(game => ((
             <GameCard
@@ -25,8 +27,7 @@ export default class Carousel extends Component {
             />
           )))}
         </div>
-
-        <i onClick={this.shiftCarousel} className="fas fa-angle-right"></i>
+        <i onClick={this.shiftCarousel} className="fas fa-angle-right side-carrot"></i>
         {children}
       </nav>
     )
