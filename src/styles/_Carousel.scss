@@ -2,6 +2,7 @@
   background-color: #15171a;
   align-content: center;
   display: grid;
+  grid-template-columns: 2% 96% 2%;
   grid-template-areas:
     "genre genre genre"
     "left mid right"

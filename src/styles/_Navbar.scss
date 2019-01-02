@@ -118,6 +118,11 @@
 }
 
 @media screen and (max-width: 465px) {
+  .AdvancedSearch,
+  .advanced-search {
+    display: none;
+  }
+
   .filter-buttons {
     flex-direction: column;
   }
