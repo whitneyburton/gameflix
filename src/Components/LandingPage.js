@@ -5,6 +5,7 @@ import PopUp from './PopUp'
 import { uid } from 'react-uid';
 
 export default class LandingPage extends Component {
+  
   render() {
     let { games, genres, popUpInfo, popUpGenre, closePopUp, createPopUp } = this.props;
     return (
