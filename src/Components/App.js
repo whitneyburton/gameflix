@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import '../styles/Main.scss';
-import Navbar from './Navbar.js';
-import LandingPage from './LandingPage.js';
-import SearchPage from './SearchPage.js';
+import Navbar from './Navbar';
+import LandingPage from './LandingPage';
+import SearchPage from './SearchPage';
+import HomePage from './HomePage';
 
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
+      isHomePage: true,
       errors: null,
       games: null,
       genres: null,
@@ -223,10 +225,19 @@ class App extends Component {
     })
   }
 
+  handleTransition = (place) => {
+    this.setState({
+      isHomePage: place === "HomePage" ? true : false
+    })
+  }
+
   render() {
     let { errors, games,
-      genres, popUpInfo, popUpGenre, searchPageCheck, filteredGames, showAdvancedSearch } = this.state;
-    if (genres && games && !errors) {
+      genres, popUpInfo, popUpGenre, searchPageCheck, filteredGames, showAdvancedSearch, isHomePage } = this.state;
+    if (isHomePage) {
+      return <HomePage handleTransition={this.handleTransition} />
+    }
+    else if (genres && games && !errors) {
       return (
         <div className="App">
           <Navbar
@@ -234,6 +245,7 @@ class App extends Component {
             checkFilterInput={this.checkFilterInput}
             resetAllGames={this.resetAllGames}
             setFilter={this.setFilter}
+            handleTransition={this.handleTransition}
           />
           {
 
