@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import AdvancedSearch from './AdvancedSearch'
 
 export default class Navbar extends Component {
-  constructor() {
-    super();
-  }
-
  
   render() {
     return (
