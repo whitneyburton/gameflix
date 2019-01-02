@@ -8,7 +8,9 @@ export default class SearchPage extends Component {
 
     return (
       <div className="SearchPage">
-        {filteredGames.map(game => {
+        <div className="SearchPage search-results-counter">Search Results: {filteredGames.length} </div>
+        {
+          filteredGames.map(game => {
           return (
             <GameCard
               game={game}

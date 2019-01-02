@@ -2,12 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  color:#fff;
   height: 90%;
   overflow: scroll;
+  background:#151719;
 }
-
+.search-results-counter{
+  width:100%;
+  font-size: 2rem;
+  color:maroon;
+}
 .SearchPage .search-popup {
-  background-color: whitesmoke;
+  background-color: #fff;
   border: 6px solid black;
   border-radius: 5px;
   position: fixed;
@@ -15,15 +21,16 @@
   min-width: 1000px;
   max-width: 550px;
   width: 40%;
-  left: 4%;
-  top: 20%;
+  left: 20%;
+  top: 25%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding:1%;
 }
 
 @media screen and (max-width: 770px) {
   .SearchPage .search-popup {
-    min-width: 90%; 
+    min-width: 90%;
     max-width: 90%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
