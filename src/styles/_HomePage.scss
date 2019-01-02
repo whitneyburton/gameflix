@@ -6,7 +6,19 @@
   letter-spacing: 3.5px;
   display:grid;
   align-content: center;
-  justify-content: center;
+  text-align: center;
+}
+
+.gameflix-title {
+  margin: 0px;
+
+}
+
+.mission-statement {
+  padding: 3% 0%;
+  text-align: center;
+  font-size: 22px;
+  margin: auto;
 }
 
 .enter-button{
