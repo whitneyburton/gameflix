@@ -2,11 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  color:#fff;
   height: 90%;
   overflow: scroll;
   background:#151719;
 }
-
+.search-results-counter{
+  width:100%;
+  font-size: 2rem;
+  color:maroon;
+}
 .SearchPage .search-popup {
   background-color: #fff;
   border: 6px solid black;

@@ -9,6 +9,7 @@ export default class SearchPage extends Component {
 
     return (
       <div className="SearchPage">
+        <div className="search-results-counter">Search Results: {filteredGames.length} </div>
         {
           filteredGames.map(game => {
           return (
