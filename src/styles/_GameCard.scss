@@ -1,30 +1,21 @@
 .game-card {
   background: #FFF;
-  border: outset 4px;
+  border: outset 4px #2b3034;
+  color:#fff;
   height: 240px;
   padding-bottom: 22px;
   border-radius: 5px;
   width: 264px;
   margin: 15px 10px 5px 10px;
+  transition: all 200ms ease;
 }
 
 .game-card:hover {
   cursor: pointer;
   position: relative;
-  animation: hoverCard .1s ease-out forwards;
-  animation-delay: .5s;
-}
-
-@keyframes hoverCard {
-  0% {
-    top: 0px;
-  }
-
-  100% {
-    top: -5px;
-    height: 250px;
-    width: 274px;
-  }
+  box-shadow: 10px 10px 10px coral;
+  height: 245px;
+  width: 269px;
 }
 
 .game-card-image {
@@ -37,7 +28,7 @@
   position: relative;
   height: 60px;
   margin: auto;
-  background-color: #e4e2e2;
+  background-image: linear-gradient(#5b5b5b, #2b3034);
 }
 
 .game-card-header-title-container {

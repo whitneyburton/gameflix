@@ -2,7 +2,7 @@
   background-color: whitesmoke;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  overflow: hidden;
+  height: 500px;
   animation: openPopUp 0.4s ease-out forwards;
 }
 
@@ -85,8 +85,16 @@
 
 .game-description {
   width: 90%;
-  margin: 10px auto; 
+  margin: 10px auto;
   border-bottom: 2px black solid;
   padding-bottom: 15px;
+}
 
+.popup-image {
+  height: 200px;
+}
+
+.youtube-video {
+  object-fit: contain;
+  height: 500px;
 }

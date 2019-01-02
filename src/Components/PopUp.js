@@ -37,7 +37,7 @@ export default class PopUp extends Component {
             Challenge level: {game.challenge_level}
             <i className={iconClassName}></i>
           </p>
-          <img className="carousel-image" src={game.img} alt="game in box" />
+          <img className="carousel-image popup-image" src={game.img} alt="game in box" />
         </section>
 
         <section class="youtube-video">
