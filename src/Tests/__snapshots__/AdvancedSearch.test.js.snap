@@ -1,0 +1,2061 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdvancedSearch should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AdvancedSearch
+    setAdvancedFilter={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <form
+        className="form"
+        onClick={[MockFunction]}
+      >
+        <div>
+          <p>
+            Type of Game
+          </p>
+          <input
+            className="adv-search-checkbox"
+            data-id="board"
+            id="board"
+            name="type-checkbox"
+            type="checkbox"
+          />
+          <label
+            for="board"
+          >
+            board
+          </label>
+          <input
+            className="adv-search-checkbox"
+            data-id="card"
+            id="card"
+            name="type-checkbox"
+            type="checkbox"
+          />
+          <label
+            for="card"
+          >
+            card
+          </label>
+        </div>
+        <div>
+          <p>
+            # of Players
+          </p>
+          <input
+            className="adv-search-checkbox"
+            data-id="two"
+            id="two"
+            type="checkbox"
+          />
+          <label
+            for="number-players-checkbox"
+          >
+            2 players
+          </label>
+          <input
+            className="adv-search-checkbox"
+            data-id="threefour"
+            id="threefour"
+            type="checkbox"
+          />
+          <label
+            for="number-players-checkbox"
+          >
+            3-4 players
+          </label>
+          <input
+            class="adv-search-checkbox"
+            data-id="fivesix"
+            id="fivesix"
+            type="checkbox"
+          />
+          <label
+            for="number-players-checkbox"
+          >
+            5-6 players
+          </label>
+          <input
+            class="adv-search-checkbox"
+            data-id="seven"
+            id="seven"
+            type="checkbox"
+          />
+          <label
+            for="number-players-checkbox"
+          >
+            7+ players
+          </label>
+        </div>
+        <div>
+          <p>
+            Age
+          </p>
+          <input
+            class="adv-search-checkbox"
+            data-id="lesseight"
+            id="lesseight"
+            type="checkbox"
+          />
+          <label
+            for="number-players-checkbox"
+          >
+            less than 8
+          </label>
+          <input
+            class="adv-search-checkbox"
+            data-id="eightthirteen"
+            id="eightthirteen"
+            type="checkbox"
+          />
+          <label
+            for="number-players-checkbox"
+          >
+            8 - 13
+          </label>
+          <input
+            class="adv-search-checkbox"
+            data-id="thirteenplus"
+            id="thirteenplus"
+            type="checkbox"
+          />
+          <label
+            for="number-players-checkbox"
+          >
+            13+
+          </label>
+          <input
+            class="adv-search-checkbox"
+            data-id="adult"
+            id="adult"
+            type="checkbox"
+          />
+          <label
+            for="number-players-checkbox"
+          >
+            Adult
+          </label>
+        </div>
+        <div>
+          <p>
+            Genre
+          </p>
+          <input
+            class="adv-search-checkbox"
+            data-id="strategy"
+            id="strategy"
+            type="checkbox"
+          />
+          <label
+            for="number-players-checkbox"
+          >
+            Strategy
+          </label>
+          <input
+            class="adv-search-checkbox"
+            data-id="family"
+            id="family"
+            type="checkbox"
+          />
+          <label
+            for="number-players-checkbox"
+          >
+            Family
+          </label>
+          <input
+            class="adv-search-checkbox"
+            data-id="party"
+            id="party"
+            type="checkbox"
+          />
+          <label
+            for="number-players-checkbox"
+          >
+            Party
+          </label>
+          <input
+            class="adv-search-checkbox"
+            data-id="adventure"
+            id="adventure"
+            type="checkbox"
+          />
+          <label
+            for="number-players-checkbox"
+          >
+            Adventure
+          </label>
+        </div>
+      </form>,
+      "className": "AdvancedSearch",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            <p>
+              Type of Game
+            </p>
+            <input
+              className="adv-search-checkbox"
+              data-id="board"
+              id="board"
+              name="type-checkbox"
+              type="checkbox"
+            />
+            <label
+              for="board"
+            >
+              board
+            </label>
+            <input
+              className="adv-search-checkbox"
+              data-id="card"
+              id="card"
+              name="type-checkbox"
+              type="checkbox"
+            />
+            <label
+              for="card"
+            >
+              card
+            </label>
+          </div>,
+          <div>
+            <p>
+              # of Players
+            </p>
+            <input
+              className="adv-search-checkbox"
+              data-id="two"
+              id="two"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              2 players
+            </label>
+            <input
+              className="adv-search-checkbox"
+              data-id="threefour"
+              id="threefour"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              3-4 players
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="fivesix"
+              id="fivesix"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              5-6 players
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="seven"
+              id="seven"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              7+ players
+            </label>
+          </div>,
+          <div>
+            <p>
+              Age
+            </p>
+            <input
+              class="adv-search-checkbox"
+              data-id="lesseight"
+              id="lesseight"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              less than 8
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="eightthirteen"
+              id="eightthirteen"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              8 - 13
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="thirteenplus"
+              id="thirteenplus"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              13+
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="adult"
+              id="adult"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Adult
+            </label>
+          </div>,
+          <div>
+            <p>
+              Genre
+            </p>
+            <input
+              class="adv-search-checkbox"
+              data-id="strategy"
+              id="strategy"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Strategy
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="family"
+              id="family"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Family
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="party"
+              id="party"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Party
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="adventure"
+              id="adventure"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Adventure
+            </label>
+          </div>,
+        ],
+        "className": "form",
+        "onClick": [MockFunction],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                Type of Game
+              </p>,
+              <input
+                className="adv-search-checkbox"
+                data-id="board"
+                id="board"
+                name="type-checkbox"
+                type="checkbox"
+              />,
+              <label
+                for="board"
+              >
+                board
+              </label>,
+              <input
+                className="adv-search-checkbox"
+                data-id="card"
+                id="card"
+                name="type-checkbox"
+                type="checkbox"
+              />,
+              <label
+                for="card"
+              >
+                card
+              </label>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Type of Game",
+              },
+              "ref": null,
+              "rendered": "Type of Game",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "adv-search-checkbox",
+                "data-id": "board",
+                "id": "board",
+                "name": "type-checkbox",
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "board",
+                "for": "board",
+              },
+              "ref": null,
+              "rendered": "board",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "adv-search-checkbox",
+                "data-id": "card",
+                "id": "card",
+                "name": "type-checkbox",
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "card",
+                "for": "card",
+              },
+              "ref": null,
+              "rendered": "card",
+              "type": "label",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                # of Players
+              </p>,
+              <input
+                className="adv-search-checkbox"
+                data-id="two"
+                id="two"
+                type="checkbox"
+              />,
+              <label
+                for="number-players-checkbox"
+              >
+                2 players
+              </label>,
+              <input
+                className="adv-search-checkbox"
+                data-id="threefour"
+                id="threefour"
+                type="checkbox"
+              />,
+              <label
+                for="number-players-checkbox"
+              >
+                3-4 players
+              </label>,
+              <input
+                class="adv-search-checkbox"
+                data-id="fivesix"
+                id="fivesix"
+                type="checkbox"
+              />,
+              <label
+                for="number-players-checkbox"
+              >
+                5-6 players
+              </label>,
+              <input
+                class="adv-search-checkbox"
+                data-id="seven"
+                id="seven"
+                type="checkbox"
+              />,
+              <label
+                for="number-players-checkbox"
+              >
+                7+ players
+              </label>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "# of Players",
+              },
+              "ref": null,
+              "rendered": "# of Players",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "adv-search-checkbox",
+                "data-id": "two",
+                "id": "two",
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "2 players",
+                "for": "number-players-checkbox",
+              },
+              "ref": null,
+              "rendered": "2 players",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "adv-search-checkbox",
+                "data-id": "threefour",
+                "id": "threefour",
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "3-4 players",
+                "for": "number-players-checkbox",
+              },
+              "ref": null,
+              "rendered": "3-4 players",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "class": "adv-search-checkbox",
+                "data-id": "fivesix",
+                "id": "fivesix",
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "5-6 players",
+                "for": "number-players-checkbox",
+              },
+              "ref": null,
+              "rendered": "5-6 players",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "class": "adv-search-checkbox",
+                "data-id": "seven",
+                "id": "seven",
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "7+ players",
+                "for": "number-players-checkbox",
+              },
+              "ref": null,
+              "rendered": "7+ players",
+              "type": "label",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                Age
+              </p>,
+              <input
+                class="adv-search-checkbox"
+                data-id="lesseight"
+                id="lesseight"
+                type="checkbox"
+              />,
+              <label
+                for="number-players-checkbox"
+              >
+                less than 8
+              </label>,
+              <input
+                class="adv-search-checkbox"
+                data-id="eightthirteen"
+                id="eightthirteen"
+                type="checkbox"
+              />,
+              <label
+                for="number-players-checkbox"
+              >
+                8 - 13
+              </label>,
+              <input
+                class="adv-search-checkbox"
+                data-id="thirteenplus"
+                id="thirteenplus"
+                type="checkbox"
+              />,
+              <label
+                for="number-players-checkbox"
+              >
+                13+
+              </label>,
+              <input
+                class="adv-search-checkbox"
+                data-id="adult"
+                id="adult"
+                type="checkbox"
+              />,
+              <label
+                for="number-players-checkbox"
+              >
+                Adult
+              </label>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Age",
+              },
+              "ref": null,
+              "rendered": "Age",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "class": "adv-search-checkbox",
+                "data-id": "lesseight",
+                "id": "lesseight",
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "less than 8",
+                "for": "number-players-checkbox",
+              },
+              "ref": null,
+              "rendered": "less than 8",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "class": "adv-search-checkbox",
+                "data-id": "eightthirteen",
+                "id": "eightthirteen",
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "8 - 13",
+                "for": "number-players-checkbox",
+              },
+              "ref": null,
+              "rendered": "8 - 13",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "class": "adv-search-checkbox",
+                "data-id": "thirteenplus",
+                "id": "thirteenplus",
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "13+",
+                "for": "number-players-checkbox",
+              },
+              "ref": null,
+              "rendered": "13+",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "class": "adv-search-checkbox",
+                "data-id": "adult",
+                "id": "adult",
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Adult",
+                "for": "number-players-checkbox",
+              },
+              "ref": null,
+              "rendered": "Adult",
+              "type": "label",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                Genre
+              </p>,
+              <input
+                class="adv-search-checkbox"
+                data-id="strategy"
+                id="strategy"
+                type="checkbox"
+              />,
+              <label
+                for="number-players-checkbox"
+              >
+                Strategy
+              </label>,
+              <input
+                class="adv-search-checkbox"
+                data-id="family"
+                id="family"
+                type="checkbox"
+              />,
+              <label
+                for="number-players-checkbox"
+              >
+                Family
+              </label>,
+              <input
+                class="adv-search-checkbox"
+                data-id="party"
+                id="party"
+                type="checkbox"
+              />,
+              <label
+                for="number-players-checkbox"
+              >
+                Party
+              </label>,
+              <input
+                class="adv-search-checkbox"
+                data-id="adventure"
+                id="adventure"
+                type="checkbox"
+              />,
+              <label
+                for="number-players-checkbox"
+              >
+                Adventure
+              </label>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Genre",
+              },
+              "ref": null,
+              "rendered": "Genre",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "class": "adv-search-checkbox",
+                "data-id": "strategy",
+                "id": "strategy",
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Strategy",
+                "for": "number-players-checkbox",
+              },
+              "ref": null,
+              "rendered": "Strategy",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "class": "adv-search-checkbox",
+                "data-id": "family",
+                "id": "family",
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Family",
+                "for": "number-players-checkbox",
+              },
+              "ref": null,
+              "rendered": "Family",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "class": "adv-search-checkbox",
+                "data-id": "party",
+                "id": "party",
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Party",
+                "for": "number-players-checkbox",
+              },
+              "ref": null,
+              "rendered": "Party",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "class": "adv-search-checkbox",
+                "data-id": "adventure",
+                "id": "adventure",
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Adventure",
+                "for": "number-players-checkbox",
+              },
+              "ref": null,
+              "rendered": "Adventure",
+              "type": "label",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "form",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <form
+          className="form"
+          onClick={[MockFunction]}
+        >
+          <div>
+            <p>
+              Type of Game
+            </p>
+            <input
+              className="adv-search-checkbox"
+              data-id="board"
+              id="board"
+              name="type-checkbox"
+              type="checkbox"
+            />
+            <label
+              for="board"
+            >
+              board
+            </label>
+            <input
+              className="adv-search-checkbox"
+              data-id="card"
+              id="card"
+              name="type-checkbox"
+              type="checkbox"
+            />
+            <label
+              for="card"
+            >
+              card
+            </label>
+          </div>
+          <div>
+            <p>
+              # of Players
+            </p>
+            <input
+              className="adv-search-checkbox"
+              data-id="two"
+              id="two"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              2 players
+            </label>
+            <input
+              className="adv-search-checkbox"
+              data-id="threefour"
+              id="threefour"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              3-4 players
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="fivesix"
+              id="fivesix"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              5-6 players
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="seven"
+              id="seven"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              7+ players
+            </label>
+          </div>
+          <div>
+            <p>
+              Age
+            </p>
+            <input
+              class="adv-search-checkbox"
+              data-id="lesseight"
+              id="lesseight"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              less than 8
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="eightthirteen"
+              id="eightthirteen"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              8 - 13
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="thirteenplus"
+              id="thirteenplus"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              13+
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="adult"
+              id="adult"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Adult
+            </label>
+          </div>
+          <div>
+            <p>
+              Genre
+            </p>
+            <input
+              class="adv-search-checkbox"
+              data-id="strategy"
+              id="strategy"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Strategy
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="family"
+              id="family"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Family
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="party"
+              id="party"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Party
+            </label>
+            <input
+              class="adv-search-checkbox"
+              data-id="adventure"
+              id="adventure"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Adventure
+            </label>
+          </div>
+        </form>,
+        "className": "AdvancedSearch",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div>
+              <p>
+                Type of Game
+              </p>
+              <input
+                className="adv-search-checkbox"
+                data-id="board"
+                id="board"
+                name="type-checkbox"
+                type="checkbox"
+              />
+              <label
+                for="board"
+              >
+                board
+              </label>
+              <input
+                className="adv-search-checkbox"
+                data-id="card"
+                id="card"
+                name="type-checkbox"
+                type="checkbox"
+              />
+              <label
+                for="card"
+              >
+                card
+              </label>
+            </div>,
+            <div>
+              <p>
+                # of Players
+              </p>
+              <input
+                className="adv-search-checkbox"
+                data-id="two"
+                id="two"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                2 players
+              </label>
+              <input
+                className="adv-search-checkbox"
+                data-id="threefour"
+                id="threefour"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                3-4 players
+              </label>
+              <input
+                class="adv-search-checkbox"
+                data-id="fivesix"
+                id="fivesix"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                5-6 players
+              </label>
+              <input
+                class="adv-search-checkbox"
+                data-id="seven"
+                id="seven"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                7+ players
+              </label>
+            </div>,
+            <div>
+              <p>
+                Age
+              </p>
+              <input
+                class="adv-search-checkbox"
+                data-id="lesseight"
+                id="lesseight"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                less than 8
+              </label>
+              <input
+                class="adv-search-checkbox"
+                data-id="eightthirteen"
+                id="eightthirteen"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                8 - 13
+              </label>
+              <input
+                class="adv-search-checkbox"
+                data-id="thirteenplus"
+                id="thirteenplus"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                13+
+              </label>
+              <input
+                class="adv-search-checkbox"
+                data-id="adult"
+                id="adult"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Adult
+              </label>
+            </div>,
+            <div>
+              <p>
+                Genre
+              </p>
+              <input
+                class="adv-search-checkbox"
+                data-id="strategy"
+                id="strategy"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Strategy
+              </label>
+              <input
+                class="adv-search-checkbox"
+                data-id="family"
+                id="family"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Family
+              </label>
+              <input
+                class="adv-search-checkbox"
+                data-id="party"
+                id="party"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Party
+              </label>
+              <input
+                class="adv-search-checkbox"
+                data-id="adventure"
+                id="adventure"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Adventure
+              </label>
+            </div>,
+          ],
+          "className": "form",
+          "onClick": [MockFunction],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Type of Game
+                </p>,
+                <input
+                  className="adv-search-checkbox"
+                  data-id="board"
+                  id="board"
+                  name="type-checkbox"
+                  type="checkbox"
+                />,
+                <label
+                  for="board"
+                >
+                  board
+                </label>,
+                <input
+                  className="adv-search-checkbox"
+                  data-id="card"
+                  id="card"
+                  name="type-checkbox"
+                  type="checkbox"
+                />,
+                <label
+                  for="card"
+                >
+                  card
+                </label>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Type of Game",
+                },
+                "ref": null,
+                "rendered": "Type of Game",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "adv-search-checkbox",
+                  "data-id": "board",
+                  "id": "board",
+                  "name": "type-checkbox",
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "board",
+                  "for": "board",
+                },
+                "ref": null,
+                "rendered": "board",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "adv-search-checkbox",
+                  "data-id": "card",
+                  "id": "card",
+                  "name": "type-checkbox",
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "card",
+                  "for": "card",
+                },
+                "ref": null,
+                "rendered": "card",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  # of Players
+                </p>,
+                <input
+                  className="adv-search-checkbox"
+                  data-id="two"
+                  id="two"
+                  type="checkbox"
+                />,
+                <label
+                  for="number-players-checkbox"
+                >
+                  2 players
+                </label>,
+                <input
+                  className="adv-search-checkbox"
+                  data-id="threefour"
+                  id="threefour"
+                  type="checkbox"
+                />,
+                <label
+                  for="number-players-checkbox"
+                >
+                  3-4 players
+                </label>,
+                <input
+                  class="adv-search-checkbox"
+                  data-id="fivesix"
+                  id="fivesix"
+                  type="checkbox"
+                />,
+                <label
+                  for="number-players-checkbox"
+                >
+                  5-6 players
+                </label>,
+                <input
+                  class="adv-search-checkbox"
+                  data-id="seven"
+                  id="seven"
+                  type="checkbox"
+                />,
+                <label
+                  for="number-players-checkbox"
+                >
+                  7+ players
+                </label>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "# of Players",
+                },
+                "ref": null,
+                "rendered": "# of Players",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "adv-search-checkbox",
+                  "data-id": "two",
+                  "id": "two",
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "2 players",
+                  "for": "number-players-checkbox",
+                },
+                "ref": null,
+                "rendered": "2 players",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "adv-search-checkbox",
+                  "data-id": "threefour",
+                  "id": "threefour",
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "3-4 players",
+                  "for": "number-players-checkbox",
+                },
+                "ref": null,
+                "rendered": "3-4 players",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "class": "adv-search-checkbox",
+                  "data-id": "fivesix",
+                  "id": "fivesix",
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "5-6 players",
+                  "for": "number-players-checkbox",
+                },
+                "ref": null,
+                "rendered": "5-6 players",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "class": "adv-search-checkbox",
+                  "data-id": "seven",
+                  "id": "seven",
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "7+ players",
+                  "for": "number-players-checkbox",
+                },
+                "ref": null,
+                "rendered": "7+ players",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Age
+                </p>,
+                <input
+                  class="adv-search-checkbox"
+                  data-id="lesseight"
+                  id="lesseight"
+                  type="checkbox"
+                />,
+                <label
+                  for="number-players-checkbox"
+                >
+                  less than 8
+                </label>,
+                <input
+                  class="adv-search-checkbox"
+                  data-id="eightthirteen"
+                  id="eightthirteen"
+                  type="checkbox"
+                />,
+                <label
+                  for="number-players-checkbox"
+                >
+                  8 - 13
+                </label>,
+                <input
+                  class="adv-search-checkbox"
+                  data-id="thirteenplus"
+                  id="thirteenplus"
+                  type="checkbox"
+                />,
+                <label
+                  for="number-players-checkbox"
+                >
+                  13+
+                </label>,
+                <input
+                  class="adv-search-checkbox"
+                  data-id="adult"
+                  id="adult"
+                  type="checkbox"
+                />,
+                <label
+                  for="number-players-checkbox"
+                >
+                  Adult
+                </label>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Age",
+                },
+                "ref": null,
+                "rendered": "Age",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "class": "adv-search-checkbox",
+                  "data-id": "lesseight",
+                  "id": "lesseight",
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "less than 8",
+                  "for": "number-players-checkbox",
+                },
+                "ref": null,
+                "rendered": "less than 8",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "class": "adv-search-checkbox",
+                  "data-id": "eightthirteen",
+                  "id": "eightthirteen",
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "8 - 13",
+                  "for": "number-players-checkbox",
+                },
+                "ref": null,
+                "rendered": "8 - 13",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "class": "adv-search-checkbox",
+                  "data-id": "thirteenplus",
+                  "id": "thirteenplus",
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "13+",
+                  "for": "number-players-checkbox",
+                },
+                "ref": null,
+                "rendered": "13+",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "class": "adv-search-checkbox",
+                  "data-id": "adult",
+                  "id": "adult",
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Adult",
+                  "for": "number-players-checkbox",
+                },
+                "ref": null,
+                "rendered": "Adult",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Genre
+                </p>,
+                <input
+                  class="adv-search-checkbox"
+                  data-id="strategy"
+                  id="strategy"
+                  type="checkbox"
+                />,
+                <label
+                  for="number-players-checkbox"
+                >
+                  Strategy
+                </label>,
+                <input
+                  class="adv-search-checkbox"
+                  data-id="family"
+                  id="family"
+                  type="checkbox"
+                />,
+                <label
+                  for="number-players-checkbox"
+                >
+                  Family
+                </label>,
+                <input
+                  class="adv-search-checkbox"
+                  data-id="party"
+                  id="party"
+                  type="checkbox"
+                />,
+                <label
+                  for="number-players-checkbox"
+                >
+                  Party
+                </label>,
+                <input
+                  class="adv-search-checkbox"
+                  data-id="adventure"
+                  id="adventure"
+                  type="checkbox"
+                />,
+                <label
+                  for="number-players-checkbox"
+                >
+                  Adventure
+                </label>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Genre",
+                },
+                "ref": null,
+                "rendered": "Genre",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "class": "adv-search-checkbox",
+                  "data-id": "strategy",
+                  "id": "strategy",
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Strategy",
+                  "for": "number-players-checkbox",
+                },
+                "ref": null,
+                "rendered": "Strategy",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "class": "adv-search-checkbox",
+                  "data-id": "family",
+                  "id": "family",
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Family",
+                  "for": "number-players-checkbox",
+                },
+                "ref": null,
+                "rendered": "Family",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "class": "adv-search-checkbox",
+                  "data-id": "party",
+                  "id": "party",
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Party",
+                  "for": "number-players-checkbox",
+                },
+                "ref": null,
+                "rendered": "Party",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "class": "adv-search-checkbox",
+                  "data-id": "adventure",
+                  "id": "adventure",
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Adventure",
+                  "for": "number-players-checkbox",
+                },
+                "ref": null,
+                "rendered": "Adventure",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "form",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -2,28 +2,25 @@ import React, { Component } from 'react';
 
 
 export default class AdvancedSearch extends Component {
-  constructor() {
-    super()
-  }
 
   render() {
     return (
       <div className="AdvancedSearch">
-        <form onClick={this.props.setFilter}>
+        <form className="form" onClick={this.props.setFilter}>
           <div>
             <p>Type of Game</p>
-            <input name="type-checkbox" id="board" class="adv-search-checkbox" data-id="board" type="checkbox" />
+            <input name="type-checkbox" id="board" className="adv-search-checkbox" data-id="board" type="checkbox" />
             <label for="board">board</label>
-            <input  name="type-checkbox" id="card" class="adv-search-checkbox" data-id="card" type="checkbox" />
+            <input  name="type-checkbox" id="card" className="adv-search-checkbox" data-id="card" type="checkbox" />
             <label for="card">card</label>
           </div>
           <div>
             <p># of Players</p>
-            <input  id="two" class="adv-search-checkbox" data-id="two" type="checkbox" />
+            <input  id="two" className="adv-search-checkbox" data-id="two" type="checkbox" />
             <label for="number-players-checkbox">
               2 players
           </label>
-            <input  id="threefour" class="adv-search-checkbox" data-id="threefour" type="checkbox" />
+            <input  id="threefour" className="adv-search-checkbox" data-id="threefour" type="checkbox" />
             <label for="number-players-checkbox">
               3-4 players
           </label>
