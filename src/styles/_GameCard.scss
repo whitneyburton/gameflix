@@ -2,7 +2,7 @@
   background: #FFF;
   border: outset 4px #2b3034;
   color:#fff;
-  height: 240px;
+  height: 250px;
   padding-bottom: 22px;
   border-radius: 5px;
   width: 264px;
@@ -14,7 +14,7 @@
   cursor: pointer;
   position: relative;
   box-shadow: 10px 10px 10px coral;
-  height: 245px;
+  height: 255px;
   width: 269px;
 }
 
@@ -25,6 +25,7 @@
 }
 
 .game-card-header-container {
+  display: flex;
   position: relative;
   height: 60px;
   margin: auto;
