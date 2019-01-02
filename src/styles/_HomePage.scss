@@ -1,0 +1,25 @@
+.HomePage{
+  background:#141414;
+  height:100vh;
+  font-size: 3rem;
+  color: #ff1818;
+  letter-spacing: 3.5px;
+  display:grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.enter-button{
+  display:block;
+  margin: 0 auto;
+  background: #ff1818;
+  font-size: 1rem;
+  display: grid;
+  color:#141414;
+  font-weight: 800;
+  align-content: center;
+  justify-content: center;
+  height:100px;
+  width:100px;
+  border-radius: 50%;
+}
