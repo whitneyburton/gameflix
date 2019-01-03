@@ -5,7 +5,8 @@ import LandingPage from './LandingPage';
 import SearchPage from './SearchPage';
 import HomePage from './HomePage';
 
-class App extends Component {
+
+export default class App extends Component {
   constructor() {
     super();
     this.state = {
@@ -66,42 +67,32 @@ class App extends Component {
   }
 
   resetAllGames = (event) => {
-    let games = [...this.state.games]
-    let filteredGames;
-    let searchPageCheck;
-    let dataNav = event.target.dataset.nav;
-    let filterOptions = {
-      type: {
-        card: false,
-        board: false
-      },
-      players: {
-        two: false,
-        threefour: false,
-        fivesix: false,
-        seven: false
-      },
-      age: {
-        lesseight: false,
-        eightthirteen: false,
-        thirteenplus: false,
-        adult: false
-      },
-      genre: {
-        strategy: false,
-        family: false,
-        party: false,
-        adventure: false
+    let { filterOptions } = this.state;
+
+    for (let filterOptionKey in filterOptions) {
+      for (let eachValuesKey in filterOptions[filterOptionKey]) {
+        filterOptions[filterOptionKey][eachValuesKey] = false;
       }
     }
 
+    this.clearInputs();
+    this.closePopUp();
+    this.showCardOrBoard(event, filterOptions);
+  }
+
+  clearInputs() {
     document.querySelector('.AdvancedSearch').classList.remove('AdvancedSearchClicked');
     document.querySelectorAll('.adv-search-checkbox').forEach(checkbox => {
       checkbox.checked = false
     })
     document.querySelector('#input-value').value = '';
     document.querySelector('.searchbar').value = '';
-    this.closePopUp();
+  }
+
+  showCardOrBoard(event, filterOptions) {
+    let { games } = this.state;
+    let filteredGames, searchPageCheck;
+    let dataNav = event.target.dataset.nav;
 
     switch (dataNav) {
       case 'resetall':
@@ -119,6 +110,7 @@ class App extends Component {
         filteredGames = games.filter(game => game.genre_ID.includes(7))
         searchPageCheck = true;
         break;
+      default: ;
     }
 
     this.setState({
@@ -149,8 +141,7 @@ class App extends Component {
   checkCategory(event, dataFilter, filterOptions) {
     const dataCategory = event.target.dataset.category;
 
-    if (dataCategory && document.querySelector(`#${dataFilter}`).checked)//Do we need to reach into dom to check this?
-    {
+    if (dataCategory && document.querySelector(`#${dataFilter}`).checked) {
       filterOptions[dataCategory][dataFilter] = true
     }
     else if (dataCategory) {
@@ -167,6 +158,42 @@ class App extends Component {
       document.querySelector('#card').checked = false
     }
   }
+  filterPlayerCheck(filterOptions, game) {
+    const { players } = filterOptions;
+    if (players.two && game.max_players <= 2
+      || players.threefour && 4 <= game.max_players
+      || players.fivesix && 6 <= game.max_players
+      || players.seven && game.max_players >= 7) {
+      return game;
+    }
+
+    if (!Object.values(filterOptions.players).includes(true)) return game;
+
+  }
+  filterGameAgeCheck(filterOptions, game) {
+    if ((filterOptions.age.lesseight && (game.min_age < 8))
+      || (filterOptions.age.eightthirteen && (game.min_age >= 8 && 13 >= game.min_age))
+      || (filterOptions.age.thirteenplus && (game.min_age >= 13))
+      || (filterOptions.age.adult && (game.min_age >= 21))) {
+      return game
+    } else if (filterOptions.age.lesseight || filterOptions.age.thirteenplus || filterOptions.age.eightthirteen || filterOptions.age.adult) {
+      return
+    } else {
+      return game
+    }
+  }
+  filterGenreCheck(filterOptions, game) {
+    if (filterOptions.genre.strategy && game.genre_ID.includes(1)
+      || filterOptions.genre.family && game.genre_ID.includes(2)
+      || filterOptions.genre.party && game.genre_ID.includes(3)
+      || filterOptions.genre.adventure && game.genre_ID.includes(8)) {
+      return game
+    } else if (filterOptions.genre.strategy || filterOptions.genre.family || filterOptions.genre.party || filterOptions.genre.adventure) {
+      return
+    } else {
+      return game
+    }
+  }
 
   setFilter = (event) => {
     const dataFilter = event.target.dataset.filter;
@@ -178,61 +205,19 @@ class App extends Component {
     this.checkCategory(event, dataFilter, filterOptions);
     this.toggleCardOrBoard(dataFilter, filterOptions);
 
-
     let filteredGames = games
       .filter(game => {
-        return filterOptions.type.board ?
-          game.genre_ID.includes(6)
-          :
-          filterOptions.type.card ?
-            game.genre_ID.includes(7)
-            :
-            game
+        return filterOptions.type.board ? game.genre_ID.includes(6)
+          : filterOptions.type.card ? game.genre_ID.includes(7)
+            : game
       })
-      .filter(game => {
-        /*
-          Object.keys(filterOptions.players).forEach()
-         */
-        if (filterOptions.players.two && game.min_players >= 1 && game.max_players <= 2
-          || (filterOptions.players.threefour && (game.min_players <= 3 && 4 <= game.max_players))
-          || (filterOptions.players.fivesix && (game.min_players <= 5 && 6 <= game.max_players))
-          || (filterOptions.players.seven && (game.min_players >= 7))) {
-          return game
-        } else if (!(filterOptions.players.two
-          || filterOptions.players.threefour
-          || filterOptions.players.fivesix
-          || filterOptions.players.seven)) {
-          return game;
-        } 
-
-      })
-      .filter(game => {
-        if ((filterOptions.age.lesseight && (game.min_age < 8))
-          || (filterOptions.age.eightthirteen && (game.min_age >= 8 && 13 >= game.min_age))
-          || (filterOptions.age.thirteenplus && (game.min_age >= 13))
-          || (filterOptions.age.adult && (game.min_age >= 21))) {
-          return game
-        } else if (filterOptions.age.lesseight || filterOptions.age.thirteenplus || filterOptions.age.eightthirteen || filterOptions.age.adult) {
-          return
-        } else {
-          return game
-        }
-      })
-      .filter(game => {
-        if (filterOptions.genre.strategy && game.genre_ID.includes(1)
-          || filterOptions.genre.family && game.genre_ID.includes(2)
-          || filterOptions.genre.party && game.genre_ID.includes(3)
-          || filterOptions.genre.adventure && game.genre_ID.includes(8)) {
-          return game
-        } else if (filterOptions.genre.strategy || filterOptions.genre.family || filterOptions.genre.party || filterOptions.genre.adventure) {
-          return
-        } else {
-          return game
-        }
-      })
+      .filter(game => this.filterPlayerCheck(filterOptions, game))
+      .filter(game => this.filterGameAgeCheck(filterOptions, game))
+      .filter(game => this.filterGenreCheck(filterOptions, game))
 
     if (inputValue) {
-      filteredGames = filteredGames.filter(game => game.game.toLowerCase().includes(inputValue))
+      filteredGames = filteredGames.filter(game => game.game
+        .toLowerCase().includes(inputValue))
         .sort((a, b) => a.game.localeCompare(b.game));
     }
 
@@ -296,4 +281,3 @@ class App extends Component {
   }
 }
 
-export default App;
