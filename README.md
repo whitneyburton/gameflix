@@ -2,6 +2,8 @@
 
 GameFlix is where you'll discover your new favorite game to bring to the table. This app allows users to see a variety of board and card games as well as a featured game. The users can choose to view games by genres in carousels, by only board or card games, or by using the advanced search to find the perfect game using multiple parameters. The advanced search includes checkboxes to search by type, age range, number of players, and genre simulatenously. Each popup card shows users information about that particular game as well as a YouTube tutorial or review video.  
 
+![2019-01-03 08 51 21](https://user-images.githubusercontent.com/33883645/50647018-cd625380-0f34-11e9-8c10-6f0cacb2af46.gif)
+
 ## Set-up
 
 Clone down this repo: 
