@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/gameflix/static/js/runtime~main.a8beacfa.js"
   },
   {
-    "revision": "f96fd23309f329715f26",
-    "url": "/gameflix/static/js/main.f96fd233.chunk.js"
+    "revision": "8965495f5a723a8fc86e",
+    "url": "/gameflix/static/js/main.8965495f.chunk.js"
   },
   {
     "revision": "7495b11bc5629027d321",
     "url": "/gameflix/static/js/1.7495b11b.chunk.js"
   },
   {
-    "revision": "f96fd23309f329715f26",
+    "revision": "8965495f5a723a8fc86e",
     "url": "/gameflix/static/css/main.af7c18bd.chunk.css"
   },
   {
-    "revision": "1497b0660af5b072fb7aa56a1d1745d3",
+    "revision": "f34d9ea81a85f4aa6b6a214c860b5f52",
     "url": "/gameflix/index.html"
   }
 ];

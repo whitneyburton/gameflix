@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/gameflix/precache-manifest.53ff825afb8effdee368817288467705.js"
+  "/gameflix/precache-manifest.7d98a8cc05c7cab53735e65acbb3c057.js"
 );
 
 workbox.clientsClaim();

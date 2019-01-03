@@ -1,13 +1,13 @@
 {
   "main.css": "/gameflix/static/css/main.af7c18bd.chunk.css",
-  "main.js": "/gameflix/static/js/main.f96fd233.chunk.js",
-  "main.js.map": "/gameflix/static/js/main.f96fd233.chunk.js.map",
+  "main.js": "/gameflix/static/js/main.8965495f.chunk.js",
+  "main.js.map": "/gameflix/static/js/main.8965495f.chunk.js.map",
   "static/js/1.7495b11b.chunk.js": "/gameflix/static/js/1.7495b11b.chunk.js",
   "static/js/1.7495b11b.chunk.js.map": "/gameflix/static/js/1.7495b11b.chunk.js.map",
   "runtime~main.js": "/gameflix/static/js/runtime~main.a8beacfa.js",
   "runtime~main.js.map": "/gameflix/static/js/runtime~main.a8beacfa.js.map",
   "static/css/main.af7c18bd.chunk.css.map": "/gameflix/static/css/main.af7c18bd.chunk.css.map",
   "index.html": "/gameflix/index.html",
-  "precache-manifest.53ff825afb8effdee368817288467705.js": "/gameflix/precache-manifest.53ff825afb8effdee368817288467705.js",
+  "precache-manifest.7d98a8cc05c7cab53735e65acbb3c057.js": "/gameflix/precache-manifest.7d98a8cc05c7cab53735e65acbb3c057.js",
   "service-worker.js": "/gameflix/service-worker.js"
 }
