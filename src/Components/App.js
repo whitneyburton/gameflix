@@ -10,7 +10,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      isHomePage: true,
+      isHomePage: false,
       errors: null,
       games: null,
       genres: null,
