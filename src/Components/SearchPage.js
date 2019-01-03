@@ -9,22 +9,24 @@ export default class SearchPage extends Component {
     return (
       <div className="SearchPage">
         <div className="search-results-counter">Search Results: {filteredGames.length} </div>
-        {
-          filteredGames.map(game => {
-          return (
-            <GameCard
-              game={game}
-              createPopUp={createPopUp}
-            />
-          )
-        })}
+        <div className="all-search-cards">
+          {
+            filteredGames.map(game => {
+            return (
+              <GameCard
+                game={game}
+                createPopUp={createPopUp}
+              />
+            )
+          })}
 
-        {popUpInfo &&
-          <PopUp
-            game={popUpInfo}
-            isSearch={popUpInfo}
-            closePopUp={closePopUp}
-          />}
+          {popUpInfo &&
+            <PopUp
+              game={popUpInfo}
+              isSearch={popUpInfo}
+              closePopUp={closePopUp}
+            />}
+        </div>
       </div>
     )
   }

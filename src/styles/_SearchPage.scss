@@ -7,7 +7,15 @@
   overflow: scroll;
   background: #151719;
 
+  .all-search-cards {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 0% 2%;
+  }
+
   .search-results-counter {
+    grid-column: 1/5;
     width: 100%;
     font-size: 1rem;
     letter-spacing: 1px;
@@ -20,7 +28,7 @@
 
 @media screen and (max-width: 880px) {
   .SearchPage .search-popup {
-    grid-template-columns: 1fr;
+    // grid-template-columns: 1fr;
     margin-top: 1%;
   }
 
