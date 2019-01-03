@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 export default class Featured extends Component {
-
   render() {
+
     return (
       <nav className="Featured">
         <iframe

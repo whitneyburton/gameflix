@@ -25,18 +25,16 @@
   overflow: scroll;
 }
 
-.fa-angle-right,
-.fa-angle-left {
+.side-carrot {
   font-size: 42px;
   color: #FFF;
   display: inline-block;
   padding: 138px 0 138px 10px;
   z-index: 1;
-}
 
-.fa-angle-right:hover,
-.fa-angle-left:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .Carousel i {

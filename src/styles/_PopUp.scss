@@ -6,14 +6,21 @@
   padding: 10px;
 }
 
-@keyframes openPopUp {
-  0% {
-    height: 0px;
-  }
+.search-popup {
+  background-color: #fff;
+  color: #000;
+  border: 6px solid black;
+  border-radius: 5px;
+  position: fixed;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1%;
+  margin-top: 5%;
+}
 
-  100% {
-    height: 500px;
-  }
+.game-details {
+  position: relative;
 }
 
 .fa-times {
@@ -28,16 +35,12 @@
   border-radius: 100px;
   background-color: whitesmoke;
   transition: all 400ms ease;
-}
 
-.fa-times:hover {
-  cursor: pointer;
-  color: #000;
-  background-color: #a2a2a2;
-}
-
-.game-details {
-  position: relative;
+  &:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #a2a2a2;
+  }
 }
 
 .game-name {
@@ -49,7 +52,7 @@
   padding: 5px 0px;
   border-bottom: 2px black solid;
   width: 84%;
-  font-family: Staatliches;
+  font-family: Staatliches, sans-serif;
 }
 
 .game-info {
@@ -61,9 +64,7 @@
   margin: 0px auto 10px auto;
 }
 
-.age-range,
-.num-of-players,
-.num-of-minutes {
+.popup-icon {
   display: inline-block;
 }
 
@@ -81,9 +82,7 @@
   text-transform: capitalize;
 }
 
-.fa-thermometer-quarter,
-.fa-thermometer-half,
-.fa-thermometer-full {
+.temp-icon {
   font-size: 18px;
   padding-left: 10px;
 }
@@ -117,13 +116,23 @@
   height: 500px;
 }
 
+// animation for popup card
+@keyframes openPopUp {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 500px;
+  }
+}
+
 @media screen and (max-width: 1030px) {
-  .age-range, 
-  .num-of-players, 
-  .num-of-minutes,
+
+  .popup-icon,
   .game-info,
   .difficulty-level,
-  .game-description, 
+  .game-description,
   .publisher {
     font-size: 12px;
   }

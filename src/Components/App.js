@@ -5,7 +5,6 @@ import LandingPage from './LandingPage';
 import SearchPage from './SearchPage';
 import HomePage from './HomePage';
 
-
 class App extends Component {
   constructor() {
     super();
@@ -43,7 +42,6 @@ class App extends Component {
           adventure: false
         }
       }
-
     }
   }
 
