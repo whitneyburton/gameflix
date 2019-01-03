@@ -1,14 +1,21 @@
 .SearchPage {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   color: #fff;
   height: 90%;
   overflow: scroll;
   background: #151719;
 
+  .carousel-game {
+    padding: 0px 12px;
+  }
+
+  .all-search-cards {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    padding: 0% 2%;
+  }
+
   .search-results-counter {
-    width: 100%;
     font-size: 1rem;
     letter-spacing: 1px;
     color: whitesmoke;
@@ -20,7 +27,7 @@
 
 @media screen and (max-width: 880px) {
   .SearchPage .search-popup {
-    grid-template-columns: 1fr;
+    // grid-template-columns: 1fr;
     margin-top: 1%;
   }
 
