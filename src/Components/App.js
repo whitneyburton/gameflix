@@ -10,7 +10,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      isHomePage: true,
+      isHomePage: false,
       errors: null,
       games: null,
       genres: null,
@@ -137,7 +137,7 @@ class App extends Component {
     const popUpGenre = isCarousel && event.target.closest('.Carousel').dataset.genre;
     let games = [...this.state.games];
     let popUpInfo = games.find(game => {
-      return game.game === event.target.closest('div').innerText;
+      return game.game === event.target.closest('.game-card').id;
     });
     this.setState({ popUpInfo, popUpGenre });
   }
@@ -260,7 +260,7 @@ class App extends Component {
   render() {
     let { errors, games,
       genres, popUpInfo, popUpGenre, searchPageCheck, filteredGames, showAdvancedSearch, isHomePage } = this.state;
-    if (!isHomePage) {
+    if (isHomePage) {
       return <HomePage handleTransition={this.handleTransition} />
     }
     else if (genres && games && !errors) {

@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   animation: openPopUp 0.4s ease-out forwards;
+  padding: 10px;
 }
 
 @keyframes openPopUp {
@@ -32,7 +33,7 @@
 .fa-times:hover {
   cursor: pointer;
   color: #000;
-  background-color: red;
+  background-color: #a2a2a2;
 }
 
 .game-details {
@@ -73,16 +74,17 @@
 
 .difficulty-level {
   border-bottom: 2px black solid;
+  border-top: 2px black solid;
   margin: 10px auto;
   width: 84%;
-  padding-bottom: 15px;
+  padding: 8px 0px;
   text-transform: capitalize;
 }
 
 .fa-thermometer-quarter,
 .fa-thermometer-half,
 .fa-thermometer-full {
-  font-size: 25px;
+  font-size: 18px;
   padding-left: 10px;
 }
 
@@ -99,15 +101,15 @@
 }
 
 .game-description {
-  width: 84%;
+  text-align: justify;
+  width: 83%;
+  max-width: 530px;
   margin: 10px auto;
   font-size: 15px;
-  border-bottom: 2px black solid;
-  padding-bottom: 15px;
 }
 
 .popup-image {
-  height: 200px;
+  height: 15rem;
 }
 
 .youtube-video {
