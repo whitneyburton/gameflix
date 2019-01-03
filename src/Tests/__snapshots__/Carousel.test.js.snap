@@ -48,7 +48,7 @@ ShallowWrapper {
           className="genre"
         />,
         <i
-          className="fas fa-angle-left"
+          className="fas fa-angle-left side-carrot"
           onClick={[Function]}
         />,
         <div
@@ -79,7 +79,7 @@ ShallowWrapper {
           />
         </div>,
         <i
-          className="fas fa-angle-right"
+          className="fas fa-angle-right side-carrot"
           onClick={[Function]}
         />,
         undefined,
@@ -106,7 +106,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "fas fa-angle-left",
+          "className": "fas fa-angle-left side-carrot",
           "onClick": [Function],
         },
         "ref": null,
@@ -184,7 +184,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "fas fa-angle-right",
+          "className": "fas fa-angle-right side-carrot",
           "onClick": [Function],
         },
         "ref": null,
@@ -206,7 +206,7 @@ ShallowWrapper {
             className="genre"
           />,
           <i
-            className="fas fa-angle-left"
+            className="fas fa-angle-left side-carrot"
             onClick={[Function]}
           />,
           <div
@@ -237,7 +237,7 @@ ShallowWrapper {
             />
           </div>,
           <i
-            className="fas fa-angle-right"
+            className="fas fa-angle-right side-carrot"
             onClick={[Function]}
           />,
           undefined,
@@ -264,7 +264,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "fas fa-angle-left",
+            "className": "fas fa-angle-left side-carrot",
             "onClick": [Function],
           },
           "ref": null,
@@ -342,7 +342,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "fas fa-angle-right",
+            "className": "fas fa-angle-right side-carrot",
             "onClick": [Function],
           },
           "ref": null,

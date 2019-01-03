@@ -105,6 +105,12 @@ ShallowWrapper {
             className="carousel-image popup-image"
             src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
           />
+          <p
+            className="publisher"
+          >
+            Publisher: 
+            All Over The Board
+          </p>
         </section>,
         <section
           class="youtube-video"
@@ -193,6 +199,12 @@ ShallowWrapper {
               className="carousel-image popup-image"
               src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
             />,
+            <p
+              className="publisher"
+            >
+              Publisher: 
+              All Over The Board
+            </p>,
           ],
           "class": "game-details",
         },
@@ -431,6 +443,24 @@ ShallowWrapper {
             "rendered": null,
             "type": "img",
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Publisher: ",
+                "All Over The Board",
+              ],
+              "className": "publisher",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Publisher: ",
+              "All Over The Board",
+            ],
+            "type": "p",
+          },
         ],
         "type": "section",
       },
@@ -546,6 +576,12 @@ ShallowWrapper {
               className="carousel-image popup-image"
               src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
             />
+            <p
+              className="publisher"
+            >
+              Publisher: 
+              All Over The Board
+            </p>
           </section>,
           <section
             class="youtube-video"
@@ -634,6 +670,12 @@ ShallowWrapper {
                 className="carousel-image popup-image"
                 src="https://cdn.shopify.com/s/files/1/1911/5793/products/DBAL-main-photo-box_350x.jpg?v=1512623523"
               />,
+              <p
+                className="publisher"
+              >
+                Publisher: 
+                All Over The Board
+              </p>,
             ],
             "class": "game-details",
           },
@@ -871,6 +913,24 @@ ShallowWrapper {
               "ref": null,
               "rendered": null,
               "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Publisher: ",
+                  "All Over The Board",
+                ],
+                "className": "publisher",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Publisher: ",
+                "All Over The Board",
+              ],
+              "type": "p",
             },
           ],
           "type": "section",
