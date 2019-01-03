@@ -38,6 +38,7 @@ export default class PopUp extends Component {
             <i className={iconClassName}></i>
           </p>
           <img className="carousel-image popup-image" src={game.img} alt="game in box" />
+          <p className="publisher">Publisher: {game.publisher}</p>
         </section>
 
         <section class="youtube-video">

@@ -7,33 +7,37 @@
   overflow: scroll;
   background:#151719;
 }
+
 .search-results-counter{
-  width:100%;
-  font-size: 2rem;
-  color:maroon;
+  width: 100%;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: whitesmoke;
+  text-align: left;
+  padding: 10px 0px 0px 50px;
+  font-weight: 500;
 }
+
 .SearchPage .search-popup {
   background-color: #fff;
+  color: #000;
   border: 6px solid black;
   border-radius: 5px;
   position: fixed;
-  min-height: 40%;
-  min-width: 1000px;
-  max-width: 550px;
-  width: 40%;
-  left: 20%;
-  top: 25%;
+  width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding:1%;
+  margin-top: 5%;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 880px) {
   .SearchPage .search-popup {
-    min-width: 90%;
-    max-width: 90%;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    top: 1%;
+    margin-top: 1%;
+  }
+
+  .youtube-video {
+    display: none;
   }
 }

@@ -2,8 +2,8 @@
   background-color: whitesmoke;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 500px;
   animation: openPopUp 0.4s ease-out forwards;
+  padding: 10px;
 }
 
 @keyframes openPopUp {
@@ -17,27 +17,38 @@
 }
 
 .fa-times {
-  position: relative;
-  font-size: 14px;
-  border: 2px solid grey;
-  padding: 1px 1px;
-  border-radius: 5px;
-  border-style: outset;
-  background-color: darkgray;
-  margin-right: 570px;
-  margin-top: 3px;
+  display: inline;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #000;
+  font-size: 22px;
+  border: 2px solid #000;
+  padding: 2px 5px;
+  border-radius: 100px;
+  background-color: whitesmoke;
+  transition: all 400ms ease;
 }
 
 .fa-times:hover {
   cursor: pointer;
+  color: #000;
+  background-color: #a2a2a2;
+}
+
+.game-details {
+  position: relative;
 }
 
 .game-name {
-  font-size: 44px;
+  display: inline-block;
+  font-size: 32px;
   margin: 0px auto;
-  padding-bottom: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 5px 0px;
   border-bottom: 2px black solid;
-  width: 90%;
+  width: 84%;
   font-family: Staatliches;
 }
 
@@ -45,7 +56,7 @@
   display: flex;
   justify-content: space-evenly;
   border-bottom: 2px black solid;
-  width: 90%;
+  width: 84%;
   padding: 10px 0px;
   margin: 0px auto 10px auto;
 }
@@ -56,18 +67,24 @@
   display: inline-block;
 }
 
+.publisher {
+  display: block;
+  font-size: 10px;
+}
+
 .difficulty-level {
   border-bottom: 2px black solid;
+  border-top: 2px black solid;
   margin: 10px auto;
-  width: 90%;
-  padding-bottom: 15px;
-
+  width: 84%;
+  padding: 8px 0px;
+  text-transform: capitalize;
 }
 
 .fa-thermometer-quarter,
 .fa-thermometer-half,
 .fa-thermometer-full {
-  font-size: 25px;
+  font-size: 18px;
   padding-left: 10px;
 }
 
@@ -84,17 +101,44 @@
 }
 
 .game-description {
-  width: 90%;
+  text-align: justify;
+  width: 83%;
+  max-width: 530px;
   margin: 10px auto;
-  border-bottom: 2px black solid;
-  padding-bottom: 15px;
+  font-size: 15px;
 }
 
 .popup-image {
-  height: 200px;
+  height: 15rem;
 }
 
 .youtube-video {
   object-fit: contain;
   height: 500px;
+}
+
+@media screen and (max-width: 1030px) {
+  .age-range, 
+  .num-of-players, 
+  .num-of-minutes,
+  .game-info,
+  .difficulty-level,
+  .game-description, 
+  .publisher {
+    font-size: 12px;
+  }
+
+  .game-name {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .PopUp {
+    grid-template-columns: 1fr;
+  }
+
+  .youtube-video {
+    display: none;
+  }
 }

@@ -20,183 +20,269 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <form
-        className="form"
+        className="advanced-search-form form"
       >
-        <div>
-          <p>
-            Type of Game
+        <div
+          className="filter-by-type"
+        >
+          <p
+            className="filter-title"
+          >
+            GAME TYPE
           </p>
-          <input
-            className="adv-search-checkbox"
-            data-id="board"
-            id="board"
-            name="type-checkbox"
-            type="checkbox"
-          />
-          <label
-            for="board"
+          <div
+            className="checkbox-and-label"
           >
-            board
-          </label>
-          <input
-            className="adv-search-checkbox"
-            data-id="card"
-            id="card"
-            name="type-checkbox"
-            type="checkbox"
-          />
-          <label
-            for="card"
+            <input
+              class="adv-search-checkbox"
+              data-category="type"
+              data-filter="board"
+              id="board"
+              name="type-checkbox"
+              type="checkbox"
+            />
+            <label
+              for="board"
+            >
+              Board Game
+            </label>
+          </div>
+          <div
+            className="checkbox-and-label"
           >
-            card
-          </label>
+            <input
+              class="adv-search-checkbox"
+              data-category="type"
+              data-filter="card"
+              id="card"
+              name="type-checkbox"
+              type="checkbox"
+            />
+            <label
+              for="card"
+            >
+              Card Game
+            </label>
+          </div>
         </div>
-        <div>
-          <p>
-            # of Players
+        <div
+          className="filter-by-players"
+        >
+          <p
+            className="filter-title"
+          >
+            NUMBER OF PLAYERS
           </p>
-          <input
-            className="adv-search-checkbox"
-            data-id="two"
-            id="two"
-            type="checkbox"
-          />
-          <label
-            for="number-players-checkbox"
+          <div
+            className="checkbox-and-label"
           >
-            2 players
-          </label>
-          <input
-            className="adv-search-checkbox"
-            data-id="threefour"
-            id="threefour"
-            type="checkbox"
-          />
-          <label
-            for="number-players-checkbox"
+            <input
+              class="adv-search-checkbox"
+              data-category="players"
+              data-filter="two"
+              id="two"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              2 players
+            </label>
+          </div>
+          <div
+            className="checkbox-and-label"
           >
-            3-4 players
-          </label>
-          <input
-            class="adv-search-checkbox"
-            data-id="fivesix"
-            id="fivesix"
-            type="checkbox"
-          />
-          <label
-            for="number-players-checkbox"
+            <input
+              class="adv-search-checkbox"
+              data-category="players"
+              data-filter="threefour"
+              id="threefour"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              3 - 4 players
+            </label>
+          </div>
+          <div
+            className="checkbox-and-label"
           >
-            5-6 players
-          </label>
-          <input
-            class="adv-search-checkbox"
-            data-id="seven"
-            id="seven"
-            type="checkbox"
-          />
-          <label
-            for="number-players-checkbox"
+            <input
+              class="adv-search-checkbox"
+              data-category="players"
+              data-filter="fivesix"
+              id="fivesix"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              5 - 6 players
+            </label>
+          </div>
+          <div
+            className="checkbox-and-label"
           >
-            7+ players
-          </label>
+            <input
+              class="adv-search-checkbox"
+              data-category="players"
+              data-filter="seven"
+              id="seven"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              7 + players
+            </label>
+          </div>
         </div>
-        <div>
-          <p>
-            Age
+        <div
+          className="filter-by-age"
+        >
+          <p
+            className="filter-title"
+          >
+            AGE RANGE
           </p>
-          <input
-            class="adv-search-checkbox"
-            data-id="lesseight"
-            id="lesseight"
-            type="checkbox"
-          />
-          <label
-            for="number-players-checkbox"
+          <div
+            className="checkbox-and-label"
           >
-            less than 8
-          </label>
-          <input
-            class="adv-search-checkbox"
-            data-id="eightthirteen"
-            id="eightthirteen"
-            type="checkbox"
-          />
-          <label
-            for="number-players-checkbox"
+            <input
+              class="adv-search-checkbox"
+              data-category="age"
+              data-filter="lesseight"
+              id="lesseight"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              8 and Under
+            </label>
+          </div>
+          <div
+            className="checkbox-and-label"
           >
-            8 - 13
-          </label>
-          <input
-            class="adv-search-checkbox"
-            data-id="thirteenplus"
-            id="thirteenplus"
-            type="checkbox"
-          />
-          <label
-            for="number-players-checkbox"
+            <input
+              class="adv-search-checkbox"
+              data-category="age"
+              data-filter="eightthirteen"
+              id="eightthirteen"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              8 - 13
+            </label>
+          </div>
+          <div
+            className="checkbox-and-label"
           >
-            13+
-          </label>
-          <input
-            class="adv-search-checkbox"
-            data-id="adult"
-            id="adult"
-            type="checkbox"
-          />
-          <label
-            for="number-players-checkbox"
+            <input
+              class="adv-search-checkbox"
+              data-category="age"
+              data-filter="thirteenplus"
+              id="thirteenplus"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              13 and Over
+            </label>
+          </div>
+          <div
+            className="checkbox-and-label"
           >
-            Adult
-          </label>
+            <input
+              class="adv-search-checkbox"
+              data-category="age"
+              data-filter="adult"
+              id="adult"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Adult Only
+            </label>
+          </div>
         </div>
-        <div>
-          <p>
-            Genre
+        <div
+          className="filter-by-genre"
+        >
+          <p
+            className="filter-title"
+          >
+            GENRE
           </p>
-          <input
-            class="adv-search-checkbox"
-            data-id="strategy"
-            id="strategy"
-            type="checkbox"
-          />
-          <label
-            for="number-players-checkbox"
+          <div
+            className="checkbox-and-label"
           >
-            Strategy
-          </label>
-          <input
-            class="adv-search-checkbox"
-            data-id="family"
-            id="family"
-            type="checkbox"
-          />
-          <label
-            for="number-players-checkbox"
+            <input
+              class="adv-search-checkbox"
+              data-category="genre"
+              data-filter="strategy"
+              id="strategy"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Strategy
+            </label>
+          </div>
+          <div
+            className="checkbox-and-label"
           >
-            Family
-          </label>
-          <input
-            class="adv-search-checkbox"
-            data-id="party"
-            id="party"
-            type="checkbox"
-          />
-          <label
-            for="number-players-checkbox"
+            <input
+              class="adv-search-checkbox"
+              data-category="genre"
+              data-filter="family"
+              id="family"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Family
+            </label>
+          </div>
+          <div
+            className="checkbox-and-label"
           >
-            Party
-          </label>
-          <input
-            class="adv-search-checkbox"
-            data-id="adventure"
-            id="adventure"
-            type="checkbox"
-          />
-          <label
-            for="number-players-checkbox"
+            <input
+              class="adv-search-checkbox"
+              data-category="genre"
+              data-filter="party"
+              id="party"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Party
+            </label>
+          </div>
+          <div
+            className="checkbox-and-label"
           >
-            Adventure
-          </label>
+            <input
+              class="adv-search-checkbox"
+              data-category="genre"
+              data-filter="adventure"
+              id="adventure"
+              type="checkbox"
+            />
+            <label
+              for="number-players-checkbox"
+            >
+              Adventure
+            </label>
+          </div>
         </div>
       </form>,
       "className": "AdvancedSearch",
@@ -208,184 +294,270 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div>
-            <p>
-              Type of Game
+          <div
+            className="filter-by-type"
+          >
+            <p
+              className="filter-title"
+            >
+              GAME TYPE
             </p>
-            <input
-              className="adv-search-checkbox"
-              data-id="board"
-              id="board"
-              name="type-checkbox"
-              type="checkbox"
-            />
-            <label
-              for="board"
+            <div
+              className="checkbox-and-label"
             >
-              board
-            </label>
-            <input
-              className="adv-search-checkbox"
-              data-id="card"
-              id="card"
-              name="type-checkbox"
-              type="checkbox"
-            />
-            <label
-              for="card"
+              <input
+                class="adv-search-checkbox"
+                data-category="type"
+                data-filter="board"
+                id="board"
+                name="type-checkbox"
+                type="checkbox"
+              />
+              <label
+                for="board"
+              >
+                Board Game
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              card
-            </label>
+              <input
+                class="adv-search-checkbox"
+                data-category="type"
+                data-filter="card"
+                id="card"
+                name="type-checkbox"
+                type="checkbox"
+              />
+              <label
+                for="card"
+              >
+                Card Game
+              </label>
+            </div>
           </div>,
-          <div>
-            <p>
-              # of Players
+          <div
+            className="filter-by-players"
+          >
+            <p
+              className="filter-title"
+            >
+              NUMBER OF PLAYERS
             </p>
-            <input
-              className="adv-search-checkbox"
-              data-id="two"
-              id="two"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+            <div
+              className="checkbox-and-label"
             >
-              2 players
-            </label>
-            <input
-              className="adv-search-checkbox"
-              data-id="threefour"
-              id="threefour"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="players"
+                data-filter="two"
+                id="two"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                2 players
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              3-4 players
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="fivesix"
-              id="fivesix"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="players"
+                data-filter="threefour"
+                id="threefour"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                3 - 4 players
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              5-6 players
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="seven"
-              id="seven"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="players"
+                data-filter="fivesix"
+                id="fivesix"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                5 - 6 players
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              7+ players
-            </label>
+              <input
+                class="adv-search-checkbox"
+                data-category="players"
+                data-filter="seven"
+                id="seven"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                7 + players
+              </label>
+            </div>
           </div>,
-          <div>
-            <p>
-              Age
+          <div
+            className="filter-by-age"
+          >
+            <p
+              className="filter-title"
+            >
+              AGE RANGE
             </p>
-            <input
-              class="adv-search-checkbox"
-              data-id="lesseight"
-              id="lesseight"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+            <div
+              className="checkbox-and-label"
             >
-              less than 8
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="eightthirteen"
-              id="eightthirteen"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="age"
+                data-filter="lesseight"
+                id="lesseight"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                8 and Under
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              8 - 13
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="thirteenplus"
-              id="thirteenplus"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="age"
+                data-filter="eightthirteen"
+                id="eightthirteen"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                8 - 13
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              13+
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="adult"
-              id="adult"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="age"
+                data-filter="thirteenplus"
+                id="thirteenplus"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                13 and Over
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              Adult
-            </label>
+              <input
+                class="adv-search-checkbox"
+                data-category="age"
+                data-filter="adult"
+                id="adult"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Adult Only
+              </label>
+            </div>
           </div>,
-          <div>
-            <p>
-              Genre
+          <div
+            className="filter-by-genre"
+          >
+            <p
+              className="filter-title"
+            >
+              GENRE
             </p>
-            <input
-              class="adv-search-checkbox"
-              data-id="strategy"
-              id="strategy"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+            <div
+              className="checkbox-and-label"
             >
-              Strategy
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="family"
-              id="family"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="genre"
+                data-filter="strategy"
+                id="strategy"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Strategy
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              Family
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="party"
-              id="party"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="genre"
+                data-filter="family"
+                id="family"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Family
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              Party
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="adventure"
-              id="adventure"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="genre"
+                data-filter="party"
+                id="party"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Party
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              Adventure
-            </label>
+              <input
+                class="adv-search-checkbox"
+                data-category="genre"
+                data-filter="adventure"
+                id="adventure"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Adventure
+              </label>
+            </div>
           </div>,
         ],
-        "className": "form",
+        "className": "advanced-search-form form",
         "onClick": undefined,
       },
       "ref": null,
@@ -396,34 +568,47 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <p>
-                Type of Game
+              <p
+                className="filter-title"
+              >
+                GAME TYPE
               </p>,
-              <input
-                className="adv-search-checkbox"
-                data-id="board"
-                id="board"
-                name="type-checkbox"
-                type="checkbox"
-              />,
-              <label
-                for="board"
+              <div
+                className="checkbox-and-label"
               >
-                board
-              </label>,
-              <input
-                className="adv-search-checkbox"
-                data-id="card"
-                id="card"
-                name="type-checkbox"
-                type="checkbox"
-              />,
-              <label
-                for="card"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="type"
+                  data-filter="board"
+                  id="board"
+                  name="type-checkbox"
+                  type="checkbox"
+                />
+                <label
+                  for="board"
+                >
+                  Board Game
+                </label>
+              </div>,
+              <div
+                className="checkbox-and-label"
               >
-                card
-              </label>,
+                <input
+                  class="adv-search-checkbox"
+                  data-category="type"
+                  data-filter="card"
+                  id="card"
+                  name="type-checkbox"
+                  type="checkbox"
+                />
+                <label
+                  for="card"
+                >
+                  Card Game
+                </label>
+              </div>,
             ],
+            "className": "filter-by-type",
           },
           "ref": null,
           "rendered": Array [
@@ -432,10 +617,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Type of Game",
+                "children": "GAME TYPE",
+                "className": "filter-title",
               },
               "ref": null,
-              "rendered": "Type of Game",
+              "rendered": "GAME TYPE",
               "type": "p",
             },
             Object {
@@ -443,54 +629,110 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "className": "adv-search-checkbox",
-                "data-id": "board",
-                "id": "board",
-                "name": "type-checkbox",
-                "type": "checkbox",
+                "children": Array [
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="type"
+                    data-filter="board"
+                    id="board"
+                    name="type-checkbox"
+                    type="checkbox"
+                  />,
+                  <label
+                    for="board"
+                  >
+                    Board Game
+                  </label>,
+                ],
+                "className": "checkbox-and-label",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "adv-search-checkbox",
+                    "data-category": "type",
+                    "data-filter": "board",
+                    "id": "board",
+                    "name": "type-checkbox",
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Board Game",
+                    "for": "board",
+                  },
+                  "ref": null,
+                  "rendered": "Board Game",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "board",
-                "for": "board",
+                "children": Array [
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="type"
+                    data-filter="card"
+                    id="card"
+                    name="type-checkbox"
+                    type="checkbox"
+                  />,
+                  <label
+                    for="card"
+                  >
+                    Card Game
+                  </label>,
+                ],
+                "className": "checkbox-and-label",
               },
               "ref": null,
-              "rendered": "board",
-              "type": "label",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "adv-search-checkbox",
-                "data-id": "card",
-                "id": "card",
-                "name": "type-checkbox",
-                "type": "checkbox",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "card",
-                "for": "card",
-              },
-              "ref": null,
-              "rendered": "card",
-              "type": "label",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "adv-search-checkbox",
+                    "data-category": "type",
+                    "data-filter": "card",
+                    "id": "card",
+                    "name": "type-checkbox",
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Card Game",
+                    "for": "card",
+                  },
+                  "ref": null,
+                  "rendered": "Card Game",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
             },
           ],
           "type": "div",
@@ -501,54 +743,77 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <p>
-                # of Players
+              <p
+                className="filter-title"
+              >
+                NUMBER OF PLAYERS
               </p>,
-              <input
-                className="adv-search-checkbox"
-                data-id="two"
-                id="two"
-                type="checkbox"
-              />,
-              <label
-                for="number-players-checkbox"
+              <div
+                className="checkbox-and-label"
               >
-                2 players
-              </label>,
-              <input
-                className="adv-search-checkbox"
-                data-id="threefour"
-                id="threefour"
-                type="checkbox"
-              />,
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="players"
+                  data-filter="two"
+                  id="two"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  2 players
+                </label>
+              </div>,
+              <div
+                className="checkbox-and-label"
               >
-                3-4 players
-              </label>,
-              <input
-                class="adv-search-checkbox"
-                data-id="fivesix"
-                id="fivesix"
-                type="checkbox"
-              />,
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="players"
+                  data-filter="threefour"
+                  id="threefour"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  3 - 4 players
+                </label>
+              </div>,
+              <div
+                className="checkbox-and-label"
               >
-                5-6 players
-              </label>,
-              <input
-                class="adv-search-checkbox"
-                data-id="seven"
-                id="seven"
-                type="checkbox"
-              />,
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="players"
+                  data-filter="fivesix"
+                  id="fivesix"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  5 - 6 players
+                </label>
+              </div>,
+              <div
+                className="checkbox-and-label"
               >
-                7+ players
-              </label>,
+                <input
+                  class="adv-search-checkbox"
+                  data-category="players"
+                  data-filter="seven"
+                  id="seven"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  7 + players
+                </label>
+              </div>,
             ],
+            "className": "filter-by-players",
           },
           "ref": null,
           "rendered": Array [
@@ -557,10 +822,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "# of Players",
+                "children": "NUMBER OF PLAYERS",
+                "className": "filter-title",
               },
               "ref": null,
-              "rendered": "# of Players",
+              "rendered": "NUMBER OF PLAYERS",
               "type": "p",
             },
             Object {
@@ -568,104 +834,212 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "className": "adv-search-checkbox",
-                "data-id": "two",
-                "id": "two",
-                "type": "checkbox",
+                "children": Array [
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="players"
+                    data-filter="two"
+                    id="two"
+                    type="checkbox"
+                  />,
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    2 players
+                  </label>,
+                ],
+                "className": "checkbox-and-label",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "adv-search-checkbox",
+                    "data-category": "players",
+                    "data-filter": "two",
+                    "id": "two",
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "2 players",
+                    "for": "number-players-checkbox",
+                  },
+                  "ref": null,
+                  "rendered": "2 players",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "2 players",
-                "for": "number-players-checkbox",
+                "children": Array [
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="players"
+                    data-filter="threefour"
+                    id="threefour"
+                    type="checkbox"
+                  />,
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    3 - 4 players
+                  </label>,
+                ],
+                "className": "checkbox-and-label",
               },
               "ref": null,
-              "rendered": "2 players",
-              "type": "label",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "adv-search-checkbox",
+                    "data-category": "players",
+                    "data-filter": "threefour",
+                    "id": "threefour",
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "3 - 4 players",
+                    "for": "number-players-checkbox",
+                  },
+                  "ref": null,
+                  "rendered": "3 - 4 players",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "className": "adv-search-checkbox",
-                "data-id": "threefour",
-                "id": "threefour",
-                "type": "checkbox",
+                "children": Array [
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="players"
+                    data-filter="fivesix"
+                    id="fivesix"
+                    type="checkbox"
+                  />,
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    5 - 6 players
+                  </label>,
+                ],
+                "className": "checkbox-and-label",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "adv-search-checkbox",
+                    "data-category": "players",
+                    "data-filter": "fivesix",
+                    "id": "fivesix",
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "5 - 6 players",
+                    "for": "number-players-checkbox",
+                  },
+                  "ref": null,
+                  "rendered": "5 - 6 players",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "3-4 players",
-                "for": "number-players-checkbox",
+                "children": Array [
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="players"
+                    data-filter="seven"
+                    id="seven"
+                    type="checkbox"
+                  />,
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    7 + players
+                  </label>,
+                ],
+                "className": "checkbox-and-label",
               },
               "ref": null,
-              "rendered": "3-4 players",
-              "type": "label",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "class": "adv-search-checkbox",
-                "data-id": "fivesix",
-                "id": "fivesix",
-                "type": "checkbox",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "5-6 players",
-                "for": "number-players-checkbox",
-              },
-              "ref": null,
-              "rendered": "5-6 players",
-              "type": "label",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "class": "adv-search-checkbox",
-                "data-id": "seven",
-                "id": "seven",
-                "type": "checkbox",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "7+ players",
-                "for": "number-players-checkbox",
-              },
-              "ref": null,
-              "rendered": "7+ players",
-              "type": "label",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "adv-search-checkbox",
+                    "data-category": "players",
+                    "data-filter": "seven",
+                    "id": "seven",
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "7 + players",
+                    "for": "number-players-checkbox",
+                  },
+                  "ref": null,
+                  "rendered": "7 + players",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
             },
           ],
           "type": "div",
@@ -676,54 +1050,77 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <p>
-                Age
+              <p
+                className="filter-title"
+              >
+                AGE RANGE
               </p>,
-              <input
-                class="adv-search-checkbox"
-                data-id="lesseight"
-                id="lesseight"
-                type="checkbox"
-              />,
-              <label
-                for="number-players-checkbox"
+              <div
+                className="checkbox-and-label"
               >
-                less than 8
-              </label>,
-              <input
-                class="adv-search-checkbox"
-                data-id="eightthirteen"
-                id="eightthirteen"
-                type="checkbox"
-              />,
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="age"
+                  data-filter="lesseight"
+                  id="lesseight"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  8 and Under
+                </label>
+              </div>,
+              <div
+                className="checkbox-and-label"
               >
-                8 - 13
-              </label>,
-              <input
-                class="adv-search-checkbox"
-                data-id="thirteenplus"
-                id="thirteenplus"
-                type="checkbox"
-              />,
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="age"
+                  data-filter="eightthirteen"
+                  id="eightthirteen"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  8 - 13
+                </label>
+              </div>,
+              <div
+                className="checkbox-and-label"
               >
-                13+
-              </label>,
-              <input
-                class="adv-search-checkbox"
-                data-id="adult"
-                id="adult"
-                type="checkbox"
-              />,
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="age"
+                  data-filter="thirteenplus"
+                  id="thirteenplus"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  13 and Over
+                </label>
+              </div>,
+              <div
+                className="checkbox-and-label"
               >
-                Adult
-              </label>,
+                <input
+                  class="adv-search-checkbox"
+                  data-category="age"
+                  data-filter="adult"
+                  id="adult"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  Adult Only
+                </label>
+              </div>,
             ],
+            "className": "filter-by-age",
           },
           "ref": null,
           "rendered": Array [
@@ -732,10 +1129,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Age",
+                "children": "AGE RANGE",
+                "className": "filter-title",
               },
               "ref": null,
-              "rendered": "Age",
+              "rendered": "AGE RANGE",
               "type": "p",
             },
             Object {
@@ -743,104 +1141,212 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "class": "adv-search-checkbox",
-                "data-id": "lesseight",
-                "id": "lesseight",
-                "type": "checkbox",
+                "children": Array [
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="age"
+                    data-filter="lesseight"
+                    id="lesseight"
+                    type="checkbox"
+                  />,
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    8 and Under
+                  </label>,
+                ],
+                "className": "checkbox-and-label",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "adv-search-checkbox",
+                    "data-category": "age",
+                    "data-filter": "lesseight",
+                    "id": "lesseight",
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "8 and Under",
+                    "for": "number-players-checkbox",
+                  },
+                  "ref": null,
+                  "rendered": "8 and Under",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "less than 8",
-                "for": "number-players-checkbox",
+                "children": Array [
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="age"
+                    data-filter="eightthirteen"
+                    id="eightthirteen"
+                    type="checkbox"
+                  />,
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    8 - 13
+                  </label>,
+                ],
+                "className": "checkbox-and-label",
               },
               "ref": null,
-              "rendered": "less than 8",
-              "type": "label",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "adv-search-checkbox",
+                    "data-category": "age",
+                    "data-filter": "eightthirteen",
+                    "id": "eightthirteen",
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "8 - 13",
+                    "for": "number-players-checkbox",
+                  },
+                  "ref": null,
+                  "rendered": "8 - 13",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "class": "adv-search-checkbox",
-                "data-id": "eightthirteen",
-                "id": "eightthirteen",
-                "type": "checkbox",
+                "children": Array [
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="age"
+                    data-filter="thirteenplus"
+                    id="thirteenplus"
+                    type="checkbox"
+                  />,
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    13 and Over
+                  </label>,
+                ],
+                "className": "checkbox-and-label",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "adv-search-checkbox",
+                    "data-category": "age",
+                    "data-filter": "thirteenplus",
+                    "id": "thirteenplus",
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "13 and Over",
+                    "for": "number-players-checkbox",
+                  },
+                  "ref": null,
+                  "rendered": "13 and Over",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "8 - 13",
-                "for": "number-players-checkbox",
+                "children": Array [
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="age"
+                    data-filter="adult"
+                    id="adult"
+                    type="checkbox"
+                  />,
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    Adult Only
+                  </label>,
+                ],
+                "className": "checkbox-and-label",
               },
               "ref": null,
-              "rendered": "8 - 13",
-              "type": "label",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "class": "adv-search-checkbox",
-                "data-id": "thirteenplus",
-                "id": "thirteenplus",
-                "type": "checkbox",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "13+",
-                "for": "number-players-checkbox",
-              },
-              "ref": null,
-              "rendered": "13+",
-              "type": "label",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "class": "adv-search-checkbox",
-                "data-id": "adult",
-                "id": "adult",
-                "type": "checkbox",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Adult",
-                "for": "number-players-checkbox",
-              },
-              "ref": null,
-              "rendered": "Adult",
-              "type": "label",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "adv-search-checkbox",
+                    "data-category": "age",
+                    "data-filter": "adult",
+                    "id": "adult",
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Adult Only",
+                    "for": "number-players-checkbox",
+                  },
+                  "ref": null,
+                  "rendered": "Adult Only",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
             },
           ],
           "type": "div",
@@ -851,54 +1357,77 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <p>
-                Genre
+              <p
+                className="filter-title"
+              >
+                GENRE
               </p>,
-              <input
-                class="adv-search-checkbox"
-                data-id="strategy"
-                id="strategy"
-                type="checkbox"
-              />,
-              <label
-                for="number-players-checkbox"
+              <div
+                className="checkbox-and-label"
               >
-                Strategy
-              </label>,
-              <input
-                class="adv-search-checkbox"
-                data-id="family"
-                id="family"
-                type="checkbox"
-              />,
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="genre"
+                  data-filter="strategy"
+                  id="strategy"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  Strategy
+                </label>
+              </div>,
+              <div
+                className="checkbox-and-label"
               >
-                Family
-              </label>,
-              <input
-                class="adv-search-checkbox"
-                data-id="party"
-                id="party"
-                type="checkbox"
-              />,
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="genre"
+                  data-filter="family"
+                  id="family"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  Family
+                </label>
+              </div>,
+              <div
+                className="checkbox-and-label"
               >
-                Party
-              </label>,
-              <input
-                class="adv-search-checkbox"
-                data-id="adventure"
-                id="adventure"
-                type="checkbox"
-              />,
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="genre"
+                  data-filter="party"
+                  id="party"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  Party
+                </label>
+              </div>,
+              <div
+                className="checkbox-and-label"
               >
-                Adventure
-              </label>,
+                <input
+                  class="adv-search-checkbox"
+                  data-category="genre"
+                  data-filter="adventure"
+                  id="adventure"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  Adventure
+                </label>
+              </div>,
             ],
+            "className": "filter-by-genre",
           },
           "ref": null,
           "rendered": Array [
@@ -907,10 +1436,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Genre",
+                "children": "GENRE",
+                "className": "filter-title",
               },
               "ref": null,
-              "rendered": "Genre",
+              "rendered": "GENRE",
               "type": "p",
             },
             Object {
@@ -918,104 +1448,212 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "class": "adv-search-checkbox",
-                "data-id": "strategy",
-                "id": "strategy",
-                "type": "checkbox",
+                "children": Array [
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="genre"
+                    data-filter="strategy"
+                    id="strategy"
+                    type="checkbox"
+                  />,
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    Strategy
+                  </label>,
+                ],
+                "className": "checkbox-and-label",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "adv-search-checkbox",
+                    "data-category": "genre",
+                    "data-filter": "strategy",
+                    "id": "strategy",
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Strategy",
+                    "for": "number-players-checkbox",
+                  },
+                  "ref": null,
+                  "rendered": "Strategy",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Strategy",
-                "for": "number-players-checkbox",
+                "children": Array [
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="genre"
+                    data-filter="family"
+                    id="family"
+                    type="checkbox"
+                  />,
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    Family
+                  </label>,
+                ],
+                "className": "checkbox-and-label",
               },
               "ref": null,
-              "rendered": "Strategy",
-              "type": "label",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "adv-search-checkbox",
+                    "data-category": "genre",
+                    "data-filter": "family",
+                    "id": "family",
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Family",
+                    "for": "number-players-checkbox",
+                  },
+                  "ref": null,
+                  "rendered": "Family",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "class": "adv-search-checkbox",
-                "data-id": "family",
-                "id": "family",
-                "type": "checkbox",
+                "children": Array [
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="genre"
+                    data-filter="party"
+                    id="party"
+                    type="checkbox"
+                  />,
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    Party
+                  </label>,
+                ],
+                "className": "checkbox-and-label",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "adv-search-checkbox",
+                    "data-category": "genre",
+                    "data-filter": "party",
+                    "id": "party",
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Party",
+                    "for": "number-players-checkbox",
+                  },
+                  "ref": null,
+                  "rendered": "Party",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Family",
-                "for": "number-players-checkbox",
+                "children": Array [
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="genre"
+                    data-filter="adventure"
+                    id="adventure"
+                    type="checkbox"
+                  />,
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    Adventure
+                  </label>,
+                ],
+                "className": "checkbox-and-label",
               },
               "ref": null,
-              "rendered": "Family",
-              "type": "label",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "class": "adv-search-checkbox",
-                "data-id": "party",
-                "id": "party",
-                "type": "checkbox",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Party",
-                "for": "number-players-checkbox",
-              },
-              "ref": null,
-              "rendered": "Party",
-              "type": "label",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "class": "adv-search-checkbox",
-                "data-id": "adventure",
-                "id": "adventure",
-                "type": "checkbox",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Adventure",
-                "for": "number-players-checkbox",
-              },
-              "ref": null,
-              "rendered": "Adventure",
-              "type": "label",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "adv-search-checkbox",
+                    "data-category": "genre",
+                    "data-filter": "adventure",
+                    "id": "adventure",
+                    "type": "checkbox",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Adventure",
+                    "for": "number-players-checkbox",
+                  },
+                  "ref": null,
+                  "rendered": "Adventure",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
             },
           ],
           "type": "div",
@@ -1032,183 +1670,269 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <form
-          className="form"
+          className="advanced-search-form form"
         >
-          <div>
-            <p>
-              Type of Game
+          <div
+            className="filter-by-type"
+          >
+            <p
+              className="filter-title"
+            >
+              GAME TYPE
             </p>
-            <input
-              className="adv-search-checkbox"
-              data-id="board"
-              id="board"
-              name="type-checkbox"
-              type="checkbox"
-            />
-            <label
-              for="board"
+            <div
+              className="checkbox-and-label"
             >
-              board
-            </label>
-            <input
-              className="adv-search-checkbox"
-              data-id="card"
-              id="card"
-              name="type-checkbox"
-              type="checkbox"
-            />
-            <label
-              for="card"
+              <input
+                class="adv-search-checkbox"
+                data-category="type"
+                data-filter="board"
+                id="board"
+                name="type-checkbox"
+                type="checkbox"
+              />
+              <label
+                for="board"
+              >
+                Board Game
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              card
-            </label>
+              <input
+                class="adv-search-checkbox"
+                data-category="type"
+                data-filter="card"
+                id="card"
+                name="type-checkbox"
+                type="checkbox"
+              />
+              <label
+                for="card"
+              >
+                Card Game
+              </label>
+            </div>
           </div>
-          <div>
-            <p>
-              # of Players
+          <div
+            className="filter-by-players"
+          >
+            <p
+              className="filter-title"
+            >
+              NUMBER OF PLAYERS
             </p>
-            <input
-              className="adv-search-checkbox"
-              data-id="two"
-              id="two"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+            <div
+              className="checkbox-and-label"
             >
-              2 players
-            </label>
-            <input
-              className="adv-search-checkbox"
-              data-id="threefour"
-              id="threefour"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="players"
+                data-filter="two"
+                id="two"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                2 players
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              3-4 players
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="fivesix"
-              id="fivesix"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="players"
+                data-filter="threefour"
+                id="threefour"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                3 - 4 players
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              5-6 players
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="seven"
-              id="seven"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="players"
+                data-filter="fivesix"
+                id="fivesix"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                5 - 6 players
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              7+ players
-            </label>
+              <input
+                class="adv-search-checkbox"
+                data-category="players"
+                data-filter="seven"
+                id="seven"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                7 + players
+              </label>
+            </div>
           </div>
-          <div>
-            <p>
-              Age
+          <div
+            className="filter-by-age"
+          >
+            <p
+              className="filter-title"
+            >
+              AGE RANGE
             </p>
-            <input
-              class="adv-search-checkbox"
-              data-id="lesseight"
-              id="lesseight"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+            <div
+              className="checkbox-and-label"
             >
-              less than 8
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="eightthirteen"
-              id="eightthirteen"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="age"
+                data-filter="lesseight"
+                id="lesseight"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                8 and Under
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              8 - 13
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="thirteenplus"
-              id="thirteenplus"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="age"
+                data-filter="eightthirteen"
+                id="eightthirteen"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                8 - 13
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              13+
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="adult"
-              id="adult"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="age"
+                data-filter="thirteenplus"
+                id="thirteenplus"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                13 and Over
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              Adult
-            </label>
+              <input
+                class="adv-search-checkbox"
+                data-category="age"
+                data-filter="adult"
+                id="adult"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Adult Only
+              </label>
+            </div>
           </div>
-          <div>
-            <p>
-              Genre
+          <div
+            className="filter-by-genre"
+          >
+            <p
+              className="filter-title"
+            >
+              GENRE
             </p>
-            <input
-              class="adv-search-checkbox"
-              data-id="strategy"
-              id="strategy"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+            <div
+              className="checkbox-and-label"
             >
-              Strategy
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="family"
-              id="family"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="genre"
+                data-filter="strategy"
+                id="strategy"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Strategy
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              Family
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="party"
-              id="party"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="genre"
+                data-filter="family"
+                id="family"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Family
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              Party
-            </label>
-            <input
-              class="adv-search-checkbox"
-              data-id="adventure"
-              id="adventure"
-              type="checkbox"
-            />
-            <label
-              for="number-players-checkbox"
+              <input
+                class="adv-search-checkbox"
+                data-category="genre"
+                data-filter="party"
+                id="party"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Party
+              </label>
+            </div>
+            <div
+              className="checkbox-and-label"
             >
-              Adventure
-            </label>
+              <input
+                class="adv-search-checkbox"
+                data-category="genre"
+                data-filter="adventure"
+                id="adventure"
+                type="checkbox"
+              />
+              <label
+                for="number-players-checkbox"
+              >
+                Adventure
+              </label>
+            </div>
           </div>
         </form>,
         "className": "AdvancedSearch",
@@ -1220,184 +1944,270 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <div>
-              <p>
-                Type of Game
+            <div
+              className="filter-by-type"
+            >
+              <p
+                className="filter-title"
+              >
+                GAME TYPE
               </p>
-              <input
-                className="adv-search-checkbox"
-                data-id="board"
-                id="board"
-                name="type-checkbox"
-                type="checkbox"
-              />
-              <label
-                for="board"
+              <div
+                className="checkbox-and-label"
               >
-                board
-              </label>
-              <input
-                className="adv-search-checkbox"
-                data-id="card"
-                id="card"
-                name="type-checkbox"
-                type="checkbox"
-              />
-              <label
-                for="card"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="type"
+                  data-filter="board"
+                  id="board"
+                  name="type-checkbox"
+                  type="checkbox"
+                />
+                <label
+                  for="board"
+                >
+                  Board Game
+                </label>
+              </div>
+              <div
+                className="checkbox-and-label"
               >
-                card
-              </label>
+                <input
+                  class="adv-search-checkbox"
+                  data-category="type"
+                  data-filter="card"
+                  id="card"
+                  name="type-checkbox"
+                  type="checkbox"
+                />
+                <label
+                  for="card"
+                >
+                  Card Game
+                </label>
+              </div>
             </div>,
-            <div>
-              <p>
-                # of Players
+            <div
+              className="filter-by-players"
+            >
+              <p
+                className="filter-title"
+              >
+                NUMBER OF PLAYERS
               </p>
-              <input
-                className="adv-search-checkbox"
-                data-id="two"
-                id="two"
-                type="checkbox"
-              />
-              <label
-                for="number-players-checkbox"
+              <div
+                className="checkbox-and-label"
               >
-                2 players
-              </label>
-              <input
-                className="adv-search-checkbox"
-                data-id="threefour"
-                id="threefour"
-                type="checkbox"
-              />
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="players"
+                  data-filter="two"
+                  id="two"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  2 players
+                </label>
+              </div>
+              <div
+                className="checkbox-and-label"
               >
-                3-4 players
-              </label>
-              <input
-                class="adv-search-checkbox"
-                data-id="fivesix"
-                id="fivesix"
-                type="checkbox"
-              />
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="players"
+                  data-filter="threefour"
+                  id="threefour"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  3 - 4 players
+                </label>
+              </div>
+              <div
+                className="checkbox-and-label"
               >
-                5-6 players
-              </label>
-              <input
-                class="adv-search-checkbox"
-                data-id="seven"
-                id="seven"
-                type="checkbox"
-              />
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="players"
+                  data-filter="fivesix"
+                  id="fivesix"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  5 - 6 players
+                </label>
+              </div>
+              <div
+                className="checkbox-and-label"
               >
-                7+ players
-              </label>
+                <input
+                  class="adv-search-checkbox"
+                  data-category="players"
+                  data-filter="seven"
+                  id="seven"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  7 + players
+                </label>
+              </div>
             </div>,
-            <div>
-              <p>
-                Age
+            <div
+              className="filter-by-age"
+            >
+              <p
+                className="filter-title"
+              >
+                AGE RANGE
               </p>
-              <input
-                class="adv-search-checkbox"
-                data-id="lesseight"
-                id="lesseight"
-                type="checkbox"
-              />
-              <label
-                for="number-players-checkbox"
+              <div
+                className="checkbox-and-label"
               >
-                less than 8
-              </label>
-              <input
-                class="adv-search-checkbox"
-                data-id="eightthirteen"
-                id="eightthirteen"
-                type="checkbox"
-              />
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="age"
+                  data-filter="lesseight"
+                  id="lesseight"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  8 and Under
+                </label>
+              </div>
+              <div
+                className="checkbox-and-label"
               >
-                8 - 13
-              </label>
-              <input
-                class="adv-search-checkbox"
-                data-id="thirteenplus"
-                id="thirteenplus"
-                type="checkbox"
-              />
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="age"
+                  data-filter="eightthirteen"
+                  id="eightthirteen"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  8 - 13
+                </label>
+              </div>
+              <div
+                className="checkbox-and-label"
               >
-                13+
-              </label>
-              <input
-                class="adv-search-checkbox"
-                data-id="adult"
-                id="adult"
-                type="checkbox"
-              />
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="age"
+                  data-filter="thirteenplus"
+                  id="thirteenplus"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  13 and Over
+                </label>
+              </div>
+              <div
+                className="checkbox-and-label"
               >
-                Adult
-              </label>
+                <input
+                  class="adv-search-checkbox"
+                  data-category="age"
+                  data-filter="adult"
+                  id="adult"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  Adult Only
+                </label>
+              </div>
             </div>,
-            <div>
-              <p>
-                Genre
+            <div
+              className="filter-by-genre"
+            >
+              <p
+                className="filter-title"
+              >
+                GENRE
               </p>
-              <input
-                class="adv-search-checkbox"
-                data-id="strategy"
-                id="strategy"
-                type="checkbox"
-              />
-              <label
-                for="number-players-checkbox"
+              <div
+                className="checkbox-and-label"
               >
-                Strategy
-              </label>
-              <input
-                class="adv-search-checkbox"
-                data-id="family"
-                id="family"
-                type="checkbox"
-              />
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="genre"
+                  data-filter="strategy"
+                  id="strategy"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  Strategy
+                </label>
+              </div>
+              <div
+                className="checkbox-and-label"
               >
-                Family
-              </label>
-              <input
-                class="adv-search-checkbox"
-                data-id="party"
-                id="party"
-                type="checkbox"
-              />
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="genre"
+                  data-filter="family"
+                  id="family"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  Family
+                </label>
+              </div>
+              <div
+                className="checkbox-and-label"
               >
-                Party
-              </label>
-              <input
-                class="adv-search-checkbox"
-                data-id="adventure"
-                id="adventure"
-                type="checkbox"
-              />
-              <label
-                for="number-players-checkbox"
+                <input
+                  class="adv-search-checkbox"
+                  data-category="genre"
+                  data-filter="party"
+                  id="party"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  Party
+                </label>
+              </div>
+              <div
+                className="checkbox-and-label"
               >
-                Adventure
-              </label>
+                <input
+                  class="adv-search-checkbox"
+                  data-category="genre"
+                  data-filter="adventure"
+                  id="adventure"
+                  type="checkbox"
+                />
+                <label
+                  for="number-players-checkbox"
+                >
+                  Adventure
+                </label>
+              </div>
             </div>,
           ],
-          "className": "form",
+          "className": "advanced-search-form form",
           "onClick": undefined,
         },
         "ref": null,
@@ -1408,34 +2218,47 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <p>
-                  Type of Game
+                <p
+                  className="filter-title"
+                >
+                  GAME TYPE
                 </p>,
-                <input
-                  className="adv-search-checkbox"
-                  data-id="board"
-                  id="board"
-                  name="type-checkbox"
-                  type="checkbox"
-                />,
-                <label
-                  for="board"
+                <div
+                  className="checkbox-and-label"
                 >
-                  board
-                </label>,
-                <input
-                  className="adv-search-checkbox"
-                  data-id="card"
-                  id="card"
-                  name="type-checkbox"
-                  type="checkbox"
-                />,
-                <label
-                  for="card"
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="type"
+                    data-filter="board"
+                    id="board"
+                    name="type-checkbox"
+                    type="checkbox"
+                  />
+                  <label
+                    for="board"
+                  >
+                    Board Game
+                  </label>
+                </div>,
+                <div
+                  className="checkbox-and-label"
                 >
-                  card
-                </label>,
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="type"
+                    data-filter="card"
+                    id="card"
+                    name="type-checkbox"
+                    type="checkbox"
+                  />
+                  <label
+                    for="card"
+                  >
+                    Card Game
+                  </label>
+                </div>,
               ],
+              "className": "filter-by-type",
             },
             "ref": null,
             "rendered": Array [
@@ -1444,10 +2267,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Type of Game",
+                  "children": "GAME TYPE",
+                  "className": "filter-title",
                 },
                 "ref": null,
-                "rendered": "Type of Game",
+                "rendered": "GAME TYPE",
                 "type": "p",
               },
               Object {
@@ -1455,54 +2279,110 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "adv-search-checkbox",
-                  "data-id": "board",
-                  "id": "board",
-                  "name": "type-checkbox",
-                  "type": "checkbox",
+                  "children": Array [
+                    <input
+                      class="adv-search-checkbox"
+                      data-category="type"
+                      data-filter="board"
+                      id="board"
+                      name="type-checkbox"
+                      type="checkbox"
+                    />,
+                    <label
+                      for="board"
+                    >
+                      Board Game
+                    </label>,
+                  ],
+                  "className": "checkbox-and-label",
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "input",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "adv-search-checkbox",
+                      "data-category": "type",
+                      "data-filter": "board",
+                      "id": "board",
+                      "name": "type-checkbox",
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Board Game",
+                      "for": "board",
+                    },
+                    "ref": null,
+                    "rendered": "Board Game",
+                    "type": "label",
+                  },
+                ],
+                "type": "div",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "board",
-                  "for": "board",
+                  "children": Array [
+                    <input
+                      class="adv-search-checkbox"
+                      data-category="type"
+                      data-filter="card"
+                      id="card"
+                      name="type-checkbox"
+                      type="checkbox"
+                    />,
+                    <label
+                      for="card"
+                    >
+                      Card Game
+                    </label>,
+                  ],
+                  "className": "checkbox-and-label",
                 },
                 "ref": null,
-                "rendered": "board",
-                "type": "label",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "adv-search-checkbox",
-                  "data-id": "card",
-                  "id": "card",
-                  "name": "type-checkbox",
-                  "type": "checkbox",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "card",
-                  "for": "card",
-                },
-                "ref": null,
-                "rendered": "card",
-                "type": "label",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "adv-search-checkbox",
+                      "data-category": "type",
+                      "data-filter": "card",
+                      "id": "card",
+                      "name": "type-checkbox",
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Card Game",
+                      "for": "card",
+                    },
+                    "ref": null,
+                    "rendered": "Card Game",
+                    "type": "label",
+                  },
+                ],
+                "type": "div",
               },
             ],
             "type": "div",
@@ -1513,54 +2393,77 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <p>
-                  # of Players
+                <p
+                  className="filter-title"
+                >
+                  NUMBER OF PLAYERS
                 </p>,
-                <input
-                  className="adv-search-checkbox"
-                  data-id="two"
-                  id="two"
-                  type="checkbox"
-                />,
-                <label
-                  for="number-players-checkbox"
+                <div
+                  className="checkbox-and-label"
                 >
-                  2 players
-                </label>,
-                <input
-                  className="adv-search-checkbox"
-                  data-id="threefour"
-                  id="threefour"
-                  type="checkbox"
-                />,
-                <label
-                  for="number-players-checkbox"
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="players"
+                    data-filter="two"
+                    id="two"
+                    type="checkbox"
+                  />
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    2 players
+                  </label>
+                </div>,
+                <div
+                  className="checkbox-and-label"
                 >
-                  3-4 players
-                </label>,
-                <input
-                  class="adv-search-checkbox"
-                  data-id="fivesix"
-                  id="fivesix"
-                  type="checkbox"
-                />,
-                <label
-                  for="number-players-checkbox"
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="players"
+                    data-filter="threefour"
+                    id="threefour"
+                    type="checkbox"
+                  />
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    3 - 4 players
+                  </label>
+                </div>,
+                <div
+                  className="checkbox-and-label"
                 >
-                  5-6 players
-                </label>,
-                <input
-                  class="adv-search-checkbox"
-                  data-id="seven"
-                  id="seven"
-                  type="checkbox"
-                />,
-                <label
-                  for="number-players-checkbox"
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="players"
+                    data-filter="fivesix"
+                    id="fivesix"
+                    type="checkbox"
+                  />
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    5 - 6 players
+                  </label>
+                </div>,
+                <div
+                  className="checkbox-and-label"
                 >
-                  7+ players
-                </label>,
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="players"
+                    data-filter="seven"
+                    id="seven"
+                    type="checkbox"
+                  />
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    7 + players
+                  </label>
+                </div>,
               ],
+              "className": "filter-by-players",
             },
             "ref": null,
             "rendered": Array [
@@ -1569,10 +2472,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "# of Players",
+                  "children": "NUMBER OF PLAYERS",
+                  "className": "filter-title",
                 },
                 "ref": null,
-                "rendered": "# of Players",
+                "rendered": "NUMBER OF PLAYERS",
                 "type": "p",
               },
               Object {
@@ -1580,104 +2484,212 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "adv-search-checkbox",
-                  "data-id": "two",
-                  "id": "two",
-                  "type": "checkbox",
+                  "children": Array [
+                    <input
+                      class="adv-search-checkbox"
+                      data-category="players"
+                      data-filter="two"
+                      id="two"
+                      type="checkbox"
+                    />,
+                    <label
+                      for="number-players-checkbox"
+                    >
+                      2 players
+                    </label>,
+                  ],
+                  "className": "checkbox-and-label",
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "input",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "adv-search-checkbox",
+                      "data-category": "players",
+                      "data-filter": "two",
+                      "id": "two",
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "2 players",
+                      "for": "number-players-checkbox",
+                    },
+                    "ref": null,
+                    "rendered": "2 players",
+                    "type": "label",
+                  },
+                ],
+                "type": "div",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "2 players",
-                  "for": "number-players-checkbox",
+                  "children": Array [
+                    <input
+                      class="adv-search-checkbox"
+                      data-category="players"
+                      data-filter="threefour"
+                      id="threefour"
+                      type="checkbox"
+                    />,
+                    <label
+                      for="number-players-checkbox"
+                    >
+                      3 - 4 players
+                    </label>,
+                  ],
+                  "className": "checkbox-and-label",
                 },
                 "ref": null,
-                "rendered": "2 players",
-                "type": "label",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "adv-search-checkbox",
+                      "data-category": "players",
+                      "data-filter": "threefour",
+                      "id": "threefour",
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "3 - 4 players",
+                      "for": "number-players-checkbox",
+                    },
+                    "ref": null,
+                    "rendered": "3 - 4 players",
+                    "type": "label",
+                  },
+                ],
+                "type": "div",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "adv-search-checkbox",
-                  "data-id": "threefour",
-                  "id": "threefour",
-                  "type": "checkbox",
+                  "children": Array [
+                    <input
+                      class="adv-search-checkbox"
+                      data-category="players"
+                      data-filter="fivesix"
+                      id="fivesix"
+                      type="checkbox"
+                    />,
+                    <label
+                      for="number-players-checkbox"
+                    >
+                      5 - 6 players
+                    </label>,
+                  ],
+                  "className": "checkbox-and-label",
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "input",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "adv-search-checkbox",
+                      "data-category": "players",
+                      "data-filter": "fivesix",
+                      "id": "fivesix",
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "5 - 6 players",
+                      "for": "number-players-checkbox",
+                    },
+                    "ref": null,
+                    "rendered": "5 - 6 players",
+                    "type": "label",
+                  },
+                ],
+                "type": "div",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "3-4 players",
-                  "for": "number-players-checkbox",
+                  "children": Array [
+                    <input
+                      class="adv-search-checkbox"
+                      data-category="players"
+                      data-filter="seven"
+                      id="seven"
+                      type="checkbox"
+                    />,
+                    <label
+                      for="number-players-checkbox"
+                    >
+                      7 + players
+                    </label>,
+                  ],
+                  "className": "checkbox-and-label",
                 },
                 "ref": null,
-                "rendered": "3-4 players",
-                "type": "label",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "class": "adv-search-checkbox",
-                  "data-id": "fivesix",
-                  "id": "fivesix",
-                  "type": "checkbox",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "5-6 players",
-                  "for": "number-players-checkbox",
-                },
-                "ref": null,
-                "rendered": "5-6 players",
-                "type": "label",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "class": "adv-search-checkbox",
-                  "data-id": "seven",
-                  "id": "seven",
-                  "type": "checkbox",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "7+ players",
-                  "for": "number-players-checkbox",
-                },
-                "ref": null,
-                "rendered": "7+ players",
-                "type": "label",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "adv-search-checkbox",
+                      "data-category": "players",
+                      "data-filter": "seven",
+                      "id": "seven",
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "7 + players",
+                      "for": "number-players-checkbox",
+                    },
+                    "ref": null,
+                    "rendered": "7 + players",
+                    "type": "label",
+                  },
+                ],
+                "type": "div",
               },
             ],
             "type": "div",
@@ -1688,54 +2700,77 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <p>
-                  Age
+                <p
+                  className="filter-title"
+                >
+                  AGE RANGE
                 </p>,
-                <input
-                  class="adv-search-checkbox"
-                  data-id="lesseight"
-                  id="lesseight"
-                  type="checkbox"
-                />,
-                <label
-                  for="number-players-checkbox"
+                <div
+                  className="checkbox-and-label"
                 >
-                  less than 8
-                </label>,
-                <input
-                  class="adv-search-checkbox"
-                  data-id="eightthirteen"
-                  id="eightthirteen"
-                  type="checkbox"
-                />,
-                <label
-                  for="number-players-checkbox"
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="age"
+                    data-filter="lesseight"
+                    id="lesseight"
+                    type="checkbox"
+                  />
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    8 and Under
+                  </label>
+                </div>,
+                <div
+                  className="checkbox-and-label"
                 >
-                  8 - 13
-                </label>,
-                <input
-                  class="adv-search-checkbox"
-                  data-id="thirteenplus"
-                  id="thirteenplus"
-                  type="checkbox"
-                />,
-                <label
-                  for="number-players-checkbox"
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="age"
+                    data-filter="eightthirteen"
+                    id="eightthirteen"
+                    type="checkbox"
+                  />
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    8 - 13
+                  </label>
+                </div>,
+                <div
+                  className="checkbox-and-label"
                 >
-                  13+
-                </label>,
-                <input
-                  class="adv-search-checkbox"
-                  data-id="adult"
-                  id="adult"
-                  type="checkbox"
-                />,
-                <label
-                  for="number-players-checkbox"
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="age"
+                    data-filter="thirteenplus"
+                    id="thirteenplus"
+                    type="checkbox"
+                  />
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    13 and Over
+                  </label>
+                </div>,
+                <div
+                  className="checkbox-and-label"
                 >
-                  Adult
-                </label>,
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="age"
+                    data-filter="adult"
+                    id="adult"
+                    type="checkbox"
+                  />
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    Adult Only
+                  </label>
+                </div>,
               ],
+              "className": "filter-by-age",
             },
             "ref": null,
             "rendered": Array [
@@ -1744,10 +2779,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Age",
+                  "children": "AGE RANGE",
+                  "className": "filter-title",
                 },
                 "ref": null,
-                "rendered": "Age",
+                "rendered": "AGE RANGE",
                 "type": "p",
               },
               Object {
@@ -1755,104 +2791,212 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "class": "adv-search-checkbox",
-                  "data-id": "lesseight",
-                  "id": "lesseight",
-                  "type": "checkbox",
+                  "children": Array [
+                    <input
+                      class="adv-search-checkbox"
+                      data-category="age"
+                      data-filter="lesseight"
+                      id="lesseight"
+                      type="checkbox"
+                    />,
+                    <label
+                      for="number-players-checkbox"
+                    >
+                      8 and Under
+                    </label>,
+                  ],
+                  "className": "checkbox-and-label",
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "input",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "adv-search-checkbox",
+                      "data-category": "age",
+                      "data-filter": "lesseight",
+                      "id": "lesseight",
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "8 and Under",
+                      "for": "number-players-checkbox",
+                    },
+                    "ref": null,
+                    "rendered": "8 and Under",
+                    "type": "label",
+                  },
+                ],
+                "type": "div",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "less than 8",
-                  "for": "number-players-checkbox",
+                  "children": Array [
+                    <input
+                      class="adv-search-checkbox"
+                      data-category="age"
+                      data-filter="eightthirteen"
+                      id="eightthirteen"
+                      type="checkbox"
+                    />,
+                    <label
+                      for="number-players-checkbox"
+                    >
+                      8 - 13
+                    </label>,
+                  ],
+                  "className": "checkbox-and-label",
                 },
                 "ref": null,
-                "rendered": "less than 8",
-                "type": "label",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "adv-search-checkbox",
+                      "data-category": "age",
+                      "data-filter": "eightthirteen",
+                      "id": "eightthirteen",
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "8 - 13",
+                      "for": "number-players-checkbox",
+                    },
+                    "ref": null,
+                    "rendered": "8 - 13",
+                    "type": "label",
+                  },
+                ],
+                "type": "div",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "class": "adv-search-checkbox",
-                  "data-id": "eightthirteen",
-                  "id": "eightthirteen",
-                  "type": "checkbox",
+                  "children": Array [
+                    <input
+                      class="adv-search-checkbox"
+                      data-category="age"
+                      data-filter="thirteenplus"
+                      id="thirteenplus"
+                      type="checkbox"
+                    />,
+                    <label
+                      for="number-players-checkbox"
+                    >
+                      13 and Over
+                    </label>,
+                  ],
+                  "className": "checkbox-and-label",
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "input",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "adv-search-checkbox",
+                      "data-category": "age",
+                      "data-filter": "thirteenplus",
+                      "id": "thirteenplus",
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "13 and Over",
+                      "for": "number-players-checkbox",
+                    },
+                    "ref": null,
+                    "rendered": "13 and Over",
+                    "type": "label",
+                  },
+                ],
+                "type": "div",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "8 - 13",
-                  "for": "number-players-checkbox",
+                  "children": Array [
+                    <input
+                      class="adv-search-checkbox"
+                      data-category="age"
+                      data-filter="adult"
+                      id="adult"
+                      type="checkbox"
+                    />,
+                    <label
+                      for="number-players-checkbox"
+                    >
+                      Adult Only
+                    </label>,
+                  ],
+                  "className": "checkbox-and-label",
                 },
                 "ref": null,
-                "rendered": "8 - 13",
-                "type": "label",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "class": "adv-search-checkbox",
-                  "data-id": "thirteenplus",
-                  "id": "thirteenplus",
-                  "type": "checkbox",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "13+",
-                  "for": "number-players-checkbox",
-                },
-                "ref": null,
-                "rendered": "13+",
-                "type": "label",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "class": "adv-search-checkbox",
-                  "data-id": "adult",
-                  "id": "adult",
-                  "type": "checkbox",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Adult",
-                  "for": "number-players-checkbox",
-                },
-                "ref": null,
-                "rendered": "Adult",
-                "type": "label",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "adv-search-checkbox",
+                      "data-category": "age",
+                      "data-filter": "adult",
+                      "id": "adult",
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Adult Only",
+                      "for": "number-players-checkbox",
+                    },
+                    "ref": null,
+                    "rendered": "Adult Only",
+                    "type": "label",
+                  },
+                ],
+                "type": "div",
               },
             ],
             "type": "div",
@@ -1863,54 +3007,77 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <p>
-                  Genre
+                <p
+                  className="filter-title"
+                >
+                  GENRE
                 </p>,
-                <input
-                  class="adv-search-checkbox"
-                  data-id="strategy"
-                  id="strategy"
-                  type="checkbox"
-                />,
-                <label
-                  for="number-players-checkbox"
+                <div
+                  className="checkbox-and-label"
                 >
-                  Strategy
-                </label>,
-                <input
-                  class="adv-search-checkbox"
-                  data-id="family"
-                  id="family"
-                  type="checkbox"
-                />,
-                <label
-                  for="number-players-checkbox"
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="genre"
+                    data-filter="strategy"
+                    id="strategy"
+                    type="checkbox"
+                  />
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    Strategy
+                  </label>
+                </div>,
+                <div
+                  className="checkbox-and-label"
                 >
-                  Family
-                </label>,
-                <input
-                  class="adv-search-checkbox"
-                  data-id="party"
-                  id="party"
-                  type="checkbox"
-                />,
-                <label
-                  for="number-players-checkbox"
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="genre"
+                    data-filter="family"
+                    id="family"
+                    type="checkbox"
+                  />
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    Family
+                  </label>
+                </div>,
+                <div
+                  className="checkbox-and-label"
                 >
-                  Party
-                </label>,
-                <input
-                  class="adv-search-checkbox"
-                  data-id="adventure"
-                  id="adventure"
-                  type="checkbox"
-                />,
-                <label
-                  for="number-players-checkbox"
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="genre"
+                    data-filter="party"
+                    id="party"
+                    type="checkbox"
+                  />
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    Party
+                  </label>
+                </div>,
+                <div
+                  className="checkbox-and-label"
                 >
-                  Adventure
-                </label>,
+                  <input
+                    class="adv-search-checkbox"
+                    data-category="genre"
+                    data-filter="adventure"
+                    id="adventure"
+                    type="checkbox"
+                  />
+                  <label
+                    for="number-players-checkbox"
+                  >
+                    Adventure
+                  </label>
+                </div>,
               ],
+              "className": "filter-by-genre",
             },
             "ref": null,
             "rendered": Array [
@@ -1919,10 +3086,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Genre",
+                  "children": "GENRE",
+                  "className": "filter-title",
                 },
                 "ref": null,
-                "rendered": "Genre",
+                "rendered": "GENRE",
                 "type": "p",
               },
               Object {
@@ -1930,104 +3098,212 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "class": "adv-search-checkbox",
-                  "data-id": "strategy",
-                  "id": "strategy",
-                  "type": "checkbox",
+                  "children": Array [
+                    <input
+                      class="adv-search-checkbox"
+                      data-category="genre"
+                      data-filter="strategy"
+                      id="strategy"
+                      type="checkbox"
+                    />,
+                    <label
+                      for="number-players-checkbox"
+                    >
+                      Strategy
+                    </label>,
+                  ],
+                  "className": "checkbox-and-label",
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "input",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "adv-search-checkbox",
+                      "data-category": "genre",
+                      "data-filter": "strategy",
+                      "id": "strategy",
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Strategy",
+                      "for": "number-players-checkbox",
+                    },
+                    "ref": null,
+                    "rendered": "Strategy",
+                    "type": "label",
+                  },
+                ],
+                "type": "div",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Strategy",
-                  "for": "number-players-checkbox",
+                  "children": Array [
+                    <input
+                      class="adv-search-checkbox"
+                      data-category="genre"
+                      data-filter="family"
+                      id="family"
+                      type="checkbox"
+                    />,
+                    <label
+                      for="number-players-checkbox"
+                    >
+                      Family
+                    </label>,
+                  ],
+                  "className": "checkbox-and-label",
                 },
                 "ref": null,
-                "rendered": "Strategy",
-                "type": "label",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "adv-search-checkbox",
+                      "data-category": "genre",
+                      "data-filter": "family",
+                      "id": "family",
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Family",
+                      "for": "number-players-checkbox",
+                    },
+                    "ref": null,
+                    "rendered": "Family",
+                    "type": "label",
+                  },
+                ],
+                "type": "div",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "class": "adv-search-checkbox",
-                  "data-id": "family",
-                  "id": "family",
-                  "type": "checkbox",
+                  "children": Array [
+                    <input
+                      class="adv-search-checkbox"
+                      data-category="genre"
+                      data-filter="party"
+                      id="party"
+                      type="checkbox"
+                    />,
+                    <label
+                      for="number-players-checkbox"
+                    >
+                      Party
+                    </label>,
+                  ],
+                  "className": "checkbox-and-label",
                 },
                 "ref": null,
-                "rendered": null,
-                "type": "input",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "adv-search-checkbox",
+                      "data-category": "genre",
+                      "data-filter": "party",
+                      "id": "party",
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Party",
+                      "for": "number-players-checkbox",
+                    },
+                    "ref": null,
+                    "rendered": "Party",
+                    "type": "label",
+                  },
+                ],
+                "type": "div",
               },
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Family",
-                  "for": "number-players-checkbox",
+                  "children": Array [
+                    <input
+                      class="adv-search-checkbox"
+                      data-category="genre"
+                      data-filter="adventure"
+                      id="adventure"
+                      type="checkbox"
+                    />,
+                    <label
+                      for="number-players-checkbox"
+                    >
+                      Adventure
+                    </label>,
+                  ],
+                  "className": "checkbox-and-label",
                 },
                 "ref": null,
-                "rendered": "Family",
-                "type": "label",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "class": "adv-search-checkbox",
-                  "data-id": "party",
-                  "id": "party",
-                  "type": "checkbox",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Party",
-                  "for": "number-players-checkbox",
-                },
-                "ref": null,
-                "rendered": "Party",
-                "type": "label",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "class": "adv-search-checkbox",
-                  "data-id": "adventure",
-                  "id": "adventure",
-                  "type": "checkbox",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Adventure",
-                  "for": "number-players-checkbox",
-                },
-                "ref": null,
-                "rendered": "Adventure",
-                "type": "label",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "adv-search-checkbox",
+                      "data-category": "genre",
+                      "data-filter": "adventure",
+                      "id": "adventure",
+                      "type": "checkbox",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Adventure",
+                      "for": "number-players-checkbox",
+                    },
+                    "ref": null,
+                    "rendered": "Adventure",
+                    "type": "label",
+                  },
+                ],
+                "type": "div",
               },
             ],
             "type": "div",

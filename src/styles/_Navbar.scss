@@ -1,13 +1,21 @@
 .Navbar {
+  background-image: linear-gradient(#5b5b5b, #2b3034);
+
+}
+
+.main-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   min-height: 75px;
-  background-image: linear-gradient(#5b5b5b, #2b3034);
 }
 
 .title {
   color: #ff1818;
+  letter-spacing: 3.5px;
+}
+.title:hover{
+  cursor: pointer;
 }
 
 .filter-buttons {
@@ -74,28 +82,33 @@
   font-size: 15px;
 }
 
-@media screen and (max-width: 1000px) {
-  .Navbar {
+@media screen and (max-width: 1030px) {
+  .main-nav {
     flex-direction: column-reverse;    
   }
 
   .filter-buttons {
     justify-content: center;
-    margin: 26px 0px 16px 0px;
   }
+  
   .search-field {
     justify-content: center;
     margin: 0px;
   }
+  
   .searchbar {
     width: 285px;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   .title {
     padding-top: 15px;
   }
+  .filter-buttons {
+    margin: 5px 0px;
+  }
+
   .reset-games,
   .filter-boardgames,
   .filter-cardgames,
@@ -104,13 +117,20 @@
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 465px) {
+  .AdvancedSearch,
+  .advanced-search {
+    display: none;
+  }
+
   .filter-buttons {
     flex-direction: column;
   }
+
   .title {
     padding: 0px;
   }
+
   .reset-games, .filter-boardgames, .filter-cardgames, .advanced-search {
     padding: 7px 0px;
   }
