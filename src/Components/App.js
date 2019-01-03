@@ -158,18 +158,18 @@ export default class App extends Component {
       document.querySelector('#card').checked = false
     }
   }
+
   filterPlayerCheck(filterOptions, game) {
     const { players } = filterOptions;
-    if (players.two && game.max_players <= 2
-      || players.threefour && 4 <= game.max_players
-      || players.fivesix && 6 <= game.max_players
-      || players.seven && game.max_players >= 7) {
+    if (players.two && (game.min_players <= 2 && 2 <= game.max_players)
+      || players.threefour && (game.min_players <= 3 && 4 <= game.max_players)
+      || players.fivesix && (game.min_players <= 5 && 6 <= game.max_players)
+      || players.seven && (game.min_players <= 7 && 7 <= game.max_players)) {
       return game;
     }
-
     if (!Object.values(filterOptions.players).includes(true)) return game;
-
   }
+  
   filterGameAgeCheck(filterOptions, game) {
     if ((filterOptions.age.lesseight && (game.min_age < 8))
       || (filterOptions.age.eightthirteen && (game.min_age >= 8 && 13 >= game.min_age))
@@ -182,6 +182,7 @@ export default class App extends Component {
       return game
     }
   }
+
   filterGenreCheck(filterOptions, game) {
     if (filterOptions.genre.strategy && game.genre_ID.includes(1)
       || filterOptions.genre.family && game.genre_ID.includes(2)
