@@ -148,6 +148,8 @@ class App extends Component {
       popUpGenre: null
     })
   }
+
+
   checkCategory(event, dataFilter, filterOptions) {
     const dataCategory = event.target.dataset.category;
 
@@ -170,6 +172,55 @@ class App extends Component {
     }
   }
 
+  filterByType(filterOptions, game) {
+    return filterOptions.type.board ? game.genre_ID.includes(6)
+      : filterOptions.type.card ? game.genre_ID.includes(7)
+        : true
+  }
+
+  filterByPlayers(filterOptions, game) {
+  /*
+     Object.keys(filterOptions.players).forEach()
+    */
+    if (filterOptions.players.two && game.min_players >= 1 && game.max_players <= 2
+      || (filterOptions.players.threefour && (game.min_players <= 3 && 4 <= game.max_players))
+      || (filterOptions.players.fivesix && (game.min_players <= 5 && 6 <= game.max_players))
+      || (filterOptions.players.seven && (game.min_players >= 7))) {
+      return game
+    } else if (!(filterOptions.players.two
+      || filterOptions.players.threefour
+      || filterOptions.players.fivesix
+      || filterOptions.players.seven)) {
+      return game;
+    }
+  }
+
+  filterByAge(filterOptions, game) {
+    if ((filterOptions.age.lesseight && (game.min_age < 8))
+      || (filterOptions.age.eightthirteen && (game.min_age >= 8 && 13 >= game.min_age))
+      || (filterOptions.age.thirteenplus && (game.min_age >= 13))
+      || (filterOptions.age.adult && (game.min_age >= 21))) {
+      return game
+    } else if (filterOptions.age.lesseight || filterOptions.age.thirteenplus || filterOptions.age.eightthirteen || filterOptions.age.adult) {
+      return
+    } else {
+      return game
+    }
+  }
+
+  filterByGenre(filterOptions, game) {
+    if (filterOptions.genre.strategy && game.genre_ID.includes(1)
+      || filterOptions.genre.family && game.genre_ID.includes(2)
+      || filterOptions.genre.party && game.genre_ID.includes(3)
+      || filterOptions.genre.adventure && game.genre_ID.includes(8)) {
+      return game
+    } else if (filterOptions.genre.strategy || filterOptions.genre.family || filterOptions.genre.party || filterOptions.genre.adventure) {
+      return
+    } else {
+      return game
+    }
+  }
+
   setFilter = (event) => {
     const dataFilter = event.target.dataset.filter;
     const inputValue = document.querySelector('#input-value').value;
@@ -180,58 +231,11 @@ class App extends Component {
     this.checkCategory(event, dataFilter, filterOptions);
     this.toggleCardOrBoard(dataFilter, filterOptions);
 
-
     let filteredGames = games
-      .filter(game => {
-        return filterOptions.type.board ?
-          game.genre_ID.includes(6)
-          :
-          filterOptions.type.card ?
-            game.genre_ID.includes(7)
-            :
-            game
-      })
-      .filter(game => {
-        /*
-          Object.keys(filterOptions.players).forEach()
-         */
-        if (filterOptions.players.two && game.min_players >= 1 && game.max_players <= 2
-          || (filterOptions.players.threefour && (game.min_players <= 3 && 4 <= game.max_players))
-          || (filterOptions.players.fivesix && (game.min_players <= 5 && 6 <= game.max_players))
-          || (filterOptions.players.seven && (game.min_players >= 7))) {
-          return game
-        } else if (!(filterOptions.players.two
-          || filterOptions.players.threefour
-          || filterOptions.players.fivesix
-          || filterOptions.players.seven)) {
-          return game;
-        } 
-
-      })
-      .filter(game => {
-        if ((filterOptions.age.lesseight && (game.min_age < 8))
-          || (filterOptions.age.eightthirteen && (game.min_age >= 8 && 13 >= game.min_age))
-          || (filterOptions.age.thirteenplus && (game.min_age >= 13))
-          || (filterOptions.age.adult && (game.min_age >= 21))) {
-          return game
-        } else if (filterOptions.age.lesseight || filterOptions.age.thirteenplus || filterOptions.age.eightthirteen || filterOptions.age.adult) {
-          return
-        } else {
-          return game
-        }
-      })
-      .filter(game => {
-        if (filterOptions.genre.strategy && game.genre_ID.includes(1)
-          || filterOptions.genre.family && game.genre_ID.includes(2)
-          || filterOptions.genre.party && game.genre_ID.includes(3)
-          || filterOptions.genre.adventure && game.genre_ID.includes(8)) {
-          return game
-        } else if (filterOptions.genre.strategy || filterOptions.genre.family || filterOptions.genre.party || filterOptions.genre.adventure) {
-          return
-        } else {
-          return game
-        }
-      })
+      .filter(game => this.filterByType(filterOptions, game) && game)
+      .filter(game => this.filterByPlayers(filterOptions, game) && game)
+      .filter(game => this.filterByAge(filterOptions, game) && game)
+      .filter(game => this.filterByGenre(filterOptions, game) && game)
 
     if (inputValue) {
       filteredGames = filteredGames.filter(game => game.game.toLowerCase().includes(inputValue))
