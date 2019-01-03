@@ -7,7 +7,7 @@ export default class extends Component {
 
     return (
       <div key={game.game} className="carousel-game">
-        <div className="game-card" onClick={createPopUp}>
+        <div id={game.game} className="game-card" onClick={createPopUp}>
           <div className="game-card-header-container">
             <div className="game-card-header-title-container">
               <span className="game-card-header">{game.game}</span>
