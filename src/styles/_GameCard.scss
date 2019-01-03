@@ -1,43 +1,37 @@
 .game-card {
   background: #FFF;
   border: outset 4px #2b3034;
-  color:#fff;
+  color: #fff;
   height: 250px;
   padding-bottom: 22px;
   border-radius: 5px;
   width: 264px;
   margin: 15px 10px 5px 10px;
   transition: all 200ms ease;
+
+  &:hover {
+    cursor: pointer;
+    position: relative;
+    box-shadow: 6px 7px 12px #646262;
+  }
 }
 
-.game-card:hover {
-  cursor: pointer;
+.game-card-header-container {
   position: relative;
-  box-shadow: 6px 7px 12px #646262;
+  height: 60px;
+  margin: auto;
+  background-image: linear-gradient(#5b5b5b, #2b3034);
+
+  .game-card-header {
+    display: block;
+    padding: 12px 27px;
+    font-weight: 600;
+    font-size: 15px;
+  }
 }
 
 .game-card-image {
   height: 180px;
   max-width: 400px;
   padding-top: 18px;
-}
-
-.game-card-header-container {
-  display: flex;
-  position: relative;
-  height: 60px;
-  margin: auto;
-  background-image: linear-gradient(#5b5b5b, #2b3034);
-}
-
-.game-card-header-title-container {
-  width: 250px;
-  margin: auto;
-}
-
-.game-card-header {
-  display: block;
-  padding: 12px 27px;
-  font-weight: 600;
-  font-size: 15px;
 }

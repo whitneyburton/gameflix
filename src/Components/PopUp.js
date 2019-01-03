@@ -21,19 +21,19 @@ export default class PopUp extends Component {
 
     return (
       <div className={className}>
-        <section class="game-details">
+        <section className="game-details">
 
           <i onClick={closePopUp} className="fas fa-times"></i>
-          <h1 class="game-name">
+          <h1 className="game-name">
             {game.game}
           </h1>
-          <div class="game-info">
-            <p class="age-range"><i class="fas fa-birthday-cake"></i> Ages {game.min_age} +</p>
-            <p class="num-of-players"><i class="fas fa-users"></i> {game.min_players} - {game.max_players} players</p>
-            <p class="num-of-minutes"><i class="fas fa-clock"></i> {game.number_of_minutes} min.</p>
+          <div className="game-info">
+            <p className="popup-icon"><i className="temp-icon fas fa-birthday-cake"></i> Ages {game.min_age} +</p>
+            <p className="popup-icon"><i className="temp-icon fas fa-users"></i> {game.min_players} - {game.max_players} players</p>
+            <p className="popup-icon"><i className="temp-icon fas fa-clock"></i> {game.number_of_minutes} min.</p>
           </div>
-          <p class="game-description">{game.description}</p>
-          <p class="difficulty-level">
+          <p className="game-description">{game.description}</p>
+          <p className="difficulty-level">
             Challenge level: {game.challenge_level}
             <i className={iconClassName}></i>
           </p>
@@ -41,7 +41,7 @@ export default class PopUp extends Component {
           <p className="publisher">Publisher: {game.publisher}</p>
         </section>
 
-        <section class="youtube-video">
+        <section className="youtube-video">
           <iframe
             width="100%"
             height="100%"

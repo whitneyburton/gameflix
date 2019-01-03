@@ -7,7 +7,7 @@ export default class AdvancedSearch extends Component {
     return (
       <div className="AdvancedSearch">
         <form className="advanced-search-form form" onClick={this.props.setFilter}>
-          <div className="filter-by-type">
+          <div className="filter-container">
             <p className="filter-title">GAME TYPE</p>
             <div className="checkbox-and-label">
               <input name="type-checkbox" id="board" class="adv-search-checkbox" data-category="type" data-filter="board" type="checkbox" />
@@ -18,11 +18,11 @@ export default class AdvancedSearch extends Component {
               <label for="card">Card Game</label>
             </div>
           </div>
-          <div className="filter-by-players">
+          <div className="filter-container">
             <p className="filter-title">NUMBER OF PLAYERS</p>
             <div className="checkbox-and-label">
               <input id="two" class="adv-search-checkbox" data-category="players" data-filter="two" type="checkbox" />
-              <label for="number-players-checkbox">2 players</label>
+              <label for="number-players-checkbox">1 - 2 players</label>
             </div>
             <div className="checkbox-and-label">
               <input id="threefour" class="adv-search-checkbox" data-category="players" data-filter="threefour" type="checkbox" />
@@ -37,7 +37,7 @@ export default class AdvancedSearch extends Component {
               <label for="number-players-checkbox">7 + players</label>
             </div>
           </div>
-          <div className="filter-by-age">
+          <div className="filter-container">
             <p className="filter-title">AGE RANGE</p>
             <div className="checkbox-and-label">
               <input id="lesseight" class="adv-search-checkbox" data-category="age" data-filter="lesseight" type="checkbox" />
@@ -57,7 +57,7 @@ export default class AdvancedSearch extends Component {
             </div>
           </div>
 
-          <div className="filter-by-genre">
+          <div className="filter-container">
             <p className="filter-title">GENRE</p>
             <div className="checkbox-and-label">
               <input id="strategy" class="adv-search-checkbox" data-category="genre" data-filter="strategy" type="checkbox" />

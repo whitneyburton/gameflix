@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import AdvancedSearch from './AdvancedSearch'
 
 export default class Navbar extends Component {
-  constructor() {
-    super();
-  }
 
   toggleAdvancedSearch = () => {
     document.querySelector('.AdvancedSearch').classList.toggle('AdvancedSearchClicked');
@@ -15,25 +12,25 @@ export default class Navbar extends Component {
     return (
       <nav className="Navbar">
         <div className="main-nav">
-          <div class="filter-buttons">
-            <h2 class="title" onClick={() => handleTransition("HomePage")}>GAMEFLIX</h2>
-            <div class="filters-column-one">
-              <p class="reset-games" data-nav="resetall" onClick={resetAllGames}>All Games</p>
-              <p class="filter-boardgames" data-nav="resetboard" onClick={resetAllGames}>Board Games</p>
+          <div className="filter-buttons">
+            <h2 className="title" onClick={() => handleTransition("HomePage")}>GAMEFLIX</h2>
+            <div className="filters-column-one">
+              <p className="nav-btn" data-nav="resetall" onClick={resetAllGames}>All Games</p>
+              <p className="nav-btn" data-nav="resetboard" onClick={resetAllGames}>Board Games</p>
             </div>
-            <div class="filters-column-two">
-              <p class="filter-cardgames" data-nav="resetcard" onClick={resetAllGames}>Card Games</p>
-              <p class="advanced-search" onClick={this.toggleAdvancedSearch}>Advanced Search</p>
+            <div className="filters-column-two">
+              <p className="nav-btn" data-nav="resetcard" onClick={resetAllGames}>Card Games</p>
+              <p className="nav-btn advanced-search " onClick={this.toggleAdvancedSearch}>Advanced Search</p>
             </div>
           </div>
-          <form class="search-field">
-            <i class="fas fa-search"></i>
+          <form className="search-field">
+            <i className="fas fa-search"></i>
             <input
               id="input-value"
               onChange={setFilter}
               type="text"
               className="searchbar"
-              placeholder="Search all games">
+              placeholder="Search games">
             </input>
           </form>
         </div>
