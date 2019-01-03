@@ -10,7 +10,7 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      isHomePage: false,
+      isHomePage: true,
       errors: null,
       games: null,
       genres: null,
