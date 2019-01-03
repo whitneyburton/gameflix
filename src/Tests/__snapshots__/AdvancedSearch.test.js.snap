@@ -21,7 +21,6 @@ ShallowWrapper {
     "props": Object {
       "children": <form
         className="form"
-        onClick={[MockFunction]}
       >
         <div>
           <p>
@@ -387,7 +386,7 @@ ShallowWrapper {
           </div>,
         ],
         "className": "form",
-        "onClick": [MockFunction],
+        "onClick": undefined,
       },
       "ref": null,
       "rendered": Array [
@@ -1034,7 +1033,6 @@ ShallowWrapper {
       "props": Object {
         "children": <form
           className="form"
-          onClick={[MockFunction]}
         >
           <div>
             <p>
@@ -1400,7 +1398,7 @@ ShallowWrapper {
             </div>,
           ],
           "className": "form",
-          "onClick": [MockFunction],
+          "onClick": undefined,
         },
         "ref": null,
         "rendered": Array [
