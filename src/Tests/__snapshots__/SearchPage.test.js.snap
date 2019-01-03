@@ -44,6 +44,13 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <div
+          className="search-results-counter"
+        >
+          Search Results: 
+          1
+           
+        </div>,
         Array [
           <_default
             createPopUp={[MockFunction]}
@@ -75,6 +82,26 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Search Results: ",
+            1,
+            " ",
+          ],
+          "className": "search-results-counter",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Search Results: ",
+          1,
+          " ",
+        ],
+        "type": "div",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -115,6 +142,13 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <div
+            className="search-results-counter"
+          >
+            Search Results: 
+            1
+             
+          </div>,
           Array [
             <_default
               createPopUp={[MockFunction]}
@@ -146,6 +180,26 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Search Results: ",
+              1,
+              " ",
+            ],
+            "className": "search-results-counter",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Search Results: ",
+            1,
+            " ",
+          ],
+          "type": "div",
+        },
         Object {
           "instance": null,
           "key": undefined,

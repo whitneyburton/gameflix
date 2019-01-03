@@ -22,12 +22,11 @@ describe('AdvancedSearch', () => {
       event: {
         target: {
           dataset: {
-            id: 2
-          }
+          id:2
         }
       }
-    });
+    }});
     expect(setAdvancedFilterMock).toBeCalled();
-  });
+  })
   
 });
