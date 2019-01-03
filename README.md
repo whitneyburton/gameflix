@@ -22,7 +22,7 @@ To run tests:
 ## Live App
 https://whitneyburton.github.io/gameflix/
 
-## Wire Frame
+## Wireframes
 ![img_1551](https://user-images.githubusercontent.com/33883645/50619675-e24cd180-0eb7-11e9-860b-786cafe1be3d.JPG)
 
 ![img_0898](https://user-images.githubusercontent.com/33883645/50619669-d82ad300-0eb7-11e9-874e-4fc21733606b.JPG)
